@@ -27,7 +27,7 @@ const ExperimentCard = ({ expId }: Props) => {
           <Typography.Text>{t(`Experiments.Cards.${expId}.description` as never)}</Typography.Text>
         </InfoWrap>
       </Wrapper>
-    </a>
+    </Link>
   );
 };
 

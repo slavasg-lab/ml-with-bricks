@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Container from "../Container/Container";
 import { useTranslation } from "react-i18next";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ const Header = () => {
     <Wrapper>
       <Container>
         <Row>
-          <Link href="/">
+          <Link to="/">
             <LogoBox>
               <img
                 src="/brain.svg"
@@ -26,7 +27,7 @@ const Header = () => {
                 {t("WebsiteName.with_lego")}
               </LogoText>
             </LogoBox>
-          </a>
+          </Link>
           <Navbar />
         </Row>
       </Container>

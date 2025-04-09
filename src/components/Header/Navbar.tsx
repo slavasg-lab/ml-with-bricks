@@ -23,7 +23,7 @@ const Navbar = () => {
           key={`header-navbar-${el.intlId}`}
           $isActive={pathname === el.link}
         >
-          <Link to={el.link}>{t(`Navigation.${el.intlId}` as any)}</a>
+          <Link to={el.link}>{t(`Navigation.${el.intlId}` as any)}</Link>
         </NavItem>
       ))}
     </Wrapper>

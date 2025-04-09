@@ -1,0 +1,139 @@
+{
+  "WebsiteName": {
+    "ml": "Maschinelles Lernen",
+    "with_lego": "mit LEGO®"
+  },
+  "Navigation": {
+    "experiments": "Experimente 💡"
+  },
+  "Experiments": {
+    "title": "Experimente",
+    "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die du mit einem LEGO Spike Prime durchführen kannst.",
+    "Cards": {
+      "fruit-predictor": {
+        "title": "Obstvorhersager",
+        "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!"
+      },
+      "ping-ponger": {
+        "title": "Pingponger",
+        "description": "Baue einen Roboter, der immer ins Ziel trifft!"
+      },
+      "crawler": {
+        "title": "Krabbler",
+        "description": "Baue einen selbstlernenden Krabbler!"
+      }
+    }
+  },
+  "FruitPredictor": {
+    "title": "Obstvorhersager",
+    "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!",
+    "yAxisTitle": "Länge   [cm]",
+    "xAxisTitle": "Farbe",
+    "showDecisionBorder": "Entscheidungsgrenze zeigen: ",
+    "hideInfer": "Vorhersagedatenpunkt verbergen: ",
+    "controlsTitle": "Steuerung",
+    "dataTitle": "Daten",
+    "fruitLabels": {
+      "banana": "Banane",
+      "apple": "Apfel"
+    },
+    "delete": "Entfernen",
+    "label": "Label",
+    "modelModes": {
+      "train": "Training",
+      "infer": "Vorhersage"
+    },
+    "selectClass": "Aktuelle Klasse:",
+    "toasts": {
+      "codeStarted": "Programm gestartet!"
+    }
+  },
+  "PingPonger": {
+    "title": "Pingponger",
+    "description": "Baue einen Roboter, der immer ins Ziel trifft!",
+    "modelModes": {
+      "train": "Training",
+      "infer": "Vorhersage"
+    },
+    "hideInfer": "Inferenzdatenpunkt verbergen: ",
+    "yAxisTitle": "Motorleistung p   [%]",
+    "xAxisTitle": "Abstand d   [cm]",
+    "delete": "Entfernen",
+    "sendNewPower": "Aktualisieren",
+    "power": "Motorleistung",
+    "calculateBest": "Beste Parameter ausrechnen",
+    "linearRegression": "Lineare Regression",
+    "latex": {
+      "eachPoint": "jeder\\:Punkt",
+      "lineEquation": "Geradengleichung",
+      "real": "reell"
+    },
+    "parameters": {
+      "slope": "Steigung",
+      "intercept": "Achsenabschnitt"
+    },
+    "launch": "Ball werfen",
+    "toasts": {
+      "min2Points": "Du brauchst mindestens 2 Datenpunkte.",
+      "codeStarted": "Programm gestartet!"
+    },
+    "loss": "Verlust"
+  },
+  "Crawler": {
+    "title": "Krabbler",
+    "description": "Baue einen selbstlernenden Krabbler!",
+    "modes": {
+      "automatic": "Auto",
+      "semiAutomatic": "Semi-auto",
+      "manual": "Manual"
+    },
+    "modeLabel": "Halt vor der nächsten Bewegung",
+    "explorations": {
+      "no": "keine",
+      "low": "niedrige",
+      "high": "hohe"
+    },
+    "explorationLabel": "Exploration",
+    "table": {
+      "rowsHeader": "Aktueller Zustand",
+      "columnsHeader": "Nächster Zustand"
+    },
+    "actionType": {
+      "exploitation": "Exploitation",
+      "exploration": "Exploration"
+    },
+    "actionTypeLabel": "Modus",
+    "thinkFutureLabel": "Zukunft denken",
+    "controls": "Steuerung",
+    "actionQualityTable": "Entscheidungstabelle",
+    "rewardDiagram": "Belohnungsdiagramm",
+    "toasts": {
+      "codeStarted": "Programm gestartet!",
+      "tooClose": "Der Crawler ist zu nah an der Wand. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
+      "tooFar": "Der Crawler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren."
+    }
+  },
+  "HubInteraction": {
+    "portState": {
+      "closed": "Hub verbinden",
+      "open": "Hub trennen", 
+      "opening": "Verbindung...",
+      "closing": "Trennung..."
+    },
+    "launchCode": "Programm starten",
+    "stopCode": "Programm stoppen",
+    "reboot": "Hub neu starten"
+  },
+  "Settings": {
+    "title": "Einstellungen",
+    "bigMotorPort": "Port des großen Motors",
+    "smallMotorPort": "Port des kleinen Motors",
+    "leftMotorPort": "Port des linken Motors",
+    "rightMotorPort": "Port des rechten Motors",
+    "distanceSensorPort": "Port des Abstandssensors",
+    "colorSensorPort": "Port des Farbsensors",
+    "isReversed": "Ist die Bewegung umgekehrt?",
+    "bigMotorSpeed": "Geschwindigkeit des großen Motors",
+    "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
+  }
+}

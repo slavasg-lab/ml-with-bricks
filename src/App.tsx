@@ -22,7 +22,6 @@ function App() {
               <Route path="/experiments/ping-ponger" element={<PingPongerPage />} />
               <Route path="/experiments/crawler" element={<CrawlerPage />} />
               <Route path="/experiments" element={<ExperimentsPage />} />
-              <Route path="/" element={<ExperimentsPage />} />
               
               <Route path="*" element={<div><h2>404 Not Found</h2></div>} />
             </Routes>

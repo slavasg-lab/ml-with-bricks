@@ -428,15 +428,13 @@ export class LegoBleConnector extends EventEmitter {
     if (this.isProcessingTunnel) return;
     this.isProcessingTunnel = true;
 
-    const packetSize = this.infoResponse?.maxPacketSize || 512;
-    const bandwidth = 8192 / 16;
-    const delay = Math.floor((1000 * packetSize) / bandwidth); // ms
 
     while (this.tunnelMessageQueue.length > 0) {
       const { chunks, deferred } = this.tunnelMessageQueue.shift()!;
 
       for (const tunnelMessageChunk of chunks) {
-        console.log(tunnelMessageChunk)
+        const packetSize = tunnelMessageChunk.serialize().length;
+        const delay = Math.floor((1000 * packetSize) / this.BANDWIDTH); // ms
         await this.sendMessage(tunnelMessageChunk);
         await new Promise((res) => setTimeout(res, delay));
       }

@@ -65,7 +65,7 @@ const PingPongerPage = () => {
     getLocalStorageValue("pingPonger_data", mockRegressionData)
   );
   const [modelMode, setModelMode] = useState<string>(() =>
-    getLocalStorageValue("pingPonger_modelMode", "training")
+    getLocalStorageValue("pingPonger_modelMode", "train")
   );
   const [inferDistance, setInferDistance] = useState<number | null>(() =>
     getLocalStorageValue("pingPonger_inferDistance", null)

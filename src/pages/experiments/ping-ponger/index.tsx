@@ -5,9 +5,7 @@ import styled from "styled-components";
 import Typography from "../../../components/Typography/Typography";
 import { useTranslation } from "react-i18next";
 import { useEffect, useMemo, useRef, useState } from "react";
-import SerialConnector from "../../../components/HubConnectors/SerialConnector";
 import { Chart as ChartJS } from "chart.js";
-import { SpikeMessageObject, useSerial } from "../../../contexts/SerialContext";
 import PingPongerDiagram from "../../../modules/PingPonger/PingPonger.Diagram";
 import SegmentControl from "../../../components/Inputs/SegmentedControl";
 import { modelModes } from "../../../consts/consts";
@@ -209,11 +207,15 @@ const PingPongerPage = () => {
         setData((prev) => [...prev, newPoint]);
         break;
       case "infer_distance":
-        setInferDistance(() => messageData.distance)
+        setInferDistance(() => messageData.distance);
+        break;
       default:
         break;
     }
   };
+
+    const code = useMemo(() => experimentCodes.crawler(pingpongerSettings), [pingpongerSettings]);
+  
 
 
 
@@ -300,7 +302,7 @@ const PingPongerPage = () => {
 
       {/* Spike Connector */}
       <BLEConnector
-        code={experimentCodes.pitcher(pingpongerSettings)}
+        code={code}
         onStart={handleCodeStart}
       // onSettingsOpen={() => setSettingsPopupActive(true)}
       // codeReplacements={codeReplacements}

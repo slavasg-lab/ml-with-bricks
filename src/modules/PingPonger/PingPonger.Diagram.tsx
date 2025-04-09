@@ -169,7 +169,7 @@ const emojiPlugin: Plugin<"scatter"> = {
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
 
-      scatterDataset.data.forEach((point, pointIndex) => {
+      scatterDataset.data.forEach((_, pointIndex) => {
         if (label === "inferLine" && pointIndex !== 1) return;
         const element = meta.data[pointIndex];
 

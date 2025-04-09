@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import Button from "../Button/Button";
 import { useTranslation } from "react-i18next";
@@ -8,8 +8,6 @@ import {
   LinkIcon,
   LinkOffIcon,
   PlayIcon,
-  SendIcon,
-  SettingsIcon,
   StopIcon,
 } from "../Icons/Icons";
 import { useBLE } from "../../contexts/BLEContext";
@@ -23,7 +21,6 @@ const BLEConnector = ({ code, onStart }: Props) => {
   const [uploadProgress, setUploadProgress] = useState<number>(0);
   const { t } = useTranslation();
   const {
-    subscribe,
     connect,
     disconnect,
     connectionStatus,
@@ -76,10 +73,5 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const ButtonsBlock = styled.div`
-  display: flex;
-  column-gap: 10px;
-  align-items: center;
-`;
 
 export default BLEConnector;

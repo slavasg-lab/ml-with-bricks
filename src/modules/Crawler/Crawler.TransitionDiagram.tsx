@@ -1,5 +1,5 @@
 import { CrawlerActionStatus, CrawlerMarkovChainMode } from "../../types/types";
-import React, { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import Cytoscape from "cytoscape";
 import avsdf from "cytoscape-avsdf";
 import { useTheme } from "styled-components";
@@ -76,16 +76,16 @@ const TransitionDiagram = ({
                 weight !== null
                   ? weight
                   : i === currentStateIx && j === currentActionIx
-                  ? 0
-                  : "?",
+                    ? 0
+                    : "?",
               label:
                 markovChainMode === "epsilon"
                   ? ""
                   : weight !== null
-                  ? weight > 0
-                    ? `+${weight}`
-                    : `${weight}`
-                  : "?",
+                    ? weight > 0
+                      ? `+${weight}`
+                      : `${weight}`
+                    : "?",
               active:
                 i === currentStateIx && j === currentActionIx
                   ? "true"

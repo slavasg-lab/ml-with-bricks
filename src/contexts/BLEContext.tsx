@@ -12,7 +12,6 @@ import { LegoBleConnector } from "../utils/bleConnector";
 import {
   ConsoleNotification,
   ProgramFlowNotification,
-  TunnelMessage,
 } from "../utils/bleMessages";
 
 export type ConnectionStatus = "closed" | "closing" | "open" | "opening";

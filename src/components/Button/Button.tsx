@@ -1,4 +1,3 @@
-import React from "react";
 import { ScaleLoader } from "react-spinners";
 import { CircularProgressbar } from "react-circular-progressbar";
 import styled, { useTheme } from "styled-components";

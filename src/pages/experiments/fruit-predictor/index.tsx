@@ -293,7 +293,7 @@ const FruitPredictorPage = () => {
       <Typography.Text>{t("FruitPredictor.description")}</Typography.Text>
 
       <BLEConnector
-        code={experimentCodes.fruitPredictor(fruitPredictorSettings)}
+        code={code}
         onStart={handleCodeStart}
       />
 

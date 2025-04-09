@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import Typography from "../Typography/Typography";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 interface Props {
   expId: string;
@@ -10,7 +11,7 @@ interface Props {
 const ExperimentCard = ({ expId }: Props) => {
   const { t } = useTranslation();
   return (
-    <a href={`/experiments/${expId}`}>
+    <Link to={`/experiments/${expId}`}>
       <Wrapper>
         {/* <Image
         src={`/experiments/${expId}.jpg`}

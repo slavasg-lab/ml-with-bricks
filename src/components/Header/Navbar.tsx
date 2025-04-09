@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 interface MenuItem {
   intlId: string;
@@ -22,7 +23,7 @@ const Navbar = () => {
           key={`header-navbar-${el.intlId}`}
           $isActive={pathname === el.link}
         >
-          <a href={el.link}>{t(`Navigation.${el.intlId}` as any)}</a>
+          <Link to={el.link}>{t(`Navigation.${el.intlId}` as any)}</a>
         </NavItem>
       ))}
     </Wrapper>

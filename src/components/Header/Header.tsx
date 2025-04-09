@@ -9,7 +9,7 @@ const Header = () => {
     <Wrapper>
       <Container>
         <Row>
-          <a href="/">
+          <Link href="/">
             <LogoBox>
               <img
                 src="/brain.svg"

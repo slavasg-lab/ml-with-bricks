@@ -31,7 +31,7 @@ const TransitionDiagram = ({
     if (markovChainMode === "qTable") return qTable;
     return qTable.map((row, i) => {
       const maxQ = Math.max(
-        ...row.filter((q) => q !== undefined && q !== null)
+        ...(row.filter((q) => q !== undefined && q !== null) as number[])
       );
       const preferredActionIx = row.findIndex((el) => el === maxQ);
       return row.map((_, j) => {

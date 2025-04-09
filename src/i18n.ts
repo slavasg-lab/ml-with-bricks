@@ -4,8 +4,6 @@ import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector"
 
 const backendOptions = [{
-    loadPath: '/ml-with-bricks/locales/{{lng}}.json',
-}, {
     loadPath: '/locales/{{lng}}.json',
 }];
 

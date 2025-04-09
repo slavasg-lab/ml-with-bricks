@@ -10,7 +10,7 @@ interface Props {
 const ExperimentCard = ({ expId }: Props) => {
   const { t } = useTranslation();
   return (
-    <a href={`experiments/${expId}`}>
+    <a href={`/experiments/${expId}`}>
       <Wrapper>
         {/* <Image
         src={`/experiments/${expId}.jpg`}

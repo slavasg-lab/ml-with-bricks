@@ -1,5 +1,6 @@
 {
   "name": "@dynamic-labs/react-18-vite-typescript",
+  "homepage": "https://slavasg-lab.github.io/ml-with-bricks/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,12 +8,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "chart.js": "^4.4.7",
     "cytoscape": "^3.31.0",
     "cytoscape-avsdf": "^1.0.0",
+    "gh-pages": "^6.3.0",
     "i18next": "^24.2.3",
     "i18next-browser-languagedetector": "^8.0.4",
     "i18next-http-backend": "^3.0.2",

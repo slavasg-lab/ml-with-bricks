@@ -55,7 +55,7 @@ const TransitionDiagram = ({
           id: `n${i}`,
           label: `State ${i}`,
           type: "ellipse",
-          bgImage: `/crawler/state_${i}.png`,
+          bgImage: `crawler/state_${i}.png`,
           active: i === currentStateIx ? "true" : "false",
         },
         grabbable: false, // Prevent user dragging of nodes

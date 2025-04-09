@@ -73,13 +73,13 @@ const CrawlerControls = ({
         <ActionTypeBlock $active={actionType === "exploitation"}>
           <Typography.Text>{t("Crawler.actionType.exploitation")}</Typography.Text>
           <ActionImageWrapper
-            style={{ backgroundImage: "url(/crawler/exploitation.png)" }}
+            style={{ backgroundImage: "url(crawler/exploitation.png)" }}
           />
         </ActionTypeBlock>
         <ActionTypeBlock $active={actionType === "exploration"}>
           <Typography.Text>{t("Crawler.actionType.exploration")}</Typography.Text>
           <ActionImageWrapper
-            style={{ backgroundImage: "url(/crawler/exploration.png)" }}
+            style={{ backgroundImage: "url(crawler/exploration.png)" }}
           />
         </ActionTypeBlock>
       </ActionTypesWrapper>

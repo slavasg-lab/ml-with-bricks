@@ -13,7 +13,7 @@ const Header = () => {
           <Link to="/">
             <LogoBox>
               <img
-                src="/brain.svg"
+                src="brain.svg"
                 alt="Machine Learning with LEGO Logotype"
                 className="logo_image"
                 // position="relative"

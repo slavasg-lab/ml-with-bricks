@@ -31,13 +31,13 @@ const CrawlerTable = ({ table, currentStateIx, currentActionIx }: Props) => {
         <ImageTableCell
           key={`row-image-${rowIx + 1}`}
           style={{ gridArea: `state${rowIx + 1}` }}
-          $bgImage={`/crawler/state_${rowIx}.png`}
+          $bgImage={`crawler/state_${rowIx}.png`}
           $active={currentStateIx === rowIx}
         />,
         <ImageTableCell
           key={`column-image-${rowIx + 1}`}
           style={{ gridArea: `action${rowIx + 1}` }}
-          $bgImage={`/crawler/state_${rowIx}.png`}
+          $bgImage={`crawler/state_${rowIx}.png`}
           $active={currentActionIx === rowIx}
         />,
       ])}

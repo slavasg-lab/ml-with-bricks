@@ -52,7 +52,7 @@ const Wrapper = styled.div`
 const ImageDiv = styled.div<{ $expId: string }>`
   width: 100%;
   aspect-ratio: 4/3;
-  background-image: ${({ $expId }) => `url(/experiments/${$expId}.webp)`};
+  background-image: ${({ $expId }) => `url(experiments/${$expId}.webp)`};
   background-size: cover;
   background-position: center;
   margin: 0;

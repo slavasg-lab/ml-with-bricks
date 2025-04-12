@@ -214,7 +214,7 @@ const PingPongerPage = () => {
     }
   };
 
-    const code = useMemo(() => experimentCodes.crawler(pingpongerSettings), [pingpongerSettings]);
+    const code = useMemo(() => experimentCodes.pitcher(pingpongerSettings), [pingpongerSettings]);
   
 
 

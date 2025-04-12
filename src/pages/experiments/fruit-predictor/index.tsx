@@ -240,7 +240,7 @@ const FruitPredictorPage = () => {
     }
   };
 
-  const code = useMemo(() => experimentCodes.crawler(fruitPredictorSettings), [fruitPredictorSettings]);
+  const code = useMemo(() => experimentCodes.fruitPredictor(fruitPredictorSettings), [fruitPredictorSettings]);
 
   // --------------------------------------
   // Subscribe/unsubscribe to port events

@@ -73,6 +73,7 @@
       "intercept": "Achsenabschnitt"
     },
     "launch": "Ball werfen",
+    "measure": "Abstand messen",
     "toasts": {
       "min2Points": "Du brauchst mindestens 2 Datenpunkte.",
       "codeStarted": "Programm gestartet!"

@@ -1022,7 +1022,7 @@ runloop.run(left_button_click_listener.listen(), right_button_click_listener.lis
 
 const pitcher = ({ distanceSensorPort, leftMotorPort, rightMotorPort, isInverted }: any) => `
 
-import runloop, hub, json
+import runloop, hub, json, math
 
 class Eventer:
     def __init__(self):
@@ -1194,7 +1194,7 @@ class Pingponger:
         self.train_power = new_power
 
     def calc_infer(self):
-        pred_power = floor(
+        pred_power = math.floor(
             self.current_parameters[0] * self.infer_distance
             + self.current_parameters[1]
         )

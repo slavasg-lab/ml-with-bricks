@@ -134,6 +134,7 @@ const BLEProvider = ({ children }: PropsWithChildren) => {
         }, 5000);
       });
 
+      connectorRef.current.removeAllListeners("tunnelData");
       await connectorRef.current.startProgram(SLOT);
       console.log("PROGRAM STARTED");
       await tunnelInit;
@@ -147,6 +148,7 @@ const BLEProvider = ({ children }: PropsWithChildren) => {
 
   const stopProgram = () => connectorRef.current.stopProgram(SLOT);
 
+
   const subscribe = (callback: BLEDataCallback) => {
     connectorRef.current.on("tunnelData", callback);
 
@@ -156,7 +158,7 @@ const BLEProvider = ({ children }: PropsWithChildren) => {
     };
   };
 
-  const sendTunnelData = ({action, payload}: TunnelData) =>
+  const sendTunnelData = ({ action, payload }: TunnelData) =>
     connectorRef.current.sendTunnelData({ action, payload });
 
   return (

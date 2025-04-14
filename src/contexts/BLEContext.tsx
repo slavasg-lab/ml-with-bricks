@@ -114,6 +114,7 @@ const BLEProvider = ({ children }: PropsWithChildren) => {
         "program.py",
         onProgress
       );
+      connectorRef.current.removeAllListeners("tunnelData");
 
       const tunnelInit = new Promise((resolve, reject) => {
         let resolved = false;
@@ -134,7 +135,6 @@ const BLEProvider = ({ children }: PropsWithChildren) => {
         }, 5000);
       });
 
-      connectorRef.current.removeAllListeners("tunnelData");
       await connectorRef.current.startProgram(SLOT);
       console.log("PROGRAM STARTED");
       await tunnelInit;

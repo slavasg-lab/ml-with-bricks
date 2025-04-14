@@ -10,7 +10,7 @@ const backendOptions = {
 i18next.use(HttpApi).use(LanguageDetector).use(initReactI18next).init({
     debug: true,
     load: 'languageOnly',
-    fallbackLng: "en",
+    fallbackLng: "de",
     backend: backendOptions
 });
 

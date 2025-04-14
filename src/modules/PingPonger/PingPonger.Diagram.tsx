@@ -175,7 +175,7 @@ const emojiPlugin: Plugin<"scatter"> = {
 
         const { x: xPixel, y: yPixel } = element;
 
-        ctx.fillText("PingPonger.🎯", xPixel, yPixel);
+        ctx.fillText("🎯", xPixel, yPixel);
       });
 
       ctx.restore();

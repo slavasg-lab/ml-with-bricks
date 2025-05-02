@@ -1,6 +1,5 @@
 "use client";
 
-
 import styled from "styled-components";
 import Typography from "../../../components/Typography/Typography";
 import { useTranslation } from "react-i18next";
@@ -10,11 +9,7 @@ import PingPongerDiagram from "../../../modules/PingPonger/PingPonger.Diagram";
 import SegmentControl from "../../../components/Inputs/SegmentedControl";
 import { modelModes } from "../../../consts/consts";
 import PingPongerTable from "../../../modules/PingPonger/PingPonger.Table";
-import {
-  LRData,
-  PingpongerSettings,
-  TunnelData,
-} from "../../../types/types";
+import { LRData, PingpongerSettings, TunnelData } from "../../../types/types";
 import Button from "../../../components/Button/Button";
 import "katex/dist/katex.min.css";
 import {
@@ -61,9 +56,12 @@ const PingPongerPage = () => {
   // --------------------------------------
   // 2. Use localStorage for state initialization
   // --------------------------------------
-  const [data, setData] = useState<LRData[]>(() =>
-    getLocalStorageValue("pingPonger_data", mockRegressionData)
-  );
+  const [data, setData] = useState<LRData[]>([
+    { id: "0", power: 20, distance: 8 },
+    { id: "1", power: 40, distance: 17 },
+    { id: "2", power: 60, distance: 36 },
+    { id: "3", power: 80, distance: 64 },
+  ]);
   const [modelMode, setModelMode] = useState<string>(() =>
     getLocalStorageValue("pingPonger_modelMode", "train")
   );
@@ -114,13 +112,15 @@ const PingPongerPage = () => {
 
   const handlePitchBall = () => {
     sendTunnelData({
-      action: "pitch_ball", payload: {}
+      action: "pitch_ball",
+      payload: {},
     });
   };
 
   const handleMeasureDistance = () => {
     sendTunnelData({
-      action: "measure_distance", payload: {}
+      action: "measure_distance",
+      payload: {},
     });
   };
 
@@ -143,14 +143,18 @@ const PingPongerPage = () => {
         infer_distance: inferDistance,
       },
     }).then(() =>
-      toast.success(t("PingPonger.toasts.codeStarted"), { position: "bottom-left" })
+      toast.success(t("PingPonger.toasts.codeStarted"), {
+        position: "bottom-left",
+      })
     );
   };
 
   const handleModelModeChange = (newModeId: string) => {
     // Example: ensure we have at least 2 data points before inference
     if (newModeId === "infer" && data.length < 2) {
-      toast.warn(t("PingPonger.toasts.min2Points"), { position: "bottom-left" });
+      toast.warn(t("PingPonger.toasts.min2Points"), {
+        position: "bottom-left",
+      });
       return;
     }
     setModelMode(newModeId);
@@ -214,10 +218,10 @@ const PingPongerPage = () => {
     }
   };
 
-    const code = useMemo(() => experimentCodes.pitcher(pingpongerSettings), [pingpongerSettings]);
-  
-
-
+  const code = useMemo(
+    () => experimentCodes.pitcher(pingpongerSettings),
+    [pingpongerSettings]
+  );
 
   // If user wants to keep best parameters in sync with new data, re-calc on data changes
   useEffect(() => {
@@ -304,9 +308,8 @@ const PingPongerPage = () => {
       <BLEConnector
         code={code}
         onStart={handleCodeStart}
-      // onSettingsOpen={() => setSettingsPopupActive(true)}
-      // codeReplacements={codeReplacements}
-
+        // onSettingsOpen={() => setSettingsPopupActive(true)}
+        // codeReplacements={codeReplacements}
       />
 
       <DiagramRow>
@@ -337,7 +340,9 @@ const PingPongerPage = () => {
           {modelMode === "infer" ? (
             <ControlsWrapper>
               <Row>
-                <Typography.H3>{t("PingPonger.linearRegression")}</Typography.H3>
+                <Typography.H3>
+                  {t("PingPonger.linearRegression")}
+                </Typography.H3>
                 <Button
                   text={t("PingPonger.calculateBest")}
                   icon={<FunctionIcon />}
@@ -383,7 +388,9 @@ const PingPongerPage = () => {
               <SelectPowerForm>
                 <SliderInput
                   value={newPower}
-                  label={`${t("PingPonger.power")}: ${currentPower}% → ${newPower}%`}
+                  label={`${t(
+                    "PingPonger.power"
+                  )}: ${currentPower}% → ${newPower}%`}
                   minValue={20}
                   maxValue={100}
                   onChange={(v) => setNewPower(v)}

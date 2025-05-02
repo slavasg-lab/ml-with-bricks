@@ -66,7 +66,9 @@ const TransitionDiagram = ({
     for (let i = 0; i < size; i++) {
       for (let j = 0; j < size; j++) {
         const weight = table[i][j];
+        console.log(weight);
         if (weight !== undefined) {
+          console.log("added");
           elements.push({
             data: {
               id: `e${i}-${j}`,
@@ -76,16 +78,16 @@ const TransitionDiagram = ({
                 weight !== null
                   ? weight
                   : i === currentStateIx && j === currentActionIx
-                    ? 0
-                    : "?",
+                  ? 0
+                  : "?",
               label:
                 markovChainMode === "epsilon"
                   ? ""
                   : weight !== null
-                    ? weight > 0
-                      ? `+${weight}`
-                      : `${weight}`
-                    : "?",
+                  ? weight > 0
+                    ? `+${weight}`
+                    : `${weight}`
+                  : "?",
               active:
                 i === currentStateIx && j === currentActionIx
                   ? "true"
@@ -184,7 +186,7 @@ const TransitionDiagram = ({
         "line-dash-pattern": [2, 1],
         "line-dash-offset": 0, // Will be animated below
         width: 0.75,
-        "arrow-scale": 0.45,
+        "arrow-scale": 0.5,
         "font-size": 4,
         "text-outline-width": 0.75,
       },

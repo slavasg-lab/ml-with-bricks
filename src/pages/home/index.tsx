@@ -91,6 +91,10 @@ const CardGrid = styled.div`
   @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: 1600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default HomePage;

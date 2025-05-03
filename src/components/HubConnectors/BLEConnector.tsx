@@ -4,13 +4,11 @@ import { useState } from "react";
 import styled from "styled-components";
 import Button from "../Button/Button";
 import { useTranslation } from "react-i18next";
-import {
-  LinkIcon,
-  LinkOffIcon,
-  PlayIcon,
-  StopIcon,
-} from "../Icons/Icons";
+import { LinkIcon, LinkOffIcon, PlayIcon, StopIcon } from "../Icons/Icons";
 import { useBLE } from "../../contexts/BLEContext";
+import Warning from "../Warnings/WarningBlock";
+import Typography from "../Typography/Typography";
+import InTextLink from "../Links/InTextLink";
 
 interface Props {
   code: string;
@@ -26,7 +24,7 @@ const BLEConnector = ({ code, onStart }: Props) => {
     connectionStatus,
     codeStatus,
     startProgram,
-    stopProgram
+    stopProgram,
   } = useBLE();
 
   const handleRunCode = async () => {
@@ -38,6 +36,18 @@ const BLEConnector = ({ code, onStart }: Props) => {
         onProgress: (percentage: number) => setUploadProgress(percentage),
       });
   };
+
+  if (!navigator.bluetooth)
+    return (
+      <Warning>
+        <Typography.Text>
+          {t("HubInteraction.troubleshootingText.part1")}
+          <InTextLink to={"/#/troubleshooting"}>
+            {t("HubInteraction.troubleshootingText.link")}
+          </InTextLink>
+        </Typography.Text>
+      </Warning>
+    );
 
   return (
     <Wrapper>
@@ -53,7 +63,11 @@ const BLEConnector = ({ code, onStart }: Props) => {
       {connectionStatus === "open" && (
         <Button
           onClick={handleRunCode}
-          text={codeStatus === "on" ? t("HubInteraction.stopCode") : t("HubInteraction.launchCode")}
+          text={
+            codeStatus === "on"
+              ? t("HubInteraction.stopCode")
+              : t("HubInteraction.launchCode")
+          }
           icon={
             (codeStatus === "off" && <PlayIcon />) ||
             (codeStatus === "on" && <StopIcon />)
@@ -72,6 +86,5 @@ const Wrapper = styled.div`
   margin: 20px 0;
   align-items: center;
 `;
-
 
 export default BLEConnector;

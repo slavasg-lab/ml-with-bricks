@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import Typography from "../Typography/Typography";
 
 interface Props {
   to: string;
@@ -10,8 +8,6 @@ interface Props {
 }
 
 const InTextLink = ({ to, children, icon }: Props) => {
-  const { t } = useTranslation();
-
   return (
     <Wrapper href={to} target="_blank">
       {!!icon && icon}

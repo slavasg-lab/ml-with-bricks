@@ -126,7 +126,11 @@
     },
     "launchCode": "Start program",
     "stopCode": "Stop program",
-    "reboot": "Reboot hub"
+    "reboot": "Reboot hub",
+    "troubleshootingText": {
+      "part1": "It seems that your browser doesn't support bluetooth connection. Please refer to our ",
+      "link": "troubleshooting page"
+    }
   },
   "Settings": {
     "title": "Settings",

@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   /* background-color: lightgray; */
   width: 100%;
   position: relative;
-  margin: 50px 0 20px;
+  margin: 50px 0 30px;
   /* 
   &::before {
     content: "";
@@ -67,6 +67,9 @@ const Wrapper = styled.div`
   .copyright {
     text-align: center;
   }
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
 `;
 
 const Row = styled.nav`
@@ -74,17 +77,12 @@ const Row = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
 
-  @media (max-width: 600px) {
-    padding: 10px 0;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
   }
-`;
 
-const LogoText = styled.p`
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 24px;
+  
 `;
 
 const NavBox = styled.ul`
@@ -92,6 +90,14 @@ const NavBox = styled.ul`
   flex: 1;
   justify-content: flex-end;
   gap: 50px;
+  @media (max-width: 400px) {
+    flex-direction: column;
+    gap: 0px;
+
+    & > li  {
+      text-align: center;
+    }
+  }
 `;
 
 const NavItem = styled.li<{ $isActive: boolean }>`

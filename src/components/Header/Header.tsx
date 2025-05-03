@@ -21,6 +21,7 @@ const Header = () => {
                 height={55}
                 // unoptimized
               />
+              
               <LogoText>
                 {t("WebsiteName.ml")}
                 <br />
@@ -77,6 +78,7 @@ const LogoBox = styled.div`
   flex-direction: row;
   align-items: center;
   column-gap: 15px;
+  margin: 10px 0;
   /* position: relative; */
   /* & > .logo_image {
     height: 100%;
@@ -87,6 +89,10 @@ const LogoText = styled.p`
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 24px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export default Header;

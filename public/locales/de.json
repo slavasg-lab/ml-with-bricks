@@ -1,7 +1,7 @@
 {
   "WebsiteName": {
     "ml": "Maschinelles Lernen",
-    "with_lego": "mit LEGO®"
+    "with_lego": "mit LEGO® Bausteinen"
   },
   "Navigation": {
     "experiments": "Experimente 💡",
@@ -126,7 +126,11 @@
     },
     "launchCode": "Programm starten",
     "stopCode": "Programm stoppen",
-    "reboot": "Hub neu starten"
+    "reboot": "Hub neu starten",
+    "troubleshootingText": {
+      "part1": "Es scheint, dass dein Browser keine Bluetooth-Verbindung unterstützt. Bitte lies unsere ",
+      "link": "Seite zur Fehlerbehebung"
+    }
   },
   "Settings": {
     "title": "Einstellungen",

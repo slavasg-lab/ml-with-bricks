@@ -8,6 +8,10 @@ import FruitPredictorPage from "./pages/experiments/fruit-predictor";
 import PingPongerPage from "./pages/experiments/ping-ponger";
 import CrawlerPage from "./pages/experiments/crawler";
 import ExperimentsPage from "./pages/experiments";
+import HomePage from "./pages/home";
+import ImprintPage from "./pages/imprint";
+import PrivacyPolicyPage from "./pages/privacy-policy";
+import MaterialsPage from "./pages/materials";
 
 function App() {
   return (
@@ -18,12 +22,21 @@ function App() {
           <PageLayout>
             <Routes>
               {/* Define a route for each page */}
-              <Route path="/experiments/fruit-predictor" element={<FruitPredictorPage />} />
-              <Route path="/experiments/ping-ponger" element={<PingPongerPage />} />
+              <Route
+                path="/experiments/fruit-predictor"
+                element={<FruitPredictorPage />}
+              />
+              <Route
+                path="/experiments/ping-ponger"
+                element={<PingPongerPage />}
+              />
               <Route path="/experiments/crawler" element={<CrawlerPage />} />
               <Route path="/experiments" element={<ExperimentsPage />} />
-              
-              <Route path="*" element={<div><h2>404 Not Found</h2></div>} />
+
+              <Route path="/imprint" element={<ImprintPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+              <Route path="/materials" element={<MaterialsPage />} />
+              <Route path="*" element={<HomePage />} />
             </Routes>
           </PageLayout>
         </>

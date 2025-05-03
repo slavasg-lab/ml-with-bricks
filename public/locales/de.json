@@ -1,10 +1,23 @@
 {
   "WebsiteName": {
     "ml": "Maschinelles Lernen",
-    "with_lego": "mit LEGO®"
+    "with_lego": "mit LEGO®",
+    "de": {
+      "ml": "Maschinelles Lernen",
+      "with_lego": "mit LEGO®"
+    }
   },
   "Navigation": {
-    "experiments": "Experimente 💡"
+    "experiments": "Experimente 💡",
+    "materials": "Materialien 📚",
+    "imprint": "Impressum ℹ️",
+    "privacyPolicy": "Datenschutzerklärung 👤",
+    "de": {
+      "experiments": "Experimente 💡",
+      "materials": "Materialien 📚",
+      "imprint": "Impressum ℹ️",
+      "privacyPolicy": "Datenschutzerklärung 👤"
+    }
   },
   "Experiments": {
     "title": "Experimente",
@@ -22,12 +35,30 @@
         "title": "Krabbler",
         "description": "Baue einen selbstlernenden Krabbler!"
       }
+    },
+    "de": {
+      "title": "Experimente",
+      "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die du mit einem LEGO Spike Prime durchführen kannst.",
+      "Cards": {
+        "fruit-predictor": {
+          "title": "Obstvorhersager",
+          "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!"
+        },
+        "ping-ponger": {
+          "title": "Pingponger",
+          "description": "Baue einen Roboter, der immer ins Ziel trifft!"
+        },
+        "crawler": {
+          "title": "Krabbler",
+          "description": "Baue einen selbstlernenden Krabbler!"
+        }
+      }
     }
   },
   "FruitPredictor": {
     "title": "Obstvorhersager",
     "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!",
-    "yAxisTitle": "Länge   [cm]",
+    "yAxisTitle": "Länge   [cm]",
     "xAxisTitle": "Farbe",
     "showDecisionBorder": "Entscheidungsgrenze zeigen: ",
     "hideInfer": "Vorhersagedatenpunkt verbergen: ",
@@ -35,17 +66,41 @@
     "dataTitle": "Daten",
     "fruitLabels": {
       "banana": "Banane",
-      "apple": "Apfel"
+      "apple": "Apfel",
+      "de": {
+        "banana": "Banane",
+        "apple": "Apfel"
+      }
     },
     "delete": "Entfernen",
     "label": "Label",
     "modelModes": {
       "train": "Training",
-      "infer": "Vorhersage"
+      "infer": "Vorhersage",
+      "de": {
+        "train": "Training",
+        "infer": "Vorhersage"
+      }
     },
     "selectClass": "Aktuelle Klasse:",
     "toasts": {
-      "codeStarted": "Programm gestartet!"
+      "codeStarted": "Programm gestartet!",
+      "de": {
+        "codeStarted": "Programm gestartet!"
+      }
+    },
+    "de": {
+      "title": "Obstvorhersager",
+      "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!",
+      "yAxisTitle": "Länge   [cm]",
+      "xAxisTitle": "Farbe",
+      "showDecisionBorder": "Entscheidungsgrenze zeigen: ",
+      "hideInfer": "Vorhersagedatenpunkt verbergen: ",
+      "controlsTitle": "Steuerung",
+      "dataTitle": "Daten",
+      "delete": "Entfernen",
+      "label": "Label",
+      "selectClass": "Aktuelle Klasse:"
     }
   },
   "PingPonger": {
@@ -53,11 +108,15 @@
     "description": "Baue einen Roboter, der immer ins Ziel trifft!",
     "modelModes": {
       "train": "Training",
-      "infer": "Vorhersage"
+      "infer": "Vorhersage",
+      "de": {
+        "train": "Training",
+        "infer": "Vorhersage"
+      }
     },
     "hideInfer": "Inferenzdatenpunkt verbergen: ",
-    "yAxisTitle": "Motorleistung p   [%]",
-    "xAxisTitle": "Abstand d   [cm]",
+    "yAxisTitle": "Motorleistung p   [%]",
+    "xAxisTitle": "Abstand d   [cm]",
     "delete": "Entfernen",
     "sendNewPower": "Aktualisieren",
     "power": "Motorleistung",
@@ -66,19 +125,47 @@
     "latex": {
       "eachPoint": "jeder\\:Punkt",
       "lineEquation": "Geradengleichung",
-      "real": "reell"
+      "real": "reell",
+      "de": {
+        "eachPoint": "jeder\\:Punkt",
+        "lineEquation": "Geradengleichung",
+        "real": "reell"
+      }
     },
     "parameters": {
       "slope": "Steigung",
-      "intercept": "Achsenabschnitt"
+      "intercept": "Achsenabschnitt",
+      "de": {
+        "slope": "Steigung",
+        "intercept": "Achsenabschnitt"
+      }
     },
     "launch": "Ball werfen",
     "measure": "Abstand messen",
     "toasts": {
       "min2Points": "Du brauchst mindestens 2 Datenpunkte.",
-      "codeStarted": "Programm gestartet!"
+      "codeStarted": "Programm gestartet!",
+      "de": {
+        "min2Points": "Du brauchst mindestens 2 Datenpunkte.",
+        "codeStarted": "Programm gestartet!"
+      }
     },
-    "loss": "Verlust"
+    "loss": "Verlust",
+    "de": {
+      "title": "Pingponger",
+      "description": "Baue einen Roboter, der immer ins Ziel trifft!",
+      "hideInfer": "Inferenzdatenpunkt verbergen: ",
+      "yAxisTitle": "Motorleistung p   [%]",
+      "xAxisTitle": "Abstand d   [cm]",
+      "delete": "Entfernen",
+      "sendNewPower": "Aktualisieren",
+      "power": "Motorleistung",
+      "calculateBest": "Beste Parameter ausrechnen",
+      "linearRegression": "Lineare Regression",
+      "launch": "Ball werfen",
+      "measure": "Abstand messen",
+      "loss": "Verlust"
+    }
   },
   "Crawler": {
     "title": "Krabbler",
@@ -86,22 +173,40 @@
     "modes": {
       "automatic": "Auto",
       "semiAutomatic": "Semi-auto",
-      "manual": "Manual"
+      "manual": "Manual",
+      "de": {
+        "automatic": "Auto",
+        "semiAutomatic": "Semi-auto",
+        "manual": "Manuell"
+      }
     },
     "modeLabel": "Halt vor der nächsten Bewegung",
     "explorations": {
       "no": "keine",
       "low": "niedrige",
-      "high": "hohe"
+      "high": "hohe",
+      "de": {
+        "no": "keine",
+        "low": "niedrige",
+        "high": "hohe"
+      }
     },
     "explorationLabel": "Exploration",
     "table": {
       "rowsHeader": "Aktueller Zustand",
-      "columnsHeader": "Nächster Zustand"
+      "columnsHeader": "Nächster Zustand",
+      "de": {
+        "rowsHeader": "Aktueller Zustand",
+        "columnsHeader": "Nächster Zustand"
+      }
     },
     "actionType": {
       "exploitation": "Exploitation",
-      "exploration": "Exploration"
+      "exploration": "Exploration",
+      "de": {
+        "exploitation": "Exploitation",
+        "exploration": "Exploration"
+      }
     },
     "actionTypeLabel": "Modus",
     "thinkFutureLabel": "Zukunft denken",
@@ -111,19 +216,45 @@
     "toasts": {
       "codeStarted": "Programm gestartet!",
       "tooClose": "Der Crawler ist zu nah an der Wand. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
-      "tooFar": "Der Crawler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren."
+      "tooFar": "Der Crawler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
+      "de": {
+        "codeStarted": "Programm gestartet!",
+        "tooClose": "Der Krabbler ist zu nah an der Wand. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
+        "tooFar": "Der Krabbler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren."
+      }
+    },
+    "de": {
+      "title": "Krabbler",
+      "description": "Baue einen selbstlernenden Krabbler!",
+      "modeLabel": "Halt vor der nächsten Bewegung",
+      "explorationLabel": "Exploration",
+      "thinkFutureLabel": "Zukunft denken",
+      "controls": "Steuerung",
+      "actionQualityTable": "Entscheidungstabelle",
+      "rewardDiagram": "Belohnungsdiagramm"
     }
   },
   "HubInteraction": {
     "portState": {
       "closed": "Hub verbinden",
-      "open": "Hub trennen", 
+      "open": "Hub trennen",
       "opening": "Verbindung...",
-      "closing": "Trennung..."
+      "closing": "Trennung...",
+      "de": {
+        "closed": "Hub verbinden",
+        "open": "Hub trennen",
+        "opening": "Verbindung...",
+        "closing": "Trennung..."
+      }
     },
     "launchCode": "Programm starten",
     "stopCode": "Programm stoppen",
-    "reboot": "Hub neu starten"
+    "reboot": "Hub neu starten",
+    "de": {
+      "launchCode": "Programm starten",
+      "stopCode": "Programm stoppen",
+      "reboot": "Hub neu starten"
+    }
   },
   "Settings": {
     "title": "Einstellungen",
@@ -135,6 +266,48 @@
     "colorSensorPort": "Port des Farbsensors",
     "isReversed": "Ist die Bewegung umgekehrt?",
     "bigMotorSpeed": "Geschwindigkeit des großen Motors",
-    "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
+    "smallMotorSpeed": "Geschwindigkeit des kleinen Motors",
+    "de": {
+      "title": "Einstellungen",
+      "bigMotorPort": "Port des großen Motors",
+      "smallMotorPort": "Port des kleinen Motors",
+      "leftMotorPort": "Port des linken Motors",
+      "rightMotorPort": "Port des rechten Motors",
+      "distanceSensorPort": "Port des Abstandssensors",
+      "colorSensorPort": "Port des Farbsensors",
+      "isReversed": "Ist die Bewegung umgekehrt?",
+      "bigMotorSpeed": "Geschwindigkeit des großen Motors",
+      "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
+    }
+  },
+  "Imprint": {
+    "title": "Impressum",
+    "de": {
+      "title": "Impressum"
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "de": {
+      "title": "Datenschutzerklärung"
+    }
+  },
+  "Materials": {
+    "title": "Materialien",
+    "text": "Hier findest du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
+    "Presentations": "Präsentationen",
+    "Presentations.english": "Englische Version",
+    "Presentations.german": "Deutsche Version",
+    "CoursePlaylist": "Kurs-Playlist",
+    "CoursePlaylistTitle": "YouTube-Videoplayer",
+    "de": {
+      "title": "Materialien",
+      "text": "Hier findest du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
+      "Presentations": "Präsentationen",
+      "Presentations.english": "Englische Version",
+      "Presentations.german": "Deutsche Version",
+      "CoursePlaylist": "Kurs-Playlist",
+      "CoursePlaylistTitle": "YouTube-Videoplayer"
+    }
   }
 }

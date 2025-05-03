@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import LanguageDropdown from "../DropDown/LanguageDropdown";
 
 interface MenuItem {
   intlId: string;
@@ -10,11 +11,12 @@ interface MenuItem {
 
 const navigation: MenuItem[] = [
   { intlId: "experiments", link: "/experiments" },
+  { intlId: "materials", link: "/materials" },
 ];
 
 const Navbar = () => {
   const { t } = useTranslation();
-  const pathname = "fruit-predictor";
+  const pathname = "";
 
   return (
     <Wrapper>
@@ -26,12 +28,14 @@ const Navbar = () => {
           <Link to={el.link}>{t(`Navigation.${el.intlId}` as any)}</Link>
         </NavItem>
       ))}
+      <LanguageDropdown></LanguageDropdown>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.ul`
   display: flex;
+  gap: 50px;
 `;
 
 const NavItem = styled.li<{ $isActive: boolean }>`

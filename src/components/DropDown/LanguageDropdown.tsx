@@ -3,11 +3,6 @@ import styled from "styled-components";
 import { ChevronRightIcon } from "../Icons/Icons";
 import { useTranslation } from "react-i18next";
 
-interface Option {
-  id: string;
-  text: string;
-}
-
 interface Props {
   width?: string;
 }

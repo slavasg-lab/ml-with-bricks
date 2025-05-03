@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import Typography from "../Typography/Typography";
 
 interface Props {
@@ -16,21 +15,21 @@ const InTextLink = ({ to, children, icon }: Props) => {
   return (
     <Wrapper href={to} target="_blank">
       {!!icon && icon}
-      <Typography.Text>{children}</Typography.Text>
+      {children}
     </Wrapper>
   );
 };
 
 const Wrapper = styled.a`
   position: relative;
-  display: inline-block;
+  display:  inline-flex;
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
     display: block;
-    bottom: 7px;
+    bottom: 0;
     width: 100%;
     border-bottom: 2px dotted currentColor;
   }

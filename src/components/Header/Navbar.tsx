@@ -9,26 +9,26 @@ interface MenuItem {
   link: string;
 }
 
-const navigation: MenuItem[] = [
-  { intlId: "experiments", link: "/experiments" },
-  { intlId: "materials", link: "/materials" },
-];
+// const navigation: MenuItem[] = [
+//   { intlId: "experiments", link: "/experiments" },
+//   { intlId: "materials", link: "/materials" },
+// ];
 
 const Navbar = () => {
-  const { t } = useTranslation();
-  const pathname = "";
+  // const { t } = useTranslation();
+  // const pathname = "";
 
   return (
     <Wrapper>
-      {navigation.map((el) => (
+      {/* {navigation.map((el) => (
         <NavItem
           key={`header-navbar-${el.intlId}`}
           $isActive={pathname === el.link}
         >
           <Link to={el.link}>{t(`Navigation.${el.intlId}` as any)}</Link>
         </NavItem>
-      ))}
-      <LanguageDropdown></LanguageDropdown>
+      ))} */}
+      <LanguageDropdown />
     </Wrapper>
   );
 };

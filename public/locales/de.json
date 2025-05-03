@@ -1,23 +1,13 @@
 {
   "WebsiteName": {
     "ml": "Maschinelles Lernen",
-    "with_lego": "mit LEGO®",
-    "de": {
-      "ml": "Maschinelles Lernen",
-      "with_lego": "mit LEGO®"
-    }
+    "with_lego": "mit LEGO®"
   },
   "Navigation": {
     "experiments": "Experimente 💡",
     "materials": "Materialien 📚",
     "imprint": "Impressum ℹ️",
-    "privacyPolicy": "Datenschutzerklärung 👤",
-    "de": {
-      "experiments": "Experimente 💡",
-      "materials": "Materialien 📚",
-      "imprint": "Impressum ℹ️",
-      "privacyPolicy": "Datenschutzerklärung 👤"
-    }
+    "privacyPolicy": "Datenschutzerklärung 👤"
   },
   "Experiments": {
     "title": "Experimente",
@@ -25,33 +15,15 @@
     "Cards": {
       "fruit-predictor": {
         "title": "Obstvorhersager",
-        "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!"
+        "description": "Sage eine Frucht mit ihrer Länge und Farbe mithilfe von K-Nearest Neighbors vorher!"
       },
       "ping-ponger": {
         "title": "Pingponger",
-        "description": "Baue einen Roboter, der immer ins Ziel trifft!"
+        "description": "Baue einen Roboter, der mit Hilfe der linearen Regression immer ins Ziel trifft!"
       },
       "crawler": {
         "title": "Krabbler",
-        "description": "Baue einen selbstlernenden Krabbler!"
-      }
-    },
-    "de": {
-      "title": "Experimente",
-      "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die du mit einem LEGO Spike Prime durchführen kannst.",
-      "Cards": {
-        "fruit-predictor": {
-          "title": "Obstvorhersager",
-          "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!"
-        },
-        "ping-ponger": {
-          "title": "Pingponger",
-          "description": "Baue einen Roboter, der immer ins Ziel trifft!"
-        },
-        "crawler": {
-          "title": "Krabbler",
-          "description": "Baue einen selbstlernenden Krabbler!"
-        }
+        "description": "Befähige einen selbstlernenden Krabbler mit Q-Learning!"
       }
     }
   },
@@ -66,41 +38,17 @@
     "dataTitle": "Daten",
     "fruitLabels": {
       "banana": "Banane",
-      "apple": "Apfel",
-      "de": {
-        "banana": "Banane",
-        "apple": "Apfel"
-      }
+      "apple": "Apfel"
     },
     "delete": "Entfernen",
     "label": "Label",
     "modelModes": {
       "train": "Training",
-      "infer": "Vorhersage",
-      "de": {
-        "train": "Training",
-        "infer": "Vorhersage"
-      }
+      "infer": "Vorhersage"
     },
     "selectClass": "Aktuelle Klasse:",
     "toasts": {
-      "codeStarted": "Programm gestartet!",
-      "de": {
-        "codeStarted": "Programm gestartet!"
-      }
-    },
-    "de": {
-      "title": "Obstvorhersager",
-      "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!",
-      "yAxisTitle": "Länge   [cm]",
-      "xAxisTitle": "Farbe",
-      "showDecisionBorder": "Entscheidungsgrenze zeigen: ",
-      "hideInfer": "Vorhersagedatenpunkt verbergen: ",
-      "controlsTitle": "Steuerung",
-      "dataTitle": "Daten",
-      "delete": "Entfernen",
-      "label": "Label",
-      "selectClass": "Aktuelle Klasse:"
+      "codeStarted": "Programm gestartet!"
     }
   },
   "PingPonger": {
@@ -108,11 +56,7 @@
     "description": "Baue einen Roboter, der immer ins Ziel trifft!",
     "modelModes": {
       "train": "Training",
-      "infer": "Vorhersage",
-      "de": {
-        "train": "Training",
-        "infer": "Vorhersage"
-      }
+      "infer": "Vorhersage"
     },
     "hideInfer": "Inferenzdatenpunkt verbergen: ",
     "yAxisTitle": "Motorleistung p   [%]",
@@ -125,47 +69,19 @@
     "latex": {
       "eachPoint": "jeder\\:Punkt",
       "lineEquation": "Geradengleichung",
-      "real": "reell",
-      "de": {
-        "eachPoint": "jeder\\:Punkt",
-        "lineEquation": "Geradengleichung",
-        "real": "reell"
-      }
+      "real": "reell"
     },
     "parameters": {
       "slope": "Steigung",
-      "intercept": "Achsenabschnitt",
-      "de": {
-        "slope": "Steigung",
-        "intercept": "Achsenabschnitt"
-      }
+      "intercept": "Achsenabschnitt"
     },
     "launch": "Ball werfen",
     "measure": "Abstand messen",
     "toasts": {
       "min2Points": "Du brauchst mindestens 2 Datenpunkte.",
-      "codeStarted": "Programm gestartet!",
-      "de": {
-        "min2Points": "Du brauchst mindestens 2 Datenpunkte.",
-        "codeStarted": "Programm gestartet!"
-      }
+      "codeStarted": "Programm gestartet!"
     },
-    "loss": "Verlust",
-    "de": {
-      "title": "Pingponger",
-      "description": "Baue einen Roboter, der immer ins Ziel trifft!",
-      "hideInfer": "Inferenzdatenpunkt verbergen: ",
-      "yAxisTitle": "Motorleistung p   [%]",
-      "xAxisTitle": "Abstand d   [cm]",
-      "delete": "Entfernen",
-      "sendNewPower": "Aktualisieren",
-      "power": "Motorleistung",
-      "calculateBest": "Beste Parameter ausrechnen",
-      "linearRegression": "Lineare Regression",
-      "launch": "Ball werfen",
-      "measure": "Abstand messen",
-      "loss": "Verlust"
-    }
+    "loss": "Verlust"
   },
   "Crawler": {
     "title": "Krabbler",
@@ -173,40 +89,22 @@
     "modes": {
       "automatic": "Auto",
       "semiAutomatic": "Semi-auto",
-      "manual": "Manual",
-      "de": {
-        "automatic": "Auto",
-        "semiAutomatic": "Semi-auto",
-        "manual": "Manuell"
-      }
+      "manual": "Manuell"
     },
     "modeLabel": "Halt vor der nächsten Bewegung",
     "explorations": {
       "no": "keine",
       "low": "niedrige",
-      "high": "hohe",
-      "de": {
-        "no": "keine",
-        "low": "niedrige",
-        "high": "hohe"
-      }
+      "high": "hohe"
     },
     "explorationLabel": "Exploration",
     "table": {
       "rowsHeader": "Aktueller Zustand",
-      "columnsHeader": "Nächster Zustand",
-      "de": {
-        "rowsHeader": "Aktueller Zustand",
-        "columnsHeader": "Nächster Zustand"
-      }
+      "columnsHeader": "Nächster Zustand"
     },
     "actionType": {
       "exploitation": "Exploitation",
-      "exploration": "Exploration",
-      "de": {
-        "exploitation": "Exploitation",
-        "exploration": "Exploration"
-      }
+      "exploration": "Exploration"
     },
     "actionTypeLabel": "Modus",
     "thinkFutureLabel": "Zukunft denken",
@@ -215,23 +113,8 @@
     "rewardDiagram": "Belohnungsdiagramm",
     "toasts": {
       "codeStarted": "Programm gestartet!",
-      "tooClose": "Der Crawler ist zu nah an der Wand. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
-      "tooFar": "Der Crawler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
-      "de": {
-        "codeStarted": "Programm gestartet!",
-        "tooClose": "Der Krabbler ist zu nah an der Wand. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
-        "tooFar": "Der Krabbler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren."
-      }
-    },
-    "de": {
-      "title": "Krabbler",
-      "description": "Baue einen selbstlernenden Krabbler!",
-      "modeLabel": "Halt vor der nächsten Bewegung",
-      "explorationLabel": "Exploration",
-      "thinkFutureLabel": "Zukunft denken",
-      "controls": "Steuerung",
-      "actionQualityTable": "Entscheidungstabelle",
-      "rewardDiagram": "Belohnungsdiagramm"
+      "tooClose": "Der Krabbler ist zu nah an der Wand. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren.",
+      "tooFar": "Der Krabbler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren."
     }
   },
   "HubInteraction": {
@@ -239,22 +122,11 @@
       "closed": "Hub verbinden",
       "open": "Hub trennen",
       "opening": "Verbindung...",
-      "closing": "Trennung...",
-      "de": {
-        "closed": "Hub verbinden",
-        "open": "Hub trennen",
-        "opening": "Verbindung...",
-        "closing": "Trennung..."
-      }
+      "closing": "Trennung..."
     },
     "launchCode": "Programm starten",
     "stopCode": "Programm stoppen",
-    "reboot": "Hub neu starten",
-    "de": {
-      "launchCode": "Programm starten",
-      "stopCode": "Programm stoppen",
-      "reboot": "Hub neu starten"
-    }
+    "reboot": "Hub neu starten"
   },
   "Settings": {
     "title": "Einstellungen",
@@ -266,48 +138,54 @@
     "colorSensorPort": "Port des Farbsensors",
     "isReversed": "Ist die Bewegung umgekehrt?",
     "bigMotorSpeed": "Geschwindigkeit des großen Motors",
-    "smallMotorSpeed": "Geschwindigkeit des kleinen Motors",
-    "de": {
-      "title": "Einstellungen",
-      "bigMotorPort": "Port des großen Motors",
-      "smallMotorPort": "Port des kleinen Motors",
-      "leftMotorPort": "Port des linken Motors",
-      "rightMotorPort": "Port des rechten Motors",
-      "distanceSensorPort": "Port des Abstandssensors",
-      "colorSensorPort": "Port des Farbsensors",
-      "isReversed": "Ist die Bewegung umgekehrt?",
-      "bigMotorSpeed": "Geschwindigkeit des großen Motors",
-      "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
-    }
+    "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
   },
   "Imprint": {
-    "title": "Impressum",
-    "de": {
-      "title": "Impressum"
-    }
+    "title": "Impressum"
   },
   "PrivacyPolicy": {
-    "title": "Datenschutzerklärung",
-    "de": {
-      "title": "Datenschutzerklärung"
-    }
+    "title": "Datenschutzerklärung"
   },
   "Materials": {
     "title": "Materialien",
     "text": "Hier findest du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
     "Presentations": "Präsentationen",
-    "Presentations.english": "Englische Version",
-    "Presentations.german": "Deutsche Version",
+    "Presentations.english": "Englische",
+    "Presentations.german": "Deutsche",
     "CoursePlaylist": "Kurs-Playlist",
-    "CoursePlaylistTitle": "YouTube-Videoplayer",
-    "de": {
-      "title": "Materialien",
-      "text": "Hier findest du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
-      "Presentations": "Präsentationen",
-      "Presentations.english": "Englische Version",
-      "Presentations.german": "Deutsche Version",
-      "CoursePlaylist": "Kurs-Playlist",
-      "CoursePlaylistTitle": "YouTube-Videoplayer"
-    }
+    "CoursePlaylistTitle": "YouTube-Videoplayer"
+  },
+  "Home": {
+    "title": "Willkommen!",
+    "text": {
+      "part1": "Diese Website ist eine interaktive Webplattform zum spielerischen Erlernen der Grundlagen des maschinellen Lernens mit ",
+      "lego": "LEGO® Education SPIKE™ Prime Set",
+      "part2": ". Hier findest du verschiedene Experimente, die dir helfen, grundlegende Algorithmen wie K-Nearest Neighbors, Lineare Regression und Reinforcement Learning zu erlernen. Alles, was du brauchst, ist ein Gerät mit einem Browser, der Bluetooth-Verbindungen unterstützt."
+    },
+    "developers": "Für Entwickler",
+    "developersText": {
+      "part1": "Du kannst dir den Quellcode dieser Seite in diesem ",
+      "github": "GitHub-Repository",
+      "part2": " ansehen. Wenn du ein Entwickler bist und auch in der Lage sein möchtest, den LEGO Hub über Bluetooth Low Energy mit einer Website zu verbinden, haben wir ein ",
+      "boilerplate": "Boilerplate",
+      "part3": " für dich erstellt!"
+    },
+    "troubleshooting": "Fehlerbehebung",
+    "troubleshootingText": {
+      "part1": "Wenn du auf technische Probleme stößt, schau auf unserer ",
+      "link": "Seite zur Fehlerbehebung",
+      "part2": " nach oder kontaktiere uns unter dieser E-Mail-Adresse: "
+    },
+    "materialsTitle": "Kursmaterialien",
+    "materialsText": {
+      "part1": "Wir ermutigen auch Leute, die diesen Kurs live mit Hilfe unserer Plattform an Kinder weitergeben möchten. Dafür können Sie unsere Präsentationen in ",
+      "part2": " und "
+    },
+    "courseRecordingTitle": "Kursaufzeichnung",
+    "courseRecordingText": "Du kannst es entweder selbst ausprobieren, indem du den Anweisungen auf den Experimentseiten folgst, oder dir die vorab aufgezeichnete YouTube-Version des Kurses ansehen:",
+    "presentations": "Präsentationen",
+    "presentationsEnglish": "Englische",
+    "presentationsGerman": "Deutsche",
+    "coursePlaylistTitle": "YouTube-Videoplayer"
   }
 }

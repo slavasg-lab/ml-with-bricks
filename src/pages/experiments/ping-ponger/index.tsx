@@ -30,6 +30,7 @@ import { getLocalStorageValue } from "../../../utils/localStorage";
 import BLEConnector from "../../../components/HubConnectors/BLEConnector";
 import experimentCodes from "../../../utils/experimentCodes";
 import { useBLE } from "../../../contexts/BLEContext";
+import PitcherInstructions from "../../../modules/PingPonger/PingPonger.Instructions";
 
 // --------------------------------------
 // Example mock data (commented out by default).
@@ -302,8 +303,7 @@ const PingPongerPage = () => {
   return (
     <Wrapper>
       <Typography.H1>{t("PingPonger.title")}</Typography.H1>
-      <Typography.Text>{t("PingPonger.description")}</Typography.Text>
-
+      <PitcherInstructions />
       {/* Spike Connector */}
       <BLEConnector
         code={code}

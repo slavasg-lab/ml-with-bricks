@@ -25,6 +25,7 @@ import BLEConnector from "../../../components/HubConnectors/BLEConnector";
 import experimentCodes from "../../../utils/experimentCodes";
 import { useBLE } from "../../../contexts/BLEContext";
 import FruitPredictorTable from "../../../modules/FruitPredictor/FruitPredictor.Table";
+import FruitPredictorInstructions from "../../../modules/FruitPredictor/FruitPredictor.Instructions";
 
 // --------------------------------------
 // Example mock data (commented out):
@@ -290,7 +291,7 @@ const FruitPredictorPage = () => {
   return (
     <Wrapper>
       <Typography.H1>{t("FruitPredictor.title")}</Typography.H1>
-      <Typography.Text>{t("FruitPredictor.description")}</Typography.Text>
+      <FruitPredictorInstructions />
 
       <BLEConnector
         code={code}

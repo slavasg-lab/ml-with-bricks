@@ -117,6 +117,28 @@
       "tooFar": "Der Krabbler ist zu weit von der Wand entfernt. Positioniere ihn neu und klicke auf 'Weiter', um fortzufahren."
     }
   },
+  "video": "Video",
+  "pdf": "PDF",
+  "these instructions": "diese Anleitung",
+  "FruitPredictorInstructions": {
+    "title": "Anleitung: Obstvorhersager",
+    "intro": "Auf dieser Seite lernst du, wie du ein einfaches Klassifizierungsgerät baust, das Äpfel und Bananen unterscheiden kann. Es verwendet Farbe und Länge als Merkmale, die vom K-Nearest Neighbor-Algorithmus verarbeitet werden, um eine Vorhersage zu treffen.",
+    "followVideo": "Du kannst unserem Experiment ",
+    "followVideoPart2": " folgen und es Schritt für Schritt mit uns durchführen, oder es selbstständig anhand der folgenden Anleitung machen.",
+    "assemblyTitle": "1. Zusammenbau",
+    "assemblyText1Part1": "Baue zuerst das Gerät anhand ",
+    "assemblyText1Part2": " zusammen. Stelle sicher, dass alle Sensoren an den korrekten Anschlüssen des Hubs angeschlossen sind.",
+    "assemblyText2Part1": "Verbinde dann deinen Hub entweder mit der ",
+    "assemblyText2Part2": "- oder der ",
+    "assemblyText2Part3": "-Anleitung.",
+    "dataCollectionTitle": "2. Datenerfassung",
+    "dataCollectionText": "Nachdem du den Hub mit der Webplattform verbunden hast, starte den Code und warte auf die Bestätigung des Code-Starts. Sammle mindestens 4 Äpfel und 4 Bananen. Nimm jeweils 3 davon und erfasse ihre Daten. Bringe jede Frucht zum Farbsensor und klicke auf die rechte Schaltfläche am Hub, um ihre Farbe aufzuzeichnen. Lege dann dieselbe Frucht in die Roboter-Klaue, schließe sie und entferne die Frucht. Klicke nach dem Entfernen auf die linke Schaltfläche am Hub, um ihre Länge zu messen. Du siehst Datenpunkte im Diagramm erscheinen, wobei die Länge der Frucht auf der Y-Achse und ein Farbspektrum (von Rot nach Gelb) auf der X-Achse dargestellt sind.",
+    "predictionTitle": "3. Vorhersage",
+    "predictionText1": "Schalte den Modellmodus auf 'Vorhersage'. Neue Früchte werden mithilfe des K-Nearest Neighbor-Algorithmus klassifiziert. Der Algorithmus berechnet die Entfernungen zu allen vorhandenen Datenpunkten. Anschließend wählt er die 'K' (standardmäßig 3) nächsten Nachbarn aus und führt eine Abstimmung durch. Wenn die Mehrheit dieser Nachbarn Äpfel sind, wird die neue Frucht als Apfel vorhergesagt, und umgekehrt für Bananen.",
+    "predictionText2": "Um das Modell zu testen, messe die Länge und Farbe einer neuen Frucht wie beim Training. Die vorhergesagte Fruchtart wird auf dem SPIKE Prime Hub angezeigt, und ein neuer Datenpunkt erscheint im Diagramm. Linien verbinden diesen neuen Punkt mit den nächsten Nachbarn, die an der Abstimmung teilgenommen haben.",
+    "thingsToTryTitle": "4. Ausprobieren",
+    "thingsToTryText": "Versuche, die Visualisierung der 'Entscheidungsgrenze' einzuschalten. Dies zeigt Bereiche, in denen eine neue Frucht basierend auf ihren Merkmalen entweder als Apfel (in einer Farbe) oder als Banane (in einer anderen Farbe) vorhergesagt wird. Experimentiere mit der Erhöhung der Anzahl der Nachbarn ('K'), die an der Abstimmung teilnehmen, und beobachte, wie sich die Entscheidungsgrenze verändert."
+ },
   "HubInteraction": {
     "portState": {
       "closed": "Hub verbinden",
@@ -191,5 +213,28 @@
     "presentationsEnglish": "Englische",
     "presentationsGerman": "Deutsche",
     "coursePlaylistTitle": "YouTube-Videoplayer"
+  },
+  "PitcherInstructions": {
+    "intro": "In diesem Experiment bauen wir eine Roboter-'Wurfmaschine', die lernt, immer ins Ziel zu treffen. Wir nutzen die lineare Regression, um die optimale Motorleistung basierend auf der Entfernung zum Ziel vorherzusagen.",
+    "followVideo": "Du kannst unserem Experiment ",
+    "followVideoPart2": " folgen und deine Wurfmaschine Schritt für Schritt mit uns bauen, oder es selbstständig anhand der folgenden Anleitung machen.",
+    "assemblyTitle": "1. Zusammenbau",
+    "assemblyText1Part1": "Baue zuerst die Wurfmaschine anhand ",
+    "assemblyText1Part2": " zusammen. Stelle sicher, dass der Motor und gegebenenfalls ein Abstandssensor an den korrekten Anschlüssen des Hubs angeschlossen sind.",
+    "assemblyText2Part1": "Verbinde dann deinen Hub mit der Webplattform entweder mit der ",
+    "assemblyText2Part2": "- oder der ",
+    "assemblyText2Part3": "-Anleitung.",
+    "dataCollectionTitle": "2. Datenerfassung",
+    "dataCollectionText": "Nachdem du den Hub verbunden und den Code gestartet hast, sammeln wir Daten. Stelle die Wurfmaschine an eine gleichbleibende Startposition. Lege einen Ball in die Halterung; stelle sicher, dass sich der Wurfarm immer in der 12-Uhr-Position befindet, da dies konsistente Würfe mit ausreichend Beschleunigungszeit gewährleistet. Beginne in der Weboberfläche mit einer Motorleistung von 20% (denke daran, auf 'Aktualisieren' zu klicken, damit die Änderungen übernommen werden). Klicke auf die Schaltfläche 'Ball werfen' auf der Webplattform, um den Ball zu werfen. Beobachte, wo der Ball landet. Halte ein Stück Karton an die Stelle, an der der Ball gelandet ist. Der Karton ermöglicht es dem Abstandssensor am Roboter, ein Signal zu reflektieren und die zurückgelegte Entfernung des Balls genau zu messen. Klicke auf die Schaltfläche 'Abstand messen' auf der Webplattform, um diese Entfernung aufzuzeichnen. Die gemessene Entfernung und die verwendete Motorleistung werden in der Weboberfläche aufgezeichnet. Wiederhole diese Schritte und verwende für jeden Wurf unterschiedliche Motorleistungswerte (z. B. 40%, 60%, 80%, bis zu 100%).",
+    "predictionTitle": "3. Vorhersage",
+    "predictionTitle": "3. Vorhersage",
+    "predictionText1": "Wenn du dir deine gesammelten Datenpunkte ansiehst, wirst du feststellen, dass sie annähernd eine gerade Linie bilden. Dies deutet auf eine lineare Beziehung zwischen der Motorleistung und der Entfernung hin, die der Ball zurücklegt. Um die benötigte Motorleistung für das Treffen eines Ziels in einer bestimmten Entfernung vorherzusagen, verwendet die Wurfmaschine eine Methode des maschinellen Lernens namens lineare Regression.",
+    "predictionText2": "Die lineare Regression ist eine Methode, die die Linie bestimmt, welche die Beziehung zwischen zwei Variablen am besten darstellt – in unserem Fall die Entfernung, wo der Ball landet, und die zum Werfen verwendete Motorleistung.",
+    "predictionText3": "Um zu verstehen, wie gut eine Linie zu den Daten passt, verwenden wir den Begriff 'Verlust' (Loss). Der Verlust stellt den Fehler zwischen der Linie und den tatsächlichen Datenpunkten dar. Eine einfache Möglichkeit, den Verlust zu berechnen, ist beispielsweise die Summe der vertikalen Abstände zwischen der Regressionsgeraden und jedem einzelnen Datenpunkt. Ein kleinerer Verlustwert deutet auf eine besser passende Linie hin.",
+    "predictionText4": "Um die beste Linie zu finden, müssen wir diesen Verlust minimieren. Dies können wir tun, indem wir die Position der Linie anpassen, die durch ihren Achsenabschnitt (wo die Linie die Y-Achse schneidet) und ihre Steigung (die Steilheit der Linie) bestimmt wird.",
+    "predictionText5": "Du kannst dies selbst ausprobieren, indem du den Modellmodus auf 'Vorhersage' umschaltest. In diesem Modus kannst du die Parameter für die Steigung und den Achsenabschnitt manuell anpassen, um den Verlust im Diagramm visuell zu minimieren. Um die Parameter anzuzeigen, die der Algorithmus als die beste Anpassung für deine Daten berechnet, klicke auf die Schaltfläche 'Beste Parameter ausrechnen'.",
+    "predictionText6": "Um zu versuchen, ein Ziel zu treffen, platziere im 'Vorhersage'-Modus eine Art Ziel vor die Wurfmaschine. Miss die Entfernung zum Ziel, indem du ein Stück Karton an die Position des Ziels hältst und auf die Schaltfläche 'Abstand messen' klickst. Entferne dann den Karton, lege den Ball in die Klaue und klicke auf die Schaltfläche 'Ball werfen'. Der Roboter verwendet das gelernte lineare Regressionsmodell, um die benötigte Motorleistung für diese Entfernung vorherzusagen.",
+    "thingsToTryTitle": "4. Ausprobieren",
+    "thingsToTryText": "Experimentiere mit verschiedenen Entfernungen und beobachte, wie sich die vorhergesagte Motorleistung ändert. Füge weitere Datenpunkte hinzu, um zu sehen, wie sich dies auf die Genauigkeit der linearen Regressionsgerade auswirkt. Du kannst auch die Funktion 'Beste Parameter ausrechnen' verwenden, um die Steigung und den Achsenabschnitt der gelernten linearen Beziehung anzuzeigen."
   }
 }

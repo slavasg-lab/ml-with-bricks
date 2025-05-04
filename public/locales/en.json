@@ -132,6 +132,29 @@
       "link": "troubleshooting page"
     }
   },
+  "video": "video",
+  "pdf": "PDF",
+  "these instructions": "these instructions",
+  "FruitPredictorInstructions": {
+    "title": "Fruit Predictor Instructions",
+    "intro": "On this page, you'll learn how to build a simple classification device that can distinguish between apples and bananas. It uses color and length as features, processed by the K-Nearest Neighbor algorithm to make a prediction.",
+    "followVideo": "You can follow our experiment ",
+    "followVideoPart2": " and do it step by step with us, or do it yourself using the instructions below.",
+    "assemblyTitle": "1. Assembly",
+    "assemblyText1Part1": "First, assemble the device using ",
+    "assemblyText1Part2": ". Ensure all sensors are connected to the correct corresponding ports on the hub.",
+    "assemblyText2Part1": "Then, connect your hub either using the ",
+    "assemblyText2Part2": " or ",
+    "assemblyText2Part3": " instructions.",
+    "dataCollectionTitle": "2. Data Collection",
+    "dataCollectionText": "After connecting the hub to the web platform, start the code and wait for the code start confirmation to pop up. Gather at least 4 apples and 4 bananas. Take 3 of each and collect their data. For each fruit, bring it to the color sensor and click the right button on the hub to record its color. Then, place the same fruit into the robot's claw, close it, and remove the fruit. After removing, click the left button on the hub to measure its length. You'll see data points appear on the diagram, with fruit length on the Y-axis and a color spectrum (from red to yellow) on the X-axis.",
+    "predictionTitle": "3. Prediction",
+    "predictionText1": "Switch the model mode to 'Prediction'. New fruits are classified using the K-Nearest Neighbors algorithm. The algorithm calculates the distances to all existing data points. Then, it selects the 'K' (default is 3) nearest neighbors and performs a vote. If the majority of these neighbors are apples, the new fruit is predicted as an apple, and vice versa for bananas.",
+    "predictionText2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the SPIKE Prime Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process.",
+    "thingsToTryTitle": "4. Things to Try",
+    "thingsToTryText": "Try turning the 'decision border' visualization on. This will show areas where a new fruit is predicted as either an apple (in one color) or a banana (in another color) based on its features. Experiment with increasing the number of neighbors ('K') participating in the vote and observe how the decision boundary changes."
+ 
+   },
   "Settings": {
     "title": "Settings",
     "bigMotorPort": "Port of the big motor",
@@ -182,5 +205,28 @@
     "presentationsEnglish": "English",
     "presentationsGerman": "German",
     "coursePlaylistTitle": "YouTube video player"
+  },
+  "PitcherInstructions": {
+    "title": "Pitcher Experiment Instructions",
+    "intro": "In this experiment, you'll build a robot 'Pitcher' that learns to always hit a target. We'll use the power of linear regression to predict the optimal motor power needed based on the distance to the target.",
+    "followVideo": "You can follow our experiment ",
+    "followVideoPart2": " and build your Pitcher step by step with us, or do it yourself using the instructions below.",
+    "assemblyTitle": "1. Assembly",
+    "assemblyText1Part1": "First, assemble the Pitcher robot using ",
+    "assemblyText1Part2": ". Ensure the motor and any distance sensor are connected to the correct corresponding ports on the hub.",
+    "assemblyText2Part1": "Then, connect your hub to the web platform using either the ",
+    "assemblyText2Part2": " or ",
+    "assemblyText2Part3": " instructions.",
+    "dataCollectionTitle": "2. Data Collection",
+    "dataCollectionText": "After connecting the hub and starting the code, let's collect data. Place the pitcher at a consistent starting position. Place a ball in the holder; ensure the serving arm is always at the 12 o'clock position, as this ensures consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect a signal and accurately measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance. The measured distance and the motor power used will be recorded in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch.",
+    "predictionTitle": "3. Prediction",
+    "predictionText1": "If you observe the data points you've collected, you'll notice they roughly form a straight line. This suggests a linear relationship between the motor speed and the distance the ball travels. To predict the necessary motor speed to hit a target at a specific distance, the pitcher will use a machine learning technique called linear regression.",
+    "predictionText2": "Linear regression is a method that finds the line that best represents the relationship between two variables – in our case, the distance to where the ball lands and the motor speed used to launch it.",
+    "predictionText3": "To understand how well a line fits the data, we use a term called 'loss'. The loss represents the error between the line and the actual data points. For example, a simple way to calculate loss is to sum up the vertical distances between the regression line and each individual data point. A smaller loss value indicates a better-fitting line.",
+    "predictionText4": "To find the best-fitting line, we need to minimize this loss. We can do this by adjusting the line's position, which is controlled by its intercept (where the line crosses the Y-axis) and its slope (the line's steepness).",
+    "predictionText5": "You can experiment with this yourself by switching the model mode to 'Prediction'. In this mode, you can manually adjust the slope and intercept parameters to try and minimize the loss visually on the graph. To see the parameters that the algorithm calculates as the best fit for your data, click the 'Calculate best parameters' button.",
+    "predictionText6": "To try and hit a target, while in 'Prediction' mode, place some kind of target in front of the pitcher. Measure the distance to the target by holding a piece of cardboard at the target's location and clicking the 'Measure distance' button. Then, remove the cardboard, place the ball into the claw, and click the 'Launch ball' button. The robot will use the learned linear regression model to predict the motor speed needed to reach that distance.",
+    "thingsToTryTitle": "4. Things to Try",
+    "thingsToTryText": "Experiment with different distances and observe how the predicted motor power changes. Try adding more data points to see how it affects the accuracy of the linear regression line. You can also explore the 'Calculate Best Parameters' function to see the slope and intercept of the learned linear relationship."
   }
 }

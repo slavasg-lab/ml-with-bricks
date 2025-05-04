@@ -3,7 +3,7 @@ import Typography from "../../components/Typography/Typography";
 import InTextLink from "../../components/Links/InTextLink";
 import { useTranslation } from "react-i18next";
 
-const PitcherInstructions = () => {
+const CrawlerInstructions = () => {
   const { t } = useTranslation();
 
   return (
@@ -78,4 +78,4 @@ const PitcherInstructions = () => {
 
 const Wrapper = styled.div``;
 
-export default PitcherInstructions;
+export default CrawlerInstructions;

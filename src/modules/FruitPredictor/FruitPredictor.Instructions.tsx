@@ -3,75 +3,62 @@ import Typography from "../../components/Typography/Typography";
 import InTextLink from "../../components/Links/InTextLink";
 import { useTranslation } from "react-i18next";
 
-const PitcherInstructions = () => {
+const FruitPredictorInstructions = () => {
   const { t } = useTranslation();
 
   return (
     <Wrapper>
-      <Typography.H2>{t("PitcherInstructions.title")}</Typography.H2>
       <Typography.Text>
-        {t("PitcherInstructions.intro")}
+        {t("FruitPredictorInstructions.intro")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.followVideo")}
-        <InTextLink to={"/materials/en/pitcher_video.mp4"}>
+        {t("FruitPredictorInstructions.followVideo")}
+        <InTextLink to={"/materials/en/video.mp4"}>
           {t("video")}
         </InTextLink>
-        {t("PitcherInstructions.followVideoPart2")}
+        {t("FruitPredictorInstructions.followVideoPart2")}
       </Typography.Text>
       <Typography.Text $bold>
-        {t("PitcherInstructions.assemblyTitle")}
+        {t("FruitPredictorInstructions.assemblyTitle")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.assemblyText1Part1")}
-        <InTextLink to="/materials/en/pitcher_instructions.pdf">
+        {t("FruitPredictorInstructions.assemblyText1Part1")}
+        <InTextLink to="/materials/en/instructions.pdf">
           {t("these instructions")}
         </InTextLink>
-        {t("PitcherInstructions.assemblyText1Part2")}
+        {t("FruitPredictorInstructions.assemblyText1Part2")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.assemblyText2Part1")}
-        <InTextLink to={"/materials/en/pitcher_instructions.pdf"}>
+        {t("FruitPredictorInstructions.assemblyText2Part1")}
+        <InTextLink to={"/materials/en/instructions.pdf"}>
           {t("pdf")}
         </InTextLink>
-        {t("PitcherInstructions.assemblyText2Part2")}
-        <InTextLink to={"/materials/en/pitcher_video.mp4"}>
+        {t("FruitPredictorInstructions.assemblyText2Part2")}
+        <InTextLink to={"/materials/en/video.mp4"}>
           {t("video")}
         </InTextLink>
-        {t("PitcherInstructions.assemblyText2Part3")}
+        {t("FruitPredictorInstructions.assemblyText2Part3")}
       </Typography.Text>
       <Typography.Text $bold>
-        {t("PitcherInstructions.dataCollectionTitle")}
+        {t("FruitPredictorInstructions.dataCollectionTitle")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.dataCollectionText")}
+        {t("FruitPredictorInstructions.dataCollectionText")}
       </Typography.Text>
       <Typography.Text $bold>
-        {t("PitcherInstructions.predictionTitle")}
+        {t("FruitPredictorInstructions.predictionTitle")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.predictionText1")}
+        {t("FruitPredictorInstructions.predictionText1")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.predictionText2")}
-      </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText3")}
-      </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText4")}
-      </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText5")}
-      </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText6")}
+        {t("FruitPredictorInstructions.predictionText2")}
       </Typography.Text>
       <Typography.Text $bold>
-        {t("PitcherInstructions.thingsToTryTitle")}
+        {t("FruitPredictorInstructions.thingsToTryTitle")}
       </Typography.Text>
       <Typography.Text>
-        {t("PitcherInstructions.thingsToTryText")}
+        {t("FruitPredictorInstructions.thingsToTryText")}
       </Typography.Text>
     </Wrapper>
   );
@@ -79,4 +66,4 @@ const PitcherInstructions = () => {
 
 const Wrapper = styled.div``;
 
-export default PitcherInstructions;
+export default FruitPredictorInstructions;

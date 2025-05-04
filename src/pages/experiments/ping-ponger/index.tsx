@@ -57,12 +57,9 @@ const PingPongerPage = () => {
   // --------------------------------------
   // 2. Use localStorage for state initialization
   // --------------------------------------
-  const [data, setData] = useState<LRData[]>([
-    { id: "0", power: 20, distance: 8 },
-    { id: "1", power: 40, distance: 17 },
-    { id: "2", power: 60, distance: 36 },
-    { id: "3", power: 80, distance: 64 },
-  ]);
+  const [data, setData] = useState<LRData[]>(() =>
+    getLocalStorageValue("pingPonger_data", mockRegressionData)
+  );
   const [modelMode, setModelMode] = useState<string>(() =>
     getLocalStorageValue("pingPonger_modelMode", "train")
   );

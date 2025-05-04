@@ -12,6 +12,7 @@ interface MenuItem {
 const navigation: MenuItem[] = [
   { intlId: "privacyPolicy", link: "/privacy-policy" },
   { intlId: "imprint", link: "/imprint" },
+  { intlId: "troubleshooting", link: "/troubleshooting" },
 ];
 
 const Footer = () => {
@@ -78,7 +79,7 @@ const Row = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column-reverse;
   }
 
@@ -89,10 +90,13 @@ const NavBox = styled.ul`
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  gap: 50px;
-  @media (max-width: 400px) {
-    flex-direction: column;
-    gap: 0px;
+  /* row-gap: 50px; */
+  column-gap: 30px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  @media (max-width: 600px) {
+    justify-content: center;
+    align-items: center;
 
     & > li  {
       text-align: center;

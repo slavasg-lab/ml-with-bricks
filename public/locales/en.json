@@ -7,7 +7,8 @@
     "experiments": "Experiments 💡",
     "materials": "Materials 📚",
     "imprint": "Imprint ℹ️",
-    "privacyPolicy": "Privacy Policy 👤"
+    "privacyPolicy": "Privacy Policy 👤",
+    "troubleshooting": "Troubleshooting 🚧"
   },
   "Experiments": {
     "title": "Experiments",
@@ -250,5 +251,13 @@
     "warning2": "To ensure accurate measurements, a crawler will stop training if it's too close or too far from the wall. To continue training, simply reposition it at ~1 elbow length to the wall and click play button again.",
     "thingsToTryTitle": "3. Things to try",
     "thingsToTryText": "Try resetting the experiment and repeating the training with 'Foresight' turned on. In this case, the crawler will also consider future rewards by adding the maximum value from the row it moves to (the next state) to the immediate crawled distance (the short-term reward). How did the decision table and the crawler's movements change?"
+  },
+  "Troubleshooting": {
+    "title": "Troubleshooting",
+    "intro": "On this page you can find tips on how to fix some problems on the website related to interaction with hub.",
+    "bluetoothQuestion": "It says my browser doesn't support Bluetooth. Why?",
+    "bluetoothAnswer": "Unfortunately, Bluetooth is still an experimental API that is not available in all browsers. In our experience, this API is supported in chromium-based browsers and Microsoft Edge.",
+    "chromiumQuestion": "I have a chromium-based browser or Microsoft Edge, but it still doesn't work.",
+    "chromiumAnswer": "Especially if you are a Linux user, this may be the case. To fix it, first make sure your device has Bluetooth turned on. If you use a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\", and \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
   }
 }

@@ -3,7 +3,6 @@ import Typography from "../../components/Typography/Typography";
 import InTextLink from "../../components/Links/InTextLink";
 import ExperimentCard from "../../components/Cards/ExperimentCard";
 import { styled } from "styled-components";
-import i18next from "i18next";
 
 const experiments = ["fruit-predictor", "ping-ponger", "crawler"];
 

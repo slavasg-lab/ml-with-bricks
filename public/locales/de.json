@@ -7,7 +7,8 @@
     "experiments": "Experimente 💡",
     "materials": "Materialien 📚",
     "imprint": "Impressum ℹ️",
-    "privacyPolicy": "Datenschutzerklärung 👤"
+    "privacyPolicy": "Datenschutzerklärung 👤",
+    "troubleshooting": "Fehlerbehebung 🚧"
   },
   "Experiments": {
     "title": "Experimente",
@@ -257,5 +258,13 @@
     "warning2": "Um genaue Messungen zu gewährleisten, stoppt ein Crawler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere ihn einfach in ca. 1 Armlänge Entfernung zur Wand und klicke erneut auf die Schaltfläche 'Play'.",
     "thingsToTryTitle": "3. Dinge, die du ausprobieren kannst",
     "thingsToTryText": "Versuche, das Experiment zurückzusetzen und das Training mit aktiviertem 'Voraussicht' zu wiederholen. In diesem Fall berücksichtigt der Crawler auch zukünftige Belohnungen, indem er den maximalen Wert aus der Zeile, zu der er sich bewegt (dem nächsten Zustand), zur unmittelbar gekrochenen Distanz (der kurzfristigen Belohnung) hinzufügt. Wie haben sich die Entscheidungstabelle und die Bewegungen des Crawlers verändert?"
+  },
+  "Troubleshooting": {
+    "title": "Fehlerbehebung",
+    "intro": "Auf dieser Seite finden Sie Tipps zur Behebung einiger Probleme auf der Website, die mit der Interaktion mit dem Hub zusammenhängen.",
+    "bluetoothQuestion": "Es wird angezeigt, dass mein Browser Bluetooth nicht unterstützt. Warum?",
+    "bluetoothAnswer": "Leider ist Bluetooth immer noch eine experimentelle API, die nicht in allen Browsern verfügbar ist. Unserer Erfahrung nach wird diese API in Chromium-basierten Browsern und Microsoft Edge unterstützt.",
+    "chromiumQuestion": "Ich habe einen Chromium-basierten Browser oder Microsoft Edge, aber es funktioniert immer noch nicht.",
+    "chromiumAnswer": "Besonders wenn Sie ein Linux-Benutzer sind, kann dies der Fall sein. Um dies zu beheben, stellen Sie zunächst sicher, dass Bluetooth auf Ihrem Gerät aktiviert ist. Wenn Sie einen Chromium-basierten Browser verwenden, versuchen Sie, die folgenden Adressen in die Adressleiste Ihres Browsers einzugeben und die aufgeführten Flags zu aktivieren: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\" und \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
   }
 }

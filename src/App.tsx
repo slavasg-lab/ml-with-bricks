@@ -12,6 +12,7 @@ import HomePage from "./pages/home";
 import ImprintPage from "./pages/imprint";
 import PrivacyPolicyPage from "./pages/privacy-policy";
 import MaterialsPage from "./pages/materials";
+import TroubleshootingPage from "./pages/troubleshooting";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
               <Route path="/imprint" element={<ImprintPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
               <Route path="/materials" element={<MaterialsPage />} />
+              <Route path="/troubleshooting" element={<TroubleshootingPage />} />
               <Route path="*" element={<HomePage />} />
             </Routes>
           </PageLayout>

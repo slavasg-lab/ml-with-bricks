@@ -329,6 +329,8 @@ const DiagramRow = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   align-items: start;
+  grid-template-areas:
+      "a b c";
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr;

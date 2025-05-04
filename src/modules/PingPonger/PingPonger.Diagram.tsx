@@ -186,76 +186,76 @@ const emojiPlugin: Plugin<"scatter"> = {
 const arrowsPlugin: Plugin<"scatter"> = {
   id: "arrowsPlugin",
   beforeDatasetDraw: (chart) => {
-    // const { ctx, data, scales } = chart;
-    // const { regressionParams } = chart.options as any;
-    // if (!regressionParams || !regressionParams.isInfer) return;
+    const { ctx, data, scales } = chart;
+    const { regressionParams } = chart.options as any;
+    if (!regressionParams || !regressionParams.isInfer) return;
 
-    // const { m, b } = regressionParams;
-    // const yMin = gridLimits.yMin;
-    // const yMax = gridLimits.yMax;
-    // const yScale = scales.y;
+    const { m, b } = regressionParams;
+    const yMin = gridLimits.yMin;
+    const yMax = gridLimits.yMax;
+    const yScale = scales.y;
 
-    // // Find the points dataset
-    // const pointsDataset = data.datasets.find((d) => d.label === "points");
-    // if (!pointsDataset) return;
-    // const pointsMeta = chart.getDatasetMeta(
-    //   data.datasets.indexOf(pointsDataset)
-    // );
-    // if (!pointsMeta) return;
+    // Find the points dataset
+    const pointsDataset = data.datasets.find((d) => d.label === "points");
+    if (!pointsDataset) return;
+    const pointsMeta = chart.getDatasetMeta(
+      data.datasets.indexOf(pointsDataset)
+    );
+    if (!pointsMeta) return;
 
-    // // For each point, draw a dashed line with arrows from actual (x, y) to predicted (x, m*x+b)
-    // ctx.save();
-    // ctx.strokeStyle = "#080808";
-    // ctx.lineWidth = 1;
+    // For each point, draw a dashed line with arrows from actual (x, y) to predicted (x, m*x+b)
+    ctx.save();
+    ctx.strokeStyle = "#080808";
+    ctx.lineWidth = 1;
 
-    // pointsDataset.data.forEach((point: any, idx: number) => {
-    //   const element = pointsMeta.data[idx];
-    //   const actualX = element.x;
-    //   const actualY = element.y;
+    pointsDataset.data.forEach((point: any, idx: number) => {
+      const element = pointsMeta.data[idx];
+      const actualX = element.x;
+      const actualY = element.y;
 
-    //   const xValue = point.x;
-    //   const predictedYValue = m * xValue + b;
+      const xValue = point.x;
+      const predictedYValue = m * xValue + b;
 
-    //   // Clamp predictedYValue to y-axis limits
-    //   let clampedYValue = predictedYValue;
-    //   if (clampedYValue < yMin) {
-    //     clampedYValue = yMin;
-    //   } else if (clampedYValue > yMax) {
-    //     clampedYValue = yMax;
-    //   }
+      // Clamp predictedYValue to y-axis limits
+      let clampedYValue = predictedYValue;
+      if (clampedYValue < yMin) {
+        clampedYValue = yMin;
+      } else if (clampedYValue > yMax) {
+        clampedYValue = yMax;
+      }
 
-    //   const clampedY = yScale.getPixelForValue(clampedYValue);
+      const clampedY = yScale.getPixelForValue(clampedYValue);
 
-    //   // Draw the dashed line
-    //   ctx.beginPath();
-    //   ctx.setLineDash([5, 5]);
-    //   ctx.moveTo(actualX, actualY);
-    //   ctx.lineTo(actualX, clampedY);
-    //   ctx.stroke();
+      // Draw the dashed line
+      ctx.beginPath();
+      ctx.setLineDash([5, 5]);
+      ctx.moveTo(actualX, actualY);
+      ctx.lineTo(actualX, clampedY);
+      ctx.stroke();
 
-    //   // Draw arrowheads
-    //   if (clampedYValue === predictedYValue) {
-    //     const arrowHeadLength = 8; // Length of the arrowhead
-    //     const angle = clampedY > actualY ? Math.PI / 2 : -Math.PI / 2; // Determine arrow direction
+      // Draw arrowheads
+      if (clampedYValue === predictedYValue) {
+        const arrowHeadLength = 8; // Length of the arrowhead
+        const angle = clampedY > actualY ? Math.PI / 2 : -Math.PI / 2; // Determine arrow direction
 
-    //     // Arrow at the clamped end (predicted point)
-    //     ctx.beginPath();
-    //     ctx.setLineDash([]); // Disable dashes for arrowhead
-    //     ctx.moveTo(actualX, clampedY);
-    //     ctx.lineTo(
-    //       actualX - arrowHeadLength * Math.cos(angle - Math.PI / 6),
-    //       clampedY - arrowHeadLength * Math.sin(angle - Math.PI / 6)
-    //     );
-    //     ctx.moveTo(actualX, clampedY);
-    //     ctx.lineTo(
-    //       actualX - arrowHeadLength * Math.cos(angle + Math.PI / 6),
-    //       clampedY - arrowHeadLength * Math.sin(angle + Math.PI / 6)
-    //     );
-    //     ctx.stroke();
-    //   }
-    // });
+        // Arrow at the clamped end (predicted point)
+        ctx.beginPath();
+        ctx.setLineDash([]); // Disable dashes for arrowhead
+        ctx.moveTo(actualX, clampedY);
+        ctx.lineTo(
+          actualX - arrowHeadLength * Math.cos(angle - Math.PI / 6),
+          clampedY - arrowHeadLength * Math.sin(angle - Math.PI / 6)
+        );
+        ctx.moveTo(actualX, clampedY);
+        ctx.lineTo(
+          actualX - arrowHeadLength * Math.cos(angle + Math.PI / 6),
+          clampedY - arrowHeadLength * Math.sin(angle + Math.PI / 6)
+        );
+        ctx.stroke();
+      }
+    });
 
-    // ctx.restore();
+    ctx.restore();
   },
 };
 

@@ -104,6 +104,7 @@ const Wrapper = styled.div`
   & > p {
     font-weight: 600;
   }
+  grid-area: c;
 `;
 
 const ActionTypesWrapper = styled.div`

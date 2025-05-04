@@ -18,6 +18,7 @@ import CrawlerSettingsPopup from "../../../components/Popups/CrawlerSettingsPopu
 import BLEConnector from "../../../components/HubConnectors/BLEConnector";
 import experimentCodes from "../../../utils/experimentCodes";
 import { useBLE } from "../../../contexts/BLEContext";
+import CrawlerInstructions from "../../../modules/Crawler/Crawler.Instructions";
 
 const defaultSettings: CrawlerSettings = {
   distanceSensorPort: "C",
@@ -265,7 +266,7 @@ const CrawlerPage = () => {
   return (
     <Wrapper>
       <Typography.H1>{t("Crawler.title")}</Typography.H1>
-      <Typography.Text>{t("Crawler.description")}</Typography.Text>
+      <CrawlerInstructions  />
 
       <BLEConnector code={code} onStart={handleCodeStart} />
       <DiagramRow>
@@ -328,6 +329,21 @@ const DiagramRow = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
 `;
 
 const Box = styled.div`

@@ -83,8 +83,14 @@ const BLEConnector = ({ code, onStart }: Props) => {
 const Wrapper = styled.div`
   display: flex;
   column-gap: 10px;
+  row-gap: 10px;
   margin: 20px 0;
   align-items: center;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 export default BLEConnector;

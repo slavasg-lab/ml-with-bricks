@@ -436,6 +436,14 @@ const DiagramRow = styled.div`
   .katex {
     font-size: 20px;
   }
+
+  @media (max-width: 1024px) {
+    column-gap: 10px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 `;
 
 const ControlsWrapper = styled.div`
@@ -462,6 +470,13 @@ const Row = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
+  
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 const ButtonWrapper = styled.div`

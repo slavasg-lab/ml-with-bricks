@@ -3,6 +3,7 @@ import Typography from "../../components/Typography/Typography";
 import InTextLink from "../../components/Links/InTextLink";
 import ExperimentCard from "../../components/Cards/ExperimentCard";
 import { styled } from "styled-components";
+import i18next from "i18next";
 
 const experiments = ["fruit-predictor", "ping-ponger", "crawler"];
 
@@ -13,9 +14,7 @@ const HomePage = () => {
       <Typography.H1>{t("Home.title")}</Typography.H1>
       <Typography.Text>
         {t("Home.text.part1")}
-        <InTextLink
-          to="https://www.lego.com/en-lu/product/lego-education-spike-prime-set-45678"
-        >
+        <InTextLink to="https://www.lego.com/en-lu/product/lego-education-spike-prime-set-45678">
           {t("Home.text.lego")}
         </InTextLink>
         {t("Home.text.part2")}
@@ -43,11 +42,11 @@ const HomePage = () => {
       <Typography.H3>{t("Home.materialsTitle")} 📖</Typography.H3>
       <Typography.Text>
         {t("Home.materialsText.part1")}
-        <InTextLink to="./presentations/DE_Presentation.pdf">
+        <InTextLink to={`./materials/de/presentation.pdf`}>
           {t("Home.presentationsGerman")}
         </InTextLink>
         {t("Home.materialsText.part2")}
-        <InTextLink to="./presentations/EN_Presentation.pdf">
+        <InTextLink to={`./materials/en/presentation.pdf`}>
           {t("Home.presentationsEnglish")}
         </InTextLink>
         .

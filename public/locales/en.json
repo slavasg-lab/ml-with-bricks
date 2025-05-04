@@ -150,7 +150,7 @@
     "dataCollectionText": "After connecting the hub to the web platform, start the code and wait for the code start confirmation to pop up. Gather at least 4 apples and 4 bananas. Take 3 of each and collect their data. For each fruit, bring it to the color sensor and click the right button on the hub to record its color. Then, place the same fruit into the robot's claw, close it, and remove the fruit. After removing, click the left button on the hub to measure its length. You'll see data points appear on the diagram, with fruit length on the Y-axis and a color spectrum (from red to yellow) on the X-axis.",
     "predictionTitle": "3. Prediction",
     "predictionText1": "Switch the model mode to 'Prediction'. New fruits are classified using the K-Nearest Neighbors algorithm. The algorithm calculates the distances to all existing data points. Then, it selects the 'K' (default is 3) nearest neighbors and performs a vote. If the majority of these neighbors are apples, the new fruit is predicted as an apple, and vice versa for bananas.",
-    "predictionText2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the SPIKE Prime Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process.",
+    "predictionText2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process.",
     "thingsToTryTitle": "4. Things to Try",
     "thingsToTryText": "Try turning the 'decision border' visualization on. This will show areas where a new fruit is predicted as either an apple (in one color) or a banana (in another color) based on its features. Experiment with increasing the number of neighbors ('K') participating in the vote and observe how the decision boundary changes."
  
@@ -208,7 +208,7 @@
   },
   "PitcherInstructions": {
     "title": "Pitcher Experiment Instructions",
-    "intro": "In this experiment, you'll build a robot 'Pitcher' that learns to always hit a target. We'll use the power of linear regression to predict the optimal motor power needed based on the distance to the target.",
+    "intro": "In this experiment, you'll build a robot 'Pitcher' that learns to always hit a target. We'll use the power of linear regression to predict the motor power needed based on the distance to the target.",
     "followVideo": "You can follow our experiment ",
     "followVideoPart2": " and build your Pitcher step by step with us, or do it yourself using the instructions below.",
     "assemblyTitle": "1. Assembly",
@@ -218,7 +218,7 @@
     "assemblyText2Part2": " or ",
     "assemblyText2Part3": " instructions.",
     "dataCollectionTitle": "2. Data Collection",
-    "dataCollectionText": "After connecting the hub and starting the code, let's collect data. Place the pitcher at a consistent starting position. Place a ball in the holder; ensure the serving arm is always at the 12 o'clock position, as this ensures consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect a signal and accurately measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance. The measured distance and the motor power used will be recorded in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch.",
+    "dataCollectionText": "After connecting the hub and starting the code, it's time to collect data. Place the pitcher at a consistent launching position. Place a ball in the holder; ensure the serving arm is always at the 12 o'clock position, as this ensures consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect an ultrasonic signal and measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance while holding the cardboard. The measured distance and the motor power used will be recorded in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch.",
     "predictionTitle": "3. Prediction",
     "predictionText1": "If you observe the data points you've collected, you'll notice they roughly form a straight line. This suggests a linear relationship between the motor speed and the distance the ball travels. To predict the necessary motor speed to hit a target at a specific distance, the pitcher will use a machine learning technique called linear regression.",
     "predictionText2": "Linear regression is a method that finds the line that best represents the relationship between two variables – in our case, the distance to where the ball lands and the motor speed used to launch it.",
@@ -228,5 +228,27 @@
     "predictionText6": "To try and hit a target, while in 'Prediction' mode, place some kind of target in front of the pitcher. Measure the distance to the target by holding a piece of cardboard at the target's location and clicking the 'Measure distance' button. Then, remove the cardboard, place the ball into the claw, and click the 'Launch ball' button. The robot will use the learned linear regression model to predict the motor speed needed to reach that distance.",
     "thingsToTryTitle": "4. Things to Try",
     "thingsToTryText": "Experiment with different distances and observe how the predicted motor power changes. Try adding more data points to see how it affects the accuracy of the linear regression line. You can also explore the 'Calculate Best Parameters' function to see the slope and intercept of the learned linear relationship."
+  },
+  "CrawlerInstructions": {
+    "title": "Crawler & Reinforcement Learning",
+    "intro": "In this experiment, you will empower a crawler with reinforcement learning.",
+    "followVideo": "You can follow our experiment ",
+    "assemblyTitle": "1. Assembly",
+    "assemblyText1Part1": "First, assemble the crawler robot using ",
+    "assemblyText1Part2": ". Ensure the motors and the distance sensor are connected to the correct corresponding ports on the hub. Make sure all motors are in their zero positions when the arm is fully extended as shown in the instructions. Otherwise, you could damage your motors.",
+    "assemblyText2Part1": "Then, connect your hub to the web platform using either the ",
+    "assemblyText2Part2": " or ",
+    "assemblyText2Part3": " instructions.",
+    "followVideoPart2": " and build your crawler step by step with us, or do it yourself using the instructions below.",
+    "algorithmTitle": "2. Algorithm",
+    "algorithmText1": "The crawler will use reinforcement learning to learn how to crawl. To simplify this, it has only 4 arm positions, as shown in the reward diagram below. It needs to determine the best next position to move to from its current position.",
+    "algorithmText2": "To select the best move, the crawler first needs to understand how effective each transition between arm positions is. The goal is to crawl as far as possible, so we measure the crawled distance to evaluate each transition.",
+    "algorithmText3": "We create a 'Decision table' where the rows represent the current arm position and the columns represent the next possible arm positions. Each cell in this table contains a value indicating how good a transition is from the row's state to the column's state. Initially, these values are unknown, so the table is filled with zeros and will be updated with learned values during training.",
+    "algorithmText4": "To learn these values, position the crawler with its distance sensor facing a wall at approximately one elbow's length away. Start the code by clicking the corresponding button on the web platform, set the exploration parameter to 'high', and click the 'play' button. A high exploration setting makes the crawler select a random movement in 80% of cases instead of always choosing the best known action. This encourages learning and prevents the crawler from getting stuck with a suboptimal movement. After the crawler has learned the distance it crawls with each transition, change the exploration parameter to 'none'. The crawler will now simply crawl by selecting the action that results in the greatest crawled distance.",
+    "algorithmText5": "To ensure accurate measurements, the crawler will stop training if it is too close or too far from the wall. To continue training, simply reposition it at approximately one elbow's length from the wall and click the 'play' button again.",
+    "warning1": "Make sure there are no objects between the wall and the distance sensor during training to ensure correct measurements.",
+    "warning2": "To ensure accurate measurements, a crawler will stop training if it's too close or too far from the wall. To continue training, simply reposition it at ~1 elbow length to the wall and click play button again.",
+    "thingsToTryTitle": "3. Things to try",
+    "thingsToTryText": "Try resetting the experiment and repeating the training with 'Foresight' turned on. In this case, the crawler will also consider future rewards by adding the maximum value from the row it moves to (the next state) to the immediate crawled distance (the short-term reward). How did the decision table and the crawler's movements change?"
   }
 }

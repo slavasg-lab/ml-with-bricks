@@ -389,6 +389,16 @@ const DiagramRow = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
+
+  @media (max-width: 1024px) {
+    column-gap: 10px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  
 `;
 
 const ControlsWrapper = styled.div`

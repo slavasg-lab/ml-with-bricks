@@ -37,7 +37,10 @@ function App() {
               <Route path="/imprint" element={<ImprintPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
               <Route path="/materials" element={<MaterialsPage />} />
-              <Route path="/troubleshooting" element={<TroubleshootingPage />} />
+              <Route
+                path="/troubleshooting"
+                element={<TroubleshootingPage />}
+              />
               <Route path="*" element={<HomePage />} />
             </Routes>
           </PageLayout>

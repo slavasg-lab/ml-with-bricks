@@ -26,9 +26,9 @@ const HomePage = () => {
       </CardGrid>
       <Typography.H3>{t("Home.courseRecordingTitle")} 📹</Typography.H3>
       <Typography.Text>{t("Home.courseRecordingText")}</Typography.Text>
-      <div style={{ flex: 1, aspectRatio: "16/9" }}>
+      <div style={{ flex: 1, borderRadius: 10, overflow: "hidden", margin: 0, aspectRatio: "16/9" }}>
         <iframe
-          style={{ borderWidth: 0, margin: "10px 0" }}
+          style={{ borderWidth: 0, aspectRatio: "16/9" }}
           width="100%"
           height="100%"
           src="https://www.youtube-nocookie.com/embed/videoseries?si=o9tvPwSMyEbBw9rm&list=PLaA3pdUzmaV-oJ0QABOJssZ5MxFRIY_hu"

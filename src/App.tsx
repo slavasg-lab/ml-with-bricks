@@ -13,12 +13,21 @@ import ImprintPage from "./pages/imprint";
 import PrivacyPolicyPage from "./pages/privacy-policy";
 import MaterialsPage from "./pages/materials";
 import TroubleshootingPage from "./pages/troubleshooting";
+import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t, i18n } = useTranslation();
   return (
     <ThemeProvider theme={lightTheme}>
       <BLEProvider>
         <>
+          <Helmet>
+            {/* Set the lang attribute on the <html> tag dynamically */}
+            <html lang={i18n.language} />
+            <title>{t("seo_title")}</title>
+            <meta name="description" content={t("seo_description")} />
+          </Helmet>
           <GlobalStyles />
           <PageLayout>
             <Routes>

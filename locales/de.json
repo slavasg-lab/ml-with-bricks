@@ -168,10 +168,131 @@
     "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
   },
   "Imprint": {
-    "title": "Impressum"
+    "title": "Impressum",
+    "contact": {
+      "heading": "Kontakt",
+      "email": "**E-Mail**: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)",
+      "phone": "**Telefonnummer**: +49 174 781 7599"
+    },
+    "euDisputeResolution": {
+      "heading": "EU-Streitschlichtung",
+      "paragraph1": "Die Europäische Kommission stellt eine [Plattform zur Online-Streitbeilegung (OS)](https://ec.europa.eu/consumers/odr/) bereit. Unsere E-Mail-Adresse finden Sie oben im Impressum."
+    },
+    "consumerDisputeResolution": {
+      "heading": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+      "paragraph1": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    }
   },
   "PrivacyPolicy": {
-    "title": "Datenschutzerklärung"
+    "title": "Datenschutzerklärung",
+    "effectiveDate": "Stand: 30. Mai 2025",
+    "section1": {
+      "title": "1. Datenschutz auf einen Blick",
+      "generalNotes": {
+        "heading": "Allgemeine Hinweise",
+        "paragraph1": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten, ausführlichen Datenschutzerklärung.",
+        "dataCollectionOnThisWebsite": "Datenerfassung auf dieser Website",
+        "whoResponsible": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+        "whoResponsibleAnswer": "Die Datenverarbeitung auf dieser Website erfolgt durch uns als Websitebetreiber. Unsere Kontaktdaten können Sie dem Abschnitt „Informationen zur verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+        "howDoWeCollect": "Wie erfassen wir Ihre Daten?",
+        "howDoWeCollectAnswer": "Wir erheben keine personenbezogenen Daten direkt von Ihnen. Unsere Website speichert lediglich nicht-personenbezogene Informationen lokal in Ihrem Browser (Local Storage), um Ihre Nutzung der Website zu ermöglichen und zu verbessern.",
+        "whatDoWeUseDataFor": "Wofür nutzen wir Ihre Daten?",
+        "whatDoWeUseDataForAnswer": "Die lokal in Ihrem Browser gespeicherten Daten dienen ausschließlich der Funktionalität und Verbesserung Ihres Nutzererlebnisses innerhalb der Website.",
+        "yourRights": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+        "yourRightsAnswer": "Da wir keine personenbezogenen Daten von Ihnen erheben oder speichern, beziehen sich die üblichen Datenschutzrechte (Auskunft, Berichtigung, Löschung etc.) auf Daten, die von Drittanbietern (wie unserem Hosting-Provider) oder lokal auf Ihrem Gerät verarbeitet werden. Details zu diesen Rechten und deren Ausübung finden Sie in den entsprechenden Abschnitten weiter unten."
+      }
+    },
+    "section2": {
+      "title": "2. Hosting",
+      "paragraph1": "Wir hosten die Inhalte unserer Website bei **GitHub, Inc.**, 88 Colin P. Kelly Jr. Street, San Francisco, California, 94107.",
+      "paragraph2": "Wenn Sie unsere Website nutzen, erhebt **GitHub Inc.** bestimmte Informationen. [Laut GitHub](https://docs.github.com/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) wird Ihre **IP-Adresse zu Sicherheitszwecken protokolliert und gespeichert.** Dies ist eine Standardpraxis für die meisten Hosting-Dienste.",
+      "paragraph3": "Für detailliertere Informationen zu den Datenerfassungspraktiken von GitHub verweisen wir auf die [Datenschutzerklärung von GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).",
+      "paragraph4": "Die Erfassung dieser Daten durch GitHub fällt in den Bereich der Bereitstellung ihres Hosting-Dienstes, was als berechtigtes Interesse des Hosting-Providers (Art. 6 Abs. 1 lit. f DSGVO) gilt.",
+      "dataTransfer": {
+        "heading": "Internationale Datenübermittlungen",
+        "paragraph1": "**GitHub Inc.** speichert und verarbeitet personenbezogene Daten an verschiedenen Standorten, einschließlich Ihrer lokalen Region, der Vereinigten Staaten und anderen Ländern, in denen **GitHub Inc.**, seine verbundenen Unternehmen, Tochtergesellschaften oder Subunternehmer tätig sind. **GitHub Inc.** übermittelt personenbezogene Daten aus der Europäischen Union, dem Vereinigten Königreich und der Schweiz in Länder, die von der Europäischen Kommission nicht als Länder mit einem angemessenen Datenschutzniveau anerkannt wurden. Wenn **GitHub Inc.** solche Übermittlungen vornimmt, stützen **sie** sich im Allgemeinen auf die von der Europäischen Kommission gemäß der Durchführungsentscheidung 2021/914 veröffentlichten Standardvertragsklauseln, um Ihre Rechte zu schützen und sicherzustellen, dass diese Schutzmaßnahmen mit Ihren Daten reisen. Weitere Informationen zu den Entscheidungen der Europäischen Kommission über die Angemessenheit des Schutzes personenbezogener Daten in den Ländern, in denen **GitHub Inc.** personenbezogene Daten verarbeitet, finden Sie in diesem Artikel auf der [Website der Europäischen Kommission](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en)."
+      }
+    },
+    "section3": {
+      "title": "3. Allgemeine Hinweise und Pflichtinformationen",
+      "dataProtection": {
+        "heading": "Datenschutz",
+        "paragraph1": "Wir als Betreiber dieser Website nehmen den Schutz Ihrer Daten ernst. Unsere Website ist so datenminimierend wie möglich gestaltet."
+      },
+      "responsibleParty": {
+        "heading": "Informationen zur verantwortlichen Stelle",
+        "country": "Deutschland",
+        "paragraph1": "Verantwortliche Stelle für die Datenverarbeitung im Zusammenhang mit dieser Website ist:",
+        "email": "**E-Mail**: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)",
+        "paragraph2": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet."
+      },
+      "dataRetention": {
+        "heading": "Speicherdauer der Daten",
+        "paragraph1": "Da wir keine personenbezogenen Daten direkt von Ihnen erheben, gibt es für uns keine Speicherdauer solcher Daten. Daten, die von GitHub im Rahmen des Hostings erhoben werden, unterliegen den Aufbewahrungsrichtlinien von GitHub. Lokal in Ihrem Browser gespeicherte Daten können Sie jederzeit selbst löschen."
+      },
+      "legalBasis": {
+        "heading": "Allgemeine Hinweise zur Rechtsgrundlage der Datenverarbeitung auf dieser Website",
+        "paragraph1": "Da wir keine personenbezogenen Daten direkt erheben, finden die klassischen Rechtsgrundlagen der DSGVO (Art. 6 Abs. 1 lit. a, b, c, f DSGVO und Art. 9 Abs. 2 lit. a DSGVO) auf unsere Website keine direkte Anwendung, da keine entsprechende Datenverarbeitung durch uns erfolgt.",
+        "paragraph2": "Daten, die von GitHub im Rahmen des Hostings erhoben werden (z. B. IP-Adressen), basieren auf dem **berechtigten Interesse** von GitHub (Art. 6 Abs. 1 lit. f DSGVO) zur Sicherstellung des Betriebs und der Sicherheit ihrer Dienste.",
+        "paragraph3": "Die Speicherung von Daten in Ihrem **Local Storage** erfolgt ausschließlich auf Ihrem Gerät und basiert auf der **technischen Notwendigkeit**, die Funktionalität unserer Website bereitzustellen."
+      },
+      "sslEncryption": {
+        "heading": "SSL- bzw. TLS-Verschlüsselung",
+        "paragraph1": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an die Website übermitteln, nicht von Dritten mitgelesen werden."
+      }
+    },
+    "section4": {
+      "title": "4. Datenerfassung auf dieser Website",
+      "cookiesLocalStorage": {
+        "heading": "Cookies und Local Storage",
+        "paragraph1": "Unsere Website verwendet keine Cookies im herkömmlichen Sinne zur Nachverfolgung oder Analyse des Nutzerverhaltens. Wir nutzen jedoch den **Local Storage** Ihres Webbrowsers, der eine ähnliche Funktion wie persistente Cookies hat, jedoch für unsere Zwecke:",
+        "listItem1": "**Speicherung des Experimentfortschritts:** Ihr Fortschritt in Experimenten wird lokal in Ihrem Browser gespeichert. So können Sie die Website später fortsetzen, ohne Ihren Fortschritt zu verlieren.",
+        "listItem2": "**Speicherung der bevorzugten Sprache:** Ihre ausgewählte Sprache (z. B. über 'i18next') wird ebenfalls lokal gespeichert, damit die Website beim nächsten Besuch direkt in der richtigen Sprache angezeigt wird.",
+        "importantInfo": "Wichtige Informationen zum Local Storage:",
+        "listItem3": "**Keine persönlichen Daten:** Die im Local Storage gespeicherten Daten sind **nicht personenbezogen.** Sie können Sie in keiner Weise identifizieren.",
+        "listItem4": "**Nur auf Ihrem Gerät:** Diese Daten werden ausschließlich in Ihrem Webbrowser auf Ihrem eigenen Gerät gespeichert. **Sie werden niemals an uns, GitHub oder Dritte gesendet.**",
+        "listItem5": "**Nutzerkontrolle:** Sie haben die volle Kontrolle über diese Daten. Sie können sie jederzeit über die Einstellungen Ihres Webbrowsers (normalerweise in den Abschnitten „Entwicklertools“ oder „Datenschutz & Sicherheit“ zu finden) einsehen, bearbeiten oder löschen. Das Leeren der Browserdaten oder des Caches entfernt diese Informationen.",
+        "paragraph2": "Da diese Daten ausschließlich der Funktionalität der Website auf Ihrem Gerät dienen und keine personenbezogenen Daten sind, benötigen wir hierfür keine separate Einwilligung nach DSGVO oder TTDSG."
+      }
+    },
+    "section5": {
+      "title": "5. Links zu externen Websites",
+      "paragraph1": "Unsere Website kann Links zu externen Websites enthalten, die nicht von uns betrieben werden. Bitte beachten Sie, dass wir keine Kontrolle über den Inhalt oder die Datenschutzpraktiken dieser Drittanseiten haben. Wir übernehmen daher keine Haftung für diese externen Inhalte.",
+      "paragraph2": "Wenn Sie auf einen externen Link klicken, werden Sie auf die Website dieses Drittanbieters weitergeleitet. Wir raten Ihnen dringend, die Datenschutzerklärung und die Nutzungsbedingungen jeder von Ihnen besuchten Website zu überprüfen. **Bitte beachten Sie, dass einige dieser externen Websites von Anbietern außerhalb der Europäischen Union (EU) oder des Europäischen Wirtschaftsraums (EWR) betrieben werden können, was dazu führen könnte, dass Ihre Daten in Länder mit abweichenden Datenschutzstandards übertragen werden.** Die Datenschutzbestimmungen dieser externen Websites können von unseren eigenen abweichen. Wir sind nicht verantwortlich für deren Inhalt, Sicherheit oder Datenerfassungspraktiken."
+    },
+    "section6": {
+      "title": "6. Ihre Rechte",
+      "paragraph1": "Obwohl wir selbst keine personenbezogenen Daten direkt erheben, stehen Ihnen bestimmte Rechte bezüglich der von GitHub erhobenen oder lokal in Ihrem Browser gespeicherten Daten zu:",
+      "rightToInformation": {
+        "heading": "Recht auf Auskunft",
+        "paragraph1": "Sie haben das Recht, jederzeit Auskunft über die von GitHub zu Ihrer IP-Adresse gespeicherten Daten (gemäß der Datenschutzerklärung von GitHub) zu erhalten oder die lokal in Ihrem Browser gespeicherten Daten einzusehen."
+      },
+      "rightToRectificationDeletion": {
+        "heading": "Recht auf Berichtigung und Löschung",
+        "paragraph1": "Die lokal in Ihrem Browser gespeicherten Daten können Sie jederzeit selbst über Ihre Browsereinstellungen ändern oder löschen. Bezüglich der von GitHub erhobenen Daten wenden Sie sich bitte direkt an GitHub."
+      },
+      "rightToObject": {
+        "heading": "Recht auf Widerspruch",
+        "paragraph1": "Da wir selbst keine personenbezogenen Daten verarbeiten, besteht kein direktes Widerspruchsrecht gegen eine Datenverarbeitung für unsere Website. Bezüglich der Datenverarbeitung durch GitHub verweisen wir auf deren Datenschutzerklärung."
+      },
+      "rightToComplain": {
+        "heading": "Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde",
+        "paragraph1": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Ortes des mutmaßlichen Verstoßes. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
+        "competentAuthority": "Die für uns in Deutschland zuständige Behörde ist:",
+        "authorityDetails": {
+          "name": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg",
+          "address": "Lautenschlagerstraße 20",
+          "plzCity": "70173 Stuttgart",
+          "country": "Deutschland",
+          "email": "**E-Mail:** [poststelle@lfdi.bwl.de](mailto:poststelle@lfdi.bwl.de)"
+        }
+      },
+      "paragraph2": "**Zur Ausübung Ihrer Rechte oder bei weiteren Fragen zum Datenschutz können Sie sich jederzeit unter den im Abschnitt „Informationen zur verantwortlichen Stelle“ angegebenen Kontaktdaten an uns wenden.**"
+    },
+    "section7": {
+      "title": "7. Änderungen dieser Datenschutzerklärung",
+      "paragraph1": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sofern sich die Rechtslage ändert oder wir unsere Website modifizieren. Die aktuelle Version finden Sie stets auf dieser Seite."
+    }
   },
   "Materials": {
     "title": "Materialien",
@@ -213,7 +334,8 @@
     "presentations": "Präsentationen",
     "presentationsEnglish": "Englische",
     "presentationsGerman": "Deutsche",
-    "coursePlaylistTitle": "YouTube-Videoplayer"
+    "coursePlaylistTitle": "YouTube-Videoplayer",
+    "watch": "Auf YouTube ansehen"
   },
   "PitcherInstructions": {
     "intro": "In diesem Experiment bauen wir einen Pingponger, der lernt, immer ins Ziel zu treffen. Wir nutzen die lineare Regression, um die benötigte Motorleistung basierend auf der Entfernung zum Ziel vorherzusagen.",

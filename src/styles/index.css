@@ -28,7 +28,30 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: var(--main-font);
+  font-size: 18px; /* Slightly increased from 16px */
+  font-weight: 300;
+  line-height: 1.6;
+  word-wrap: break-word;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Increased from 14px */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px; /* Increased from 12px */
+  }
+}
+
+strong {
+  
+  font-weight: 500;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 10px 0;
 }
 
 a {

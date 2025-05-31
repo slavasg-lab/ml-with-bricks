@@ -11,7 +11,12 @@ i18next.use(HttpApi).use(LanguageDetector).use(initReactI18next).init({
     debug: true,
     load: 'languageOnly',
     fallbackLng: "en",
-    backend: backendOptions
+    backend: backendOptions,
+    supportedLngs: ["en", "de"],
+    nonExplicitSupportedLngs: true,
+    detection: {
+        caches: ['localStorage']
+    }
 });
 
 export default i18next;

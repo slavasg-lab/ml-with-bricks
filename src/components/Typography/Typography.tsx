@@ -82,6 +82,7 @@ const customMarkdownComponents = {
   a: ({ node, ...props }: any) => (
     <InTextLink to={props.href}>{props.children}</InTextLink>
   ),
+  p: ({ children }: any) => <>{children}</>,
 };
 
 const Text = ({
@@ -106,6 +107,26 @@ const Text = ({
     <Paragraph $bold={$bold}>{children}</Paragraph>
   );
 
+const Li = ({
+  children,
+  $markdown,
+}: {
+  children: string | React.ReactNode;
+  $markdown?: boolean;
+}) =>
+  !!$markdown ? (
+    <li>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={customMarkdownComponents}
+      >
+        {children as string}
+      </ReactMarkdown>
+    </li>
+  ) : (
+    <li>{children}</li>
+  );
+
 // Export the typography components
-const Typography = { H1, H2, H3, Text };
+const Typography = { H1, H2, H3, Text, Li };
 export default Typography;

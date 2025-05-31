@@ -193,9 +193,13 @@
       "section2": {
         "title": "2. Hosting",
         "paragraph1": "We host our website's content with **GitHub, Inc.**, located at 88 Colin P. Kelly Jr. Street, San Francisco, California, 94107.",
-        "paragraph2": "When you use our website, **GitHub Pages** collects certain information. According to [GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), your **IP address is logged and stored for security purposes.** This is a standard practice for most hosting services.",
-        "paragraph3": "For more detailed information regarding GitHub's data collection practices, please refer to GitHub's Privacy Policy: {{githubPrivacyPolicyLink}}",
-        "paragraph4": "GitHub's collection of this data falls within the scope of providing their hosting service, which is considered a legitimate interest of the hosting provider (Art. 6 para. 1 lit. f GDPR)."
+        "paragraph2": "When you use our website, **GitHub Inc.** collects certain information. [According to GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), your **IP address is logged and stored for security purposes.** This is a standard practice for most hosting services.",
+        "paragraph3": "For more detailed information regarding GitHub's data collection practices, please refer to [GitHub's Privacy Policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).",
+        "paragraph4": "GitHub's collection of this data falls within the scope of providing their hosting service, which is considered a legitimate interest of the hosting provider (Art. 6 para. 1 lit. f GDPR).",
+        "dataTransfer": {
+          "heading": "International Data Transfers",
+          "paragraph1": "**GitHub Inc.** stores and processes Personal Data in a variety of locations, including your local region, the United States, and other countries where **GitHub Inc.**, its affiliates, subsidiaries, or subprocessors have operations. **GitHub Inc.** transfers Personal Data from the European Union, the United Kingdom, and Switzerland to countries that the European Commission has not recognized as having an adequate level of data protection. When **GitHub Inc.** engages in such transfers, **they** generally rely on the standard contractual clauses published by the European Commission under Commission Implementing Decision 2021/914, to help protect your rights and enable these protections to travel with your data. To learn more about the European Commission’s decisions on the adequacy of the protection of personal data in the countries where **GitHub Inc.** processes personal data, see this article on the [European Commission website](https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en)."
+        }
       },
       "section3": {
         "title": "3. General Information and Mandatory Disclosures",
@@ -205,10 +209,9 @@
         },
         "responsibleParty": {
           "heading": "Information on the Responsible Party",
+          "country": "Germany",
           "paragraph1": "The responsible party for data processing in connection with this website is:",
-          "yourDetails": "{{yourNameOrOrg}}\n{{yourStreet}}\n{{yourPLZCity}}\nGermany",
-          "email": "E-Mail: {{contactEmail}}",
-          "optionalLink": "[Optional: Link to a GitHub Issues page or other public contact method]",
+          "email": "**E-Mail**: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)",
           "paragraph2": "The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data."
         },
         "dataRetention": {
@@ -231,28 +234,22 @@
         "cookiesLocalStorage": {
           "heading": "Cookies and Local Storage",
           "paragraph1": "Our website does not use cookies in the traditional sense for tracking or analyzing user behavior. However, we do use your web browser's **Local Storage**, which has a similar function to persistent cookies, but for our purposes:",
-          "listItem1": "Saving Experiment Progress: Your progress in experiments is stored locally in your browser. This allows you to resume using the website later without losing your progress.",
-          "listItem2": "Saving Preferred Language: Your selected language (e.g., via `i18next`) is also stored locally so that the website is displayed directly in the correct language on your next visit.",
+          "listItem1": "**Saving Experiment Progress:** Your progress in experiments is stored locally in your browser. This allows you to resume using the website later without losing your progress.",
+          "listItem2": "**Saving Preferred Language:** Your selected language (e.g., via 'i18next') is also stored locally so that the website is displayed directly in the correct language on your next visit.",
           "importantInfo": "Important information about Local Storage:",
-          "listItem3": "No Personal Data: The data stored in Local Storage is **not personal.** It cannot identify you in any way.",
-          "listItem4": "Only on Your Device: This data is stored exclusively in your web browser on your own device. **It is never sent to us, GitHub, or any third party.**",
-          "listItem5": "User Control: You have full control over this data. You can view, edit, or delete it at any time via your web browser's settings (usually found in the \"Developer Tools\" or \"Privacy & Security\" sections). Clearing your browser's data or cache will typically remove this information.",
+          "listItem3": "**No Personal Data:** The data stored in Local Storage is **not personal.** It cannot identify you in any way.",
+          "listItem4": "**Only on Your Device:** This data is stored exclusively in your web browser on your own device. **It is never sent to us, GitHub, or any third party.**",
+          "listItem5": "**User Control:** You have full control over this data. You can view, edit, or delete it at any time via your web browser's settings (usually found in the \"Developer Tools\" or \"Privacy & Security\" sections). Clearing your browser's data or cache will remove this information.",
           "paragraph2": "Since this data is stored exclusively for the functionality of the website on your device and is not personal data, we do not require separate consent for this under the GDPR or TTDSG."
-        },
-        "serverLogFiles": {
-          "heading": "Server Log Files (by GitHub Pages)",
-          "paragraph1": "The provider of the pages (GitHub Pages) automatically collects and stores information in so-called server log files. This information is automatically transmitted by your browser to GitHub and includes:",
-          "listItem1": "Browser type and browser version",
-          "listItem2": "Operating system used",
-          "listItem3": "Referrer URL",
-          "listItem4": "Hostname of the accessing computer",
-          "listItem5": "Time of the server request",
-          "listItem6": "IP address",
-          "paragraph2": "This data is not merged with other data sources by GitHub, except for security purposes. The collection of this data is based on Art. 6 para. 1 lit. f GDPR (legitimate interest of the hosting provider in a technically flawless and secure operation of its services). We do not have direct access to these specific log files."
         }
       },
       "section5": {
-        "title": "5. Your Rights",
+        "title": "5. Links to External Websites",
+        "paragraph1": "Our website may contain links to external websites that are not operated by us. Please be aware that we have no control over the content or privacy practices of these third-party sites. We therefore assume no liability for these external contents.",
+        "paragraph2": "When you click on an external link, you will be directed to that third party's website. We strongly advise you to review the Privacy Policy and terms of any site you visit. **Please note that some of these external websites may be operated by providers outside the European Union (EU) or European Economic Area (EEA), which could result in your data being transferred to countries with different data protection standards.** The data protection regulations of these external websites may differ from our own. We are not responsible for their content, security, or data collection practices."
+      },
+      "section6": {
+        "title": "6. Your Rights",
         "paragraph1": "Although we do not directly collect any personal data ourselves, you have certain rights regarding the data collected by GitHub or stored locally in your browser:",
         "rightToInformation": {
           "heading": "Right to Information",
@@ -270,12 +267,18 @@
           "heading": "Right to Lodge a Complaint with the Competent Supervisory Authority",
           "paragraph1": "In case of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, their place of work or the place of the alleged infringement. The right to complain exists without prejudice to any other administrative or judicial remedies.",
           "competentAuthority": "The competent authority for us in Germany is:",
-          "authorityDetails": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg\nLautenschlagerstraße 20\n70173 Stuttgart\nE-Mail: poststelle@lfdi.bwl.de"
+          "authorityDetails": {
+            "name": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg",
+            "address": "Lautenschlagerstraße 20",
+            "plzCity": "70173 Stuttgart",
+            "country": "Germany",
+            "email": "**E-Mail:** [poststelle@lfdi.bwl.de](mailto:poststelle@lfdi.bwl.de)"
+          }
         },
-        "paragraph2": "To exercise your rights or for further questions regarding data protection, you can contact us at any time using the contact details provided in the section \"Information on the Responsible Party\"."
+        "paragraph2": "**To exercise your rights or for further questions regarding data protection, you can contact us at any time using the contact details provided in the section \"Information on the Responsible Party\".**"
       },
-      "section6": {
-        "title": "6. Changes to This Privacy Policy",
+      "section7": {
+        "title": "7. Changes to This Privacy Policy",
         "paragraph1": "We reserve the right to adapt this Privacy Policy if the legal situation changes or if we modify our website. The current version can always be found on this page."
       }
     },

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Typography from "../../components/Typography/Typography";
 import InTextLink from "../../components/Links/InTextLink";
 import styled from "styled-components";
+import PlaylistLink from "../../components/PlaylistLink/PlaylistLink";
 
 const MaterialsPage = () => {
   const { t } = useTranslation();
@@ -25,7 +26,7 @@ const MaterialsPage = () => {
         </li>
       </BulletList>
       <Typography.Text $bold>{t("Materials.CoursePlaylist")}: </Typography.Text>
-      <div style={{ flex: 1, aspectRatio: "16/9" }}>
+      {/* <div style={{ flex: 1, aspectRatio: "16/9" }}>
         <iframe
           style={{ borderWidth: 0 }}
           width="100%"
@@ -36,7 +37,8 @@ const MaterialsPage = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
+      <PlaylistLink />
     </Wrapper>
   );
 };

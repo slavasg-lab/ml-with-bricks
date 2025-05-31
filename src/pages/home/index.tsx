@@ -3,13 +3,14 @@ import Typography from "../../components/Typography/Typography";
 import InTextLink from "../../components/Links/InTextLink";
 import ExperimentCard from "../../components/Cards/ExperimentCard";
 import { styled } from "styled-components";
+import PlaylistLink from "../../components/PlaylistLink/PlaylistLink";
 
 const experiments = ["fruit-predictor", "ping-ponger", "crawler"];
 
 const HomePage = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <Wrapper>
       <Typography.H1>{t("Home.title")}</Typography.H1>
       <Typography.Text>
         {t("Home.text.part1")}
@@ -26,7 +27,7 @@ const HomePage = () => {
       </CardGrid>
       <Typography.H3>{t("Home.courseRecordingTitle")} 📹</Typography.H3>
       <Typography.Text>{t("Home.courseRecordingText")}</Typography.Text>
-      <div style={{ flex: 1, borderRadius: 10, overflow: "hidden", margin: 0, aspectRatio: "16/9" }}>
+      {/* <div style={{ flex: 1, borderRadius: 10, overflow: "hidden", margin: 0, aspectRatio: "16/9" }}>
         <iframe
           style={{ borderWidth: 0, aspectRatio: "16/9" }}
           width="100%"
@@ -37,7 +38,8 @@ const HomePage = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
+      <PlaylistLink />
       <Typography.H3>{t("Home.materialsTitle")} 📖</Typography.H3>
       <Typography.Text>
         {t("Home.materialsText.part1")}
@@ -74,9 +76,14 @@ const HomePage = () => {
         </InTextLink>
         .
       </Typography.Text>
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 const CardGrid = styled.div`
   width: 100%;

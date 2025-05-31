@@ -172,8 +172,113 @@
     "title": "Imprint"
   },
   "PrivacyPolicy": {
-    "title": "Privacy Policy"
-  },
+      "title": "Privacy Policy",
+      "effectiveDate": "Effective Date: May 30, 2025",
+      "section1": {
+        "title": "1. Data Protection at a Glance",
+        "generalNotes": {
+          "heading": "General Information",
+          "paragraph1": "The following information provides a simple overview of what happens with your personal data when you visit our website. Personal data refers to all data that can personally identify you. For detailed information on data protection, please refer to our comprehensive Privacy Policy listed below this text.",
+          "dataCollectionOnThisWebsite": "Data Collection on This Website",
+          "whoResponsible": "Who is responsible for data collection on this website?",
+          "whoResponsibleAnswer": "The data processing on this website is carried out by us as the operator of the website. Our contact details can be found in the section \"Information on the Responsible Party\" in this Privacy Policy.",
+          "howDoWeCollect": "How do we collect your data?",
+          "howDoWeCollectAnswer": "We do not collect any personal data directly from you. Our website only stores non-personal information locally in your browser (Local Storage) to enable and improve your use of the website.",
+          "whatDoWeUseDataFor": "What do we use your data for?",
+          "whatDoWeUseDataForAnswer": "The data stored locally in your browser is used exclusively for the functionality and improvement of your user experience within the website.",
+          "yourRights": "What rights do you have regarding your data?",
+          "yourRightsAnswer": "Since we do not collect or store any personal data from you, the usual data protection rights (information, rectification, deletion, etc.) refer to data processed by third parties (such as our hosting provider) or locally on your device. For details on these rights and how to exercise them, please refer to the relevant sections below."
+        }
+      },
+      "section2": {
+        "title": "2. Hosting",
+        "paragraph1": "We host our website's content with **GitHub, Inc.**, located at 88 Colin P. Kelly Jr. Street, San Francisco, California, 94107.",
+        "paragraph2": "When you use our website, **GitHub Pages** collects certain information. According to [GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), your **IP address is logged and stored for security purposes.** This is a standard practice for most hosting services.",
+        "paragraph3": "For more detailed information regarding GitHub's data collection practices, please refer to GitHub's Privacy Policy: {{githubPrivacyPolicyLink}}",
+        "paragraph4": "GitHub's collection of this data falls within the scope of providing their hosting service, which is considered a legitimate interest of the hosting provider (Art. 6 para. 1 lit. f GDPR)."
+      },
+      "section3": {
+        "title": "3. General Information and Mandatory Disclosures",
+        "dataProtection": {
+          "heading": "Data Protection",
+          "paragraph1": "We as the operator of this website take the protection of your data seriously. Our website is designed to be as data-minimizing as possible."
+        },
+        "responsibleParty": {
+          "heading": "Information on the Responsible Party",
+          "paragraph1": "The responsible party for data processing in connection with this website is:",
+          "yourDetails": "{{yourNameOrOrg}}\n{{yourStreet}}\n{{yourPLZCity}}\nGermany",
+          "email": "E-Mail: {{contactEmail}}",
+          "optionalLink": "[Optional: Link to a GitHub Issues page or other public contact method]",
+          "paragraph2": "The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data."
+        },
+        "dataRetention": {
+          "heading": "Data Retention Period",
+          "paragraph1": "Since we do not directly collect any personal data from you, there is no retention period for such data by us. Data collected by GitHub as part of hosting is subject to GitHub's retention policies. You can delete data stored locally in your browser yourself at any time."
+        },
+        "legalBasis": {
+          "heading": "General Information on the Legal Basis for Data Processing on This Website",
+          "paragraph1": "Since we do not directly collect any personal data, the classical legal bases of the GDPR (Art. 6 para. 1 lit. a, b, c, f GDPR and Art. 9 para. 2 lit. a GDPR) are not directly applicable to our website, as no corresponding data processing is carried out by us.",
+          "paragraph2": "Data collected by GitHub as part of hosting (e.g., IP addresses) is based on GitHub's **legitimate interest** (Art. 6 para. 1 lit. f GDPR) in ensuring the operation and security of its services.",
+          "paragraph3": "The storage of data in your **Local Storage** occurs exclusively on your device and is based on the **technical necessity** to provide the functionality of our website."
+        },
+        "sslEncryption": {
+          "heading": "SSL/TLS Encryption",
+          "paragraph1": "This website uses SSL/TLS encryption for security reasons and to protect the transmission of confidential content. You can recognize an encrypted connection by the address bar of the browser changing from \"http://\" to \"https://\" and by the lock symbol in your browser's address bar. When SSL/TLS encryption is activated, the data you transmit to the website cannot be read by third parties."
+        }
+      },
+      "section4": {
+        "title": "4. Data Collection on This Website",
+        "cookiesLocalStorage": {
+          "heading": "Cookies and Local Storage",
+          "paragraph1": "Our website does not use cookies in the traditional sense for tracking or analyzing user behavior. However, we do use your web browser's **Local Storage**, which has a similar function to persistent cookies, but for our purposes:",
+          "listItem1": "Saving Experiment Progress: Your progress in experiments is stored locally in your browser. This allows you to resume using the website later without losing your progress.",
+          "listItem2": "Saving Preferred Language: Your selected language (e.g., via `i18next`) is also stored locally so that the website is displayed directly in the correct language on your next visit.",
+          "importantInfo": "Important information about Local Storage:",
+          "listItem3": "No Personal Data: The data stored in Local Storage is **not personal.** It cannot identify you in any way.",
+          "listItem4": "Only on Your Device: This data is stored exclusively in your web browser on your own device. **It is never sent to us, GitHub, or any third party.**",
+          "listItem5": "User Control: You have full control over this data. You can view, edit, or delete it at any time via your web browser's settings (usually found in the \"Developer Tools\" or \"Privacy & Security\" sections). Clearing your browser's data or cache will typically remove this information.",
+          "paragraph2": "Since this data is stored exclusively for the functionality of the website on your device and is not personal data, we do not require separate consent for this under the GDPR or TTDSG."
+        },
+        "serverLogFiles": {
+          "heading": "Server Log Files (by GitHub Pages)",
+          "paragraph1": "The provider of the pages (GitHub Pages) automatically collects and stores information in so-called server log files. This information is automatically transmitted by your browser to GitHub and includes:",
+          "listItem1": "Browser type and browser version",
+          "listItem2": "Operating system used",
+          "listItem3": "Referrer URL",
+          "listItem4": "Hostname of the accessing computer",
+          "listItem5": "Time of the server request",
+          "listItem6": "IP address",
+          "paragraph2": "This data is not merged with other data sources by GitHub, except for security purposes. The collection of this data is based on Art. 6 para. 1 lit. f GDPR (legitimate interest of the hosting provider in a technically flawless and secure operation of its services). We do not have direct access to these specific log files."
+        }
+      },
+      "section5": {
+        "title": "5. Your Rights",
+        "paragraph1": "Although we do not directly collect any personal data ourselves, you have certain rights regarding the data collected by GitHub or stored locally in your browser:",
+        "rightToInformation": {
+          "heading": "Right to Information",
+          "paragraph1": "You have the right to receive information at any time about the data stored by GitHub concerning your IP address (according to GitHub's privacy policy) or to view the data stored locally in your browser."
+        },
+        "rightToRectificationDeletion": {
+          "heading": "Right to Rectification and Deletion",
+          "paragraph1": "You can change or delete the data stored locally in your browser yourself at any time via your browser settings. Regarding data collected by GitHub, please contact GitHub directly."
+        },
+        "rightToObject": {
+          "heading": "Right to Object",
+          "paragraph1": "Since we do not process any personal data, there is no direct right to object to data processing for our website. Regarding data processing by GitHub, please refer to their privacy policy."
+        },
+        "rightToComplain": {
+          "heading": "Right to Lodge a Complaint with the Competent Supervisory Authority",
+          "paragraph1": "In case of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, their place of work or the place of the alleged infringement. The right to complain exists without prejudice to any other administrative or judicial remedies.",
+          "competentAuthority": "The competent authority for us in Germany is:",
+          "authorityDetails": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg\nLautenschlagerstraße 20\n70173 Stuttgart\nE-Mail: poststelle@lfdi.bwl.de"
+        },
+        "paragraph2": "To exercise your rights or for further questions regarding data protection, you can contact us at any time using the contact details provided in the section \"Information on the Responsible Party\"."
+      },
+      "section6": {
+        "title": "6. Changes to This Privacy Policy",
+        "paragraph1": "We reserve the right to adapt this Privacy Policy if the legal situation changes or if we modify our website. The current version can always be found on this page."
+      }
+    },
   "Home": {
     "title": "Welcome!",
     "text": {
@@ -205,7 +310,8 @@
     "presentations": "Presentations",
     "presentationsEnglish": "English",
     "presentationsGerman": "German",
-    "coursePlaylistTitle": "YouTube video player"
+    "coursePlaylistTitle": "YouTube video player",
+    "video": "Watch on YouTube"
   },
   "PitcherInstructions": {
     "title": "Pitcher Experiment Instructions",

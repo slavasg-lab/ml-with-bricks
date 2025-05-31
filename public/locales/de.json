@@ -171,8 +171,115 @@
     "title": "Impressum"
   },
   "PrivacyPolicy": {
-    "title": "Datenschutzerklärung"
-  },
+      "title": "Datenschutzerklärung",
+      "effectiveDate": "Stand: 30. Mai 2025",
+      "section1": {
+        "title": "1. Datenschutz auf einen Blick",
+        "generalNotes": {
+          "heading": "Allgemeine Hinweise",
+          "paragraph1": "Die folgende Datenschutzerklärung gibt Ihnen einen Überblick darüber, wie wir mit Ihren Daten umgehen, wenn Sie unsere Webseite nutzen. Diese Webseite wird auf GitHub Pages gehostet. **Wir als Betreiber dieser Webseite sammeln direkt keine personenbezogenen Daten von Ihnen.** Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+          "dataCollectionOnThisWebsite": "Datenerfassung auf dieser Webseite",
+          "whoResponsible": "Wer ist verantwortlich für die Datenerfassung auf dieser Webseite?",
+          "whoResponsibleAnswer": "Die Datenverarbeitung auf dieser Webseite erfolgt durch uns als Betreiber der Webseite. Unsere Kontaktdaten können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+          "howDoWeCollect": "Wie erfassen wir Ihre Daten?",
+          "howDoWeCollectAnswer": "Wir erfassen keine personenbezogenen Daten direkt von Ihnen. Unsere Webseite speichert lediglich nicht-personenbezogene Informationen lokal in Ihrem Browser (Local Storage), um Ihre Nutzung der Webseite zu ermöglichen und zu verbessern.",
+          "whatDoWeUseDataFor": "Wofür nutzen wir Ihre Daten?",
+          "whatDoWeUseDataForAnswer": "Die lokal in Ihrem Browser gespeicherten Daten dienen ausschließlich der Funktionalität und Verbesserung Ihrer Nutzererfahrung innerhalb der Webseite.",
+          "yourRights": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+          "yourRightsAnswer": "Da wir keine personenbezogenen Daten von Ihnen erfassen oder speichern, beziehen sich die üblichen Datenschutzrechte (Auskunft, Berichtigung, Löschung etc.) auf die Daten, die von Dritten (wie unserem Hosting-Anbieter) oder lokal auf Ihrem Gerät verarbeitet werden. Für Details zu diesen Rechten und wie Sie sie ausüben können, lesen Sie bitte die entsprechenden Abschnitte unten."
+        }
+      },
+      "section2": {
+        "title": "2. Hosting (GitHub Pages)",
+        "paragraph1": "Wir hosten die Inhalte unserer Webseite bei GitHub, Inc. (GitHub Pages).",
+        "provider": "Anbieter ist:",
+        "address": "GitHub, Inc.\n88 Colin P Kelly Jr Street\nSan Francisco, CA 94107\nUSA",
+        "paragraph2": "GitHub Pages sammelt bei der Nutzung unserer Webseite bestimmte Informationen. Laut GitHubs Datenschutzbestimmungen wird Ihre **IP-Adresse zu Sicherheitszwecken protokolliert und gespeichert.** Dies ist eine standardmäßige Praxis bei den meisten Hosting-Diensten.",
+        "paragraph3": "Details hierzu entnehmen Sie bitte der Datenschutzerklärung von GitHub: {{githubPrivacyPolicyLink}}",
+        "paragraph4": "Die Erfassung dieser Daten durch GitHub erfolgt im Rahmen der Erbringung des Hosting-Dienstes, was als berechtigtes Interesse des Hosting-Anbieters angesehen werden kann (Art. 6 Abs. 1 lit. f DSGVO)."
+      },
+      "section3": {
+        "title": "3. Allgemeine Hinweise und Pflichtinformationen",
+        "dataProtection": {
+          "heading": "Datenschutz",
+          "paragraph1": "Wir als Betreiber dieser Webseite nehmen den Schutz Ihrer Daten ernst. Unsere Webseite ist darauf ausgelegt, so datensparsam wie möglich zu sein."
+        },
+        "responsibleParty": {
+          "heading": "Hinweis zur verantwortlichen Stelle",
+          "paragraph1": "Die verantwortliche Stelle für die Datenverarbeitung im Zusammenhang mit dieser Webseite ist:",
+          "yourDetails": "{{yourNameOrOrg}}\n{{yourStreet}}\n{{yourPLZCity}}\nDeutschland",
+          "email": "E-Mail: {{contactEmail}}",
+          "optionalLink": "[Optional: Link zu einem GitHub Issues-Bereich oder anderer öffentlicher Kontaktmethode]",
+          "paragraph2": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+        },
+        "dataRetention": {
+          "heading": "Speicherdauer",
+          "paragraph1": "Da wir direkt keine personenbezogenen Daten von Ihnen erheben, gibt es für uns keine Speicherdauer für solche Daten. Die von GitHub im Rahmen des Hostings erhobenen Daten unterliegen den Aufbewahrungsrichtlinien von GitHub. Lokal in Ihrem Browser gespeicherte Daten können Sie jederzeit selbst löschen."
+        },
+        "legalBasis": {
+          "heading": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Webseite",
+          "paragraph1": "Da wir direkt keine personenbezogenen Daten erfassen, sind für unsere Webseite die klassischen Rechtsgrundlagen der DSGVO (Art. 6 Abs. 1 lit. a, b, c, f DSGVO und Art. 9 Abs. 2 lit. a DSGVO) nicht direkt anwendbar, da keine entsprechende Datenverarbeitung durch uns stattfindet.",
+          "paragraph2": "Die von GitHub im Rahmen des Hostings erhobenen Daten (z.B. IP-Adressen) basieren auf dem **berechtigten Interesse** von GitHub (Art. 6 Abs. 1 lit. f DSGVO) zur Sicherstellung des Betriebs und der Sicherheit ihrer Dienste.",
+          "paragraph3": "Die Speicherung von Daten in Ihrem **Local Storage** erfolgt ausschließlich auf Ihrem Gerät und basiert auf der **technischen Notwendigkeit** zur Bereitstellung der Funktionalität unserer Webseite."
+        },
+        "sslEncryption": {
+          "heading": "SSL- bzw. TLS-Verschlüsselung",
+          "paragraph1": "Diese Webseite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie mit der Webseite austauschen, nicht von Dritten mitgelesen werden."
+        }
+      },
+      "section4": {
+        "title": "4. Datenerfassung auf dieser Webseite",
+        "cookiesLocalStorage": {
+          "heading": "Cookies und Local Storage",
+          "paragraph1": "Unsere Webseite verwendet keine Cookies im herkömmlichen Sinne zur Verfolgung oder Analyse des Nutzerverhaltens. Wir verwenden jedoch den **Local Storage** Ihres Webbrowsers, der eine ähnliche Funktion wie persistente Cookies hat, jedoch für unsere Zwecke:",
+          "listItem1": "Speicherung des Experimentfortschritts: Ihre Fortschritte bei Experimenten werden lokal in Ihrem Browser gespeichert. Dies ermöglicht es Ihnen, die Webseite später fortzusetzen, ohne Ihren Fortschritt zu verlieren.",
+          "listItem2": "Speicherung der bevorzugten Sprache: Ihre ausgewählte Sprache (z.B. über `i18next`) wird ebenfalls lokal gespeichert, damit die Webseite bei Ihrem nächsten Besuch direkt in der richtigen Sprache angezeigt wird.",
+          "importantInfo": "Wichtige Informationen zum Local Storage:",
+          "listItem3": "Keine personenbezogenen Daten: Die im Local Storage gespeicherten Daten sind **nicht personenbezogen.** Sie können Sie in keiner Weise identifizieren.",
+          "listItem4": "Nur auf Ihrem Gerät: Diese Daten werden ausschließlich in Ihrem Webbrowser auf Ihrem eigenen Gerät gespeichert. **Sie werden niemals an uns, GitHub oder Dritte gesendet.**",
+          "listItem5": "Ihre Kontrolle: Sie können diese Daten jederzeit über die Einstellungen Ihres Webbrowsers einsehen, bearbeiten oder löschen. Das Leeren des Browser-Caches oder der Website-Daten entfernt diese Informationen üblicherweise.",
+          "paragraph2": "Da diese Daten ausschließlich für die Funktionalität der Webseite auf Ihrem Gerät gespeichert werden und keine personenbezogenen Daten sind, benötigen wir hierfür keine gesonderte Einwilligung nach der DSGVO oder dem TTDSG."
+        },
+        "serverLogFiles": {
+          "heading": "Server-Log-Dateien (durch GitHub Pages)",
+          "paragraph1": "Der Provider der Seiten (GitHub Pages) erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien. Diese Informationen werden von Ihrem Browser automatisch an GitHub übermittelt und umfassen:",
+          "listItem1": "Browsertyp und Browserversion",
+          "listItem2": "verwendetes Betriebssystem",
+          "listItem3": "Referrer URL",
+          "listItem4": "Hostname des zugreifenden Rechners",
+          "listItem5": "Uhrzeit der Serveranfrage",
+          "listItem6": "IP-Adresse",
+          "paragraph2": "Eine Zusammenführung dieser Daten mit anderen Datenquellen findet durch GitHub nicht statt, außer für Sicherheitszwecke. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse des Hosting-Anbieters an einem technisch fehlerfreien und sicheren Betrieb seiner Dienste). Wir haben keinen direkten Zugriff auf diese spezifischen Log-Dateien."
+        }
+      },
+      "section5": {
+        "title": "5. Ihre Rechte",
+        "paragraph1": "Obwohl wir selbst keine personenbezogenen Daten direkt erfassen, haben Sie in Bezug auf die Daten, die von GitHub erhoben oder lokal in Ihrem Browser gespeichert werden, bestimmte Rechte:",
+        "rightToInformation": {
+          "heading": "Recht auf Auskunft",
+          "paragraph1": "Sie haben das Recht, jederzeit Auskunft über die von GitHub zu Ihrer IP-Adresse gespeicherten Daten zu erhalten (gemäß GitHubs Datenschutzrichtlinie) oder die lokal in Ihrem Browser gespeicherten Daten einzusehen."
+        },
+        "rightToRectificationDeletion": {
+          "heading": "Recht auf Berichtigung und Löschung",
+          "paragraph1": "Sie können die lokal in Ihrem Browser gespeicherten Daten jederzeit selbst über Ihre Browsereinstellungen ändern oder löschen. Bezüglich der von GitHub erhobenen Daten richten Sie sich bitte an GitHub."
+        },
+        "rightToObject": {
+          "heading": "Widerspruchsrecht",
+          "paragraph1": "Da wir keine personenbezogenen Daten verarbeiten, gibt es für unsere Webseite keinen direkten Widerspruch gegen Datenverarbeitung. Bezüglich der Datenverarbeitung durch GitHub können Sie sich auf deren Datenschutzrichtlinie beziehen."
+        },
+        "rightToComplain": {
+          "heading": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+          "paragraph1": "Im Falle von Verstößen gegen die DSGVO steht Ihnen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
+          "competentAuthority": "Die für uns zuständige Behörde in Deutschland ist:",
+          "authorityDetails": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg\nLautenschlagerstraße 20\n70173 Stuttgart\nE-Mail: poststelle@lfdi.bwl.de"
+        },
+        "paragraph2": "Zur Ausübung Ihrer Rechte oder bei weiteren Fragen zum Datenschutz können Sie uns jederzeit unter den im Abschnitt „Hinweis zur verantwortlichen Stelle“ genannten Kontaktdaten erreichen."
+      },
+      "section6": {
+        "title": "6. Änderungen dieser Datenschutzerklärung",
+        "paragraph1": "Wir behalten uns das Recht vor, diese Datenschutzerklärung anzupassen, falls sich die Gesetzeslage ändert oder wir unsere Webseite modifizieren. Die jeweils aktuelle Version finden Sie stets auf dieser Seite."
+      }
+    },
   "Materials": {
     "title": "Materialien",
     "text": "Hier findest du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
@@ -213,7 +320,8 @@
     "presentations": "Präsentationen",
     "presentationsEnglish": "Englische",
     "presentationsGerman": "Deutsche",
-    "coursePlaylistTitle": "YouTube-Videoplayer"
+    "coursePlaylistTitle": "YouTube-Videoplayer",
+    "watch": "Auf YouTube ansehen"
   },
   "PitcherInstructions": {
     "intro": "In diesem Experiment bauen wir einen Pingponger, der lernt, immer ins Ziel zu treffen. Wir nutzen die lineare Regression, um die benötigte Motorleistung basierend auf der Entfernung zum Ziel vorherzusagen.",

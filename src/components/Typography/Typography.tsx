@@ -1,4 +1,8 @@
+import React from "react";
+import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
+import remarkGfm from "remark-gfm";
+import InTextLink from "../Links/InTextLink";
 
 // Define media queries for responsiveness
 const breakpoints = {
@@ -57,7 +61,7 @@ const H3 = styled.h3`
   }
 `;
 
-const Text = styled.p<{ $bold?: boolean }>`
+const Paragraph = styled.p<{ $bold?: boolean }>`
   font-family: var(--main-font);
   font-size: 18px; /* Slightly increased from 16px */
   font-weight: ${({ $bold }) => (!!$bold ? 700 : 300)};
@@ -73,6 +77,34 @@ const Text = styled.p<{ $bold?: boolean }>`
     font-size: 14px; /* Increased from 12px */
   }
 `;
+
+const customMarkdownComponents = {
+  a: ({ node, ...props }: any) => (
+    <InTextLink to={props.href}>{props.children}</InTextLink>
+  ),
+};
+
+const Text = ({
+  $bold,
+  children,
+  $markdown,
+}: {
+  $bold?: boolean;
+  children: string | React.ReactNode;
+  $markdown?: boolean;
+}) =>
+  !!$markdown ? (
+    <Paragraph $bold={$bold}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={customMarkdownComponents}
+      >
+        {children as string}
+      </ReactMarkdown>
+    </Paragraph>
+  ) : (
+    <Paragraph $bold={$bold}>{children}</Paragraph>
+  );
 
 // Export the typography components
 const Typography = { H1, H2, H3, Text };

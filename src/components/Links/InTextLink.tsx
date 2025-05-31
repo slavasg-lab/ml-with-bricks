@@ -9,7 +9,7 @@ interface Props {
 
 const InTextLink = ({ to, children, icon }: Props) => {
   return (
-    <Wrapper href={to} target="_blank">
+    <Wrapper href={to} target="_blank" rel="noopener noreferrer">
       {!!icon && icon}
       {children}
     </Wrapper>

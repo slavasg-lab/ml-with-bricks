@@ -26,14 +26,14 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^15.4.1",
     "react-latex-next": "^3.0.0",
+    "react-markdown": "^8.0.6",
     "react-router-dom": "^7.5.3",
     "react-spinners": "^0.15.0",
     "react-toastify": "^11.0.3",
+    "remark-gfm": "^4.0.1",
     "styled-components": "^6.1.17"
   },
   "devDependencies": {
-    "@dynamic-labs/ethereum": "*",
-    "@dynamic-labs/sdk-react-core": "*",
     "@types/cytoscape-avsdf": "^1.0.3",
     "@types/dom-serial": "^1.0.6",
     "@types/ms": "^2.1.0",
@@ -52,6 +52,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-node-polyfills": "^0.23.0"
   }
 }

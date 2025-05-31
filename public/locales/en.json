@@ -169,7 +169,20 @@
     "smallMotorSpeed": "Speed of the small motor"
   },
   "Imprint": {
-    "title": "Imprint"
+    "title": "Imprint",
+    "contact": {
+      "heading": "Contact",
+      "email":"**E-Mail**: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)",
+      "phone": "**Phone number**: +49 174 781 7599"
+    },
+    "euDisputeResolution": {
+      "heading": "EU Dispute Resolution",
+      "paragraph1": "The European Commission provides a [platform for online dispute resolution (OS)](https://ec.europa.eu/consumers/odr/). You can find our email address in the imprint above."
+    },
+    "consumerDisputeResolution": {
+      "heading": "Consumer Dispute Resolution/Universal Conciliation Board",
+      "paragraph1": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer conciliation board."
+    }
   },
   "PrivacyPolicy": {
       "title": "Privacy Policy",
@@ -193,7 +206,7 @@
       "section2": {
         "title": "2. Hosting",
         "paragraph1": "We host our website's content with **GitHub, Inc.**, located at 88 Colin P. Kelly Jr. Street, San Francisco, California, 94107.",
-        "paragraph2": "When you use our website, **GitHub Inc.** collects certain information. [According to GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), your **IP address is logged and stored for security purposes.** This is a standard practice for most hosting services.",
+        "paragraph2": "When you use our website, **GitHub Inc.** collects certain information. [According to GitHub](https://docs.github.com/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), your **IP address is logged and stored for security purposes.** This is a standard practice for most hosting services.",
         "paragraph3": "For more detailed information regarding GitHub's data collection practices, please refer to [GitHub's Privacy Policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).",
         "paragraph4": "GitHub's collection of this data falls within the scope of providing their hosting service, which is considered a legitimate interest of the hosting provider (Art. 6 para. 1 lit. f GDPR).",
         "dataTransfer": {

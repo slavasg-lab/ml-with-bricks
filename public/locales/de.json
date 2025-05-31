@@ -168,7 +168,20 @@
     "smallMotorSpeed": "Geschwindigkeit des kleinen Motors"
   },
   "Imprint": {
-    "title": "Impressum"
+    "title": "Impressum",
+    "contact": {
+      "heading": "Kontakt",
+      "email": "**E-Mail**: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)",
+      "phone": "**Telefonnummer**: +49 174 781 7599"
+    },
+    "euDisputeResolution": {
+      "heading": "EU-Streitschlichtung",
+      "paragraph1": "Die Europäische Kommission stellt eine [Plattform zur Online-Streitbeilegung (OS)](https://ec.europa.eu/consumers/odr/) bereit. Unsere E-Mail-Adresse finden Sie oben im Impressum."
+    },
+    "consumerDisputeResolution": {
+      "heading": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+      "paragraph1": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    }
   },
   "PrivacyPolicy": {
     "title": "Datenschutzerklärung",
@@ -192,7 +205,7 @@
     "section2": {
       "title": "2. Hosting",
       "paragraph1": "Wir hosten die Inhalte unserer Website bei **GitHub, Inc.**, 88 Colin P. Kelly Jr. Street, San Francisco, California, 94107.",
-      "paragraph2": "Wenn Sie unsere Website nutzen, erhebt **GitHub Inc.** bestimmte Informationen. [Laut GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) wird Ihre **IP-Adresse zu Sicherheitszwecken protokolliert und gespeichert.** Dies ist eine Standardpraxis für die meisten Hosting-Dienste.",
+      "paragraph2": "Wenn Sie unsere Website nutzen, erhebt **GitHub Inc.** bestimmte Informationen. [Laut GitHub](https://docs.github.com/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) wird Ihre **IP-Adresse zu Sicherheitszwecken protokolliert und gespeichert.** Dies ist eine Standardpraxis für die meisten Hosting-Dienste.",
       "paragraph3": "Für detailliertere Informationen zu den Datenerfassungspraktiken von GitHub verweisen wir auf die [Datenschutzerklärung von GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).",
       "paragraph4": "Die Erfassung dieser Daten durch GitHub fällt in den Bereich der Bereitstellung ihres Hosting-Dienstes, was als berechtigtes Interesse des Hosting-Providers (Art. 6 Abs. 1 lit. f DSGVO) gilt.",
       "dataTransfer": {

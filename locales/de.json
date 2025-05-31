@@ -12,7 +12,7 @@
   },
   "Experiments": {
     "title": "Experimente",
-    "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die du mit einem LEGO Spike Prime durchführen kannst.",
+    "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die du mit einem LEGO® Spike Prime durchführen kannst.",
     "Cards": {
       "fruit-predictor": {
         "title": "Obstvorhersager",
@@ -314,7 +314,7 @@
     "developersText": {
       "part1": "Du kannst dir den Quellcode dieser Seite in diesem ",
       "github": "GitHub-Repository",
-      "part2": " ansehen. Wenn du ein Entwickler bist und auch in der Lage sein möchtest, den LEGO Hub über Bluetooth Low Energy mit einer Website zu verbinden, haben wir ein ",
+      "part2": " ansehen. Wenn du ein Entwickler bist und auch in der Lage sein möchtest, den LEGO® Hub über Bluetooth Low Energy mit einer Website zu verbinden, haben wir ein ",
       "boilerplate": "Boilerplate",
       "part3": " für dich erstellt!"
     },
@@ -388,5 +388,6 @@
     "bluetoothAnswer": "Leider ist Bluetooth immer noch eine experimentelle API, die nicht in allen Browsern verfügbar ist. Unserer Erfahrung nach wird diese API in Chromium-basierten Browsern und Microsoft Edge unterstützt.",
     "chromiumQuestion": "Ich habe einen Chromium-basierten Browser oder Microsoft Edge, aber es funktioniert immer noch nicht.",
     "chromiumAnswer": "Besonders wenn Sie ein Linux-Benutzer sind, kann dies der Fall sein. Um dies zu beheben, stellen Sie zunächst sicher, dass Bluetooth auf Ihrem Gerät aktiviert ist. Wenn Sie einen Chromium-basierten Browser verwenden, versuchen Sie, die folgenden Adressen in die Adressleiste Ihres Browsers einzugeben und die aufgeführten Flags zu aktivieren: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\" und \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
-  }
+  },
+  "legoDisclaimer": "LEGO ist eine Marke der LEGO Gruppe, die diese Webseite weder sponsert, autorisiert noch unterstützt."
 }

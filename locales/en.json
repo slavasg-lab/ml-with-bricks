@@ -306,7 +306,7 @@
     "developersText": {
       "part1": "You can check out the source code of this page in this ",
       "github": "GitHub Repository",
-      "part2": ". If you are a developer who wants to also be able to connect the LEGO Hub to a website using Bluetooth Low Energy, we created a ",
+      "part2": ". If you are a developer who wants to also be able to connect the LEGO® Hub to a website using Bluetooth Low Energy, we created a ",
       "boilerplate": "boilerplate",
       "part3": " for you!"
     },
@@ -327,7 +327,7 @@
     "presentationsEnglish": "English",
     "presentationsGerman": "German",
     "coursePlaylistTitle": "YouTube video player",
-    "video": "Watch on YouTube"
+    "watch": "Watch on YouTube"
   },
   "PitcherInstructions": {
     "title": "Pitcher Experiment Instructions",
@@ -381,5 +381,6 @@
     "bluetoothAnswer": "Unfortunately, Bluetooth is still an experimental API that is not available in all browsers. In our experience, this API is supported in chromium-based browsers and Microsoft Edge.",
     "chromiumQuestion": "I have a chromium-based browser or Microsoft Edge, but it still doesn't work.",
     "chromiumAnswer": "Especially if you are a Linux user, this may be the case. To fix it, first make sure your device has Bluetooth turned on. If you use a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\", and \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
-  }
+  },
+  "legoDisclaimer": "LEGO is a trademark of the LEGO Group, which does not sponsor, authorize or endorse this web site."
 }

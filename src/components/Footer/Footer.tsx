@@ -23,7 +23,8 @@ const Footer = () => {
       <Container>
         <Row>
           <Typography.Text>
-            © 2025 Viacheslav Sydora. All rights reserved.
+            © 2025 Viacheslav Sydora, Guner Dilsad Er, Michael Muehlebach. All
+            rights reserved.
           </Typography.Text>
           <NavBox>
             {navigation.map((el) => (
@@ -36,6 +37,9 @@ const Footer = () => {
             ))}
           </NavBox>
         </Row>
+        <p style={{ opacity: 0.5, textAlign: "center" }}>
+          {t("legoDisclaimer")}
+        </p>
       </Container>
     </Wrapper>
   );
@@ -83,7 +87,9 @@ const Row = styled.nav`
     flex-direction: column-reverse;
   }
 
-  
+  & > p {
+    text-align: center;
+  }
 `;
 
 const NavBox = styled.ul`
@@ -98,7 +104,7 @@ const NavBox = styled.ul`
     justify-content: center;
     align-items: center;
 
-    & > li  {
+    & > li {
       text-align: center;
     }
   }

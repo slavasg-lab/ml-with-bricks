@@ -71,7 +71,7 @@ export class LegoBleConnector extends EventEmitter {
    */
   async connect(): Promise<void> {
     try {
-      console.log("Scanning for LEGO hubs...");
+      console.log("Scanning for LEGO® hubs...");
 
       // Request device with specific service UUID
       this.device = await navigator.bluetooth.requestDevice({

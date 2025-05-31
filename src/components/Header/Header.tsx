@@ -14,7 +14,7 @@ const Header = () => {
             <LogoBox>
               <img
                 src="brain.svg"
-                alt="Machine Learning with LEGO Logotype"
+                alt="Machine Learning with LEGO® Bricks Logotype"
                 className="logo_image"
                 // position="relative"
                 width={55}

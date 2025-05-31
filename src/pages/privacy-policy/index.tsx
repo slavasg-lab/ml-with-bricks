@@ -268,6 +268,6 @@ export default PrivacyPolicyPage;
 const ResponsiblePartyBlock = styled.div`
   & > p {
     line-height: 1;
-    margin: 0;
+    /* margin: 0; */
   }
 `;

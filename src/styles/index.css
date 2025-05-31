@@ -31,7 +31,6 @@ body {
   font-family: var(--main-font);
   font-size: 18px; /* Slightly increased from 16px */
   font-weight: 300;
-  line-height: 1.6;
   word-wrap: break-word;
 
   @media (max-width: 768px) {
@@ -52,6 +51,7 @@ ul {
   list-style-position: inside;
   padding-left: 0;
   margin: 10px 0;
+  line-height: 1.6;
 }
 
 a {

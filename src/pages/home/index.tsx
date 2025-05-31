@@ -67,7 +67,7 @@ const HomePage = () => {
       <Typography.H3>{t("Home.troubleshooting")} 🚧</Typography.H3>
       <Typography.Text>
         {t("Home.troubleshootingText.part1")}
-        <InTextLink to="/#/troubleshooting">
+        <InTextLink to="/ml-with-bricks/#/troubleshooting">
           {t("Home.troubleshootingText.link")}
         </InTextLink>{" "}
         {t("Home.troubleshootingText.part2")}

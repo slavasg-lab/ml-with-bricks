@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import Typography from "../../components/Typography/Typography";
-import InTextLink from "../../components/Links/InTextLink";
 import ExperimentCard from "../../components/Cards/ExperimentCard";
 import { styled } from "styled-components";
 import PlaylistLink from "../../components/PlaylistLink/PlaylistLink";
@@ -12,69 +11,36 @@ const HomePage = () => {
   return (
     <Wrapper>
       <Typography.H1>{t("Home.title")}</Typography.H1>
-      <Typography.Text>
-        {t("Home.text.part1")}
-        <InTextLink to="https://www.lego.com/en-lu/product/lego-education-spike-prime-set-45678">
-          {t("Home.text.lego")}
-        </InTextLink>
-        {t("Home.text.part2")}
-      </Typography.Text>
-      <Typography.H3>{t("Experiments.title")} 🧪</Typography.H3>
+      <Typography.Text $markdown>{t("Home.paragraph1")}</Typography.Text>
+      <Typography.Text $markdown>{t("Home.paragraph2")}</Typography.Text>
+
+      <Typography.H3>{t("Home.experiments.heading")} 🧪</Typography.H3>
+      <Typography.Text $markdown>{t("Home.experiments.paragraph")}</Typography.Text>
       <CardGrid>
         {experiments.map((el) => (
           <ExperimentCard key={el} expId={el} />
         ))}
       </CardGrid>
-      <Typography.H3>{t("Home.courseRecordingTitle")} 📹</Typography.H3>
-      <Typography.Text>{t("Home.courseRecordingText")}</Typography.Text>
-      {/* <div style={{ flex: 1, borderRadius: 10, overflow: "hidden", margin: 0, aspectRatio: "16/9" }}>
-        <iframe
-          style={{ borderWidth: 0, aspectRatio: "16/9" }}
-          width="100%"
-          height="100%"
-          src="https://www.youtube-nocookie.com/embed/videoseries?si=o9tvPwSMyEbBw9rm&list=PLaA3pdUzmaV-oJ0QABOJssZ5MxFRIY_hu"
-          title={t("Home.coursePlaylistTitle")}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div> */}
+      <Typography.H3>{t("Home.courseRecording.heading")} 📹</Typography.H3>
+      <Typography.Text $markdown>
+        {t("Home.courseRecording.paragraph")}
+      </Typography.Text>
+
       <PlaylistLink />
-      <Typography.H3>{t("Home.materialsTitle")} 📖</Typography.H3>
-      <Typography.Text>
-        {t("Home.materialsText.part1")}
-        <InTextLink to={`./materials/de/presentation.pdf`}>
-          {t("Home.presentationsGerman")}
-        </InTextLink>
-        {t("Home.materialsText.part2")}
-        <InTextLink to={`./materials/en/presentation.pdf`}>
-          {t("Home.presentationsEnglish")}
-        </InTextLink>
-        .
+
+      <Typography.H3>{t("Home.courseMaterials.heading")} 📖</Typography.H3>
+      <Typography.Text $markdown>
+        {t("Home.courseMaterials.paragraph")}
       </Typography.Text>
-      <Typography.H3>{t("Home.developers")} ⌨️</Typography.H3>
-      <Typography.Text>
-        {t("Home.developersText.part1")}
-        <InTextLink to="https://github.com/slavasg-lab/ml-with-bricks">
-          {t("Home.developersText.github")}
-        </InTextLink>
-        {t("Home.developersText.part2")}
-        <InTextLink to="https://github.com/slavasg-lab/ml-with-bricks">
-          {t("Home.developersText.boilerplate")}
-        </InTextLink>{" "}
-        {t("Home.developersText.part3")}
+
+      <Typography.H3>{t("Home.developers.heading")} ⌨️</Typography.H3>
+      <Typography.Text $markdown>
+        {t("Home.developers.paragraph")}
       </Typography.Text>
-      <Typography.H3>{t("Home.troubleshooting")} 🚧</Typography.H3>
-      <Typography.Text>
-        {t("Home.troubleshootingText.part1")}
-        <InTextLink to="/ml-with-bricks/#/troubleshooting">
-          {t("Home.troubleshootingText.link")}
-        </InTextLink>{" "}
-        {t("Home.troubleshootingText.part2")}
-        <InTextLink to="mailto:viacheslav.sydora@gmail.com">
-          viacheslav.sydora@gmail.com
-        </InTextLink>
-        .
+
+      <Typography.H3>{t("Home.troubleshooting.heading")} 🚧</Typography.H3>
+      <Typography.Text $markdown>
+        {t("Home.troubleshooting.paragraph")}
       </Typography.Text>
     </Wrapper>
   );

@@ -25,7 +25,7 @@ const Wrapper = styled.a`
     position: absolute;
     left: 0;
     display: block;
-    bottom: 0;
+    bottom: 2px;
     width: 100%;
     border-bottom: 2px dotted currentColor;
   }

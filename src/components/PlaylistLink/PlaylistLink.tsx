@@ -16,7 +16,7 @@ const PlaylistLink = () => {
       <Vignette>
         <Row>
           <PlayIcon />
-          <Typography.Text>{t("Home.watch")}</Typography.Text>
+          <Typography.Text>{t("Home.courseRecording.watch")}</Typography.Text>
         </Row>
       </Vignette>
     </Wrapper>

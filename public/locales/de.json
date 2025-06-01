@@ -304,38 +304,42 @@
     "CoursePlaylistTitle": "YouTube-Videoplayer"
   },
   "Home": {
-    "title": "Willkommen!",
+    "title": "Hands-on Machine Learning mit LEGO® SPIKE",
+    "paragraph1": "Diese interaktive Webseite ermöglicht ein spielerisches Erlernen der Grundlagen des maschinellen Lernens mit dem [LEGO® Education SPIKE™ Prime Set](https://www.lego.com/product/lego-education-spike-prime-set-45678). Diese Webseite enthält drei Experimente, die grundlegende Algorithmen wie k-Nearest Neighbors, lineare Regression und Q-Learning interaktiv und anschaulich erklären. Alles, was Du brauchst, ist ein Gerät mit einem Browser, der Bluetooth-Verbindungen unterstützt. Die Kursmaterialien (pdf-Folien) und dazugehörige Video-Aufnahmen sind unten beigefügt.",
+    "paragraph2": "Dieser Kurs wurde durch [Viacheslav Sydora](https://www.linkedin.com/in/viacheslav-sydora/), [Guner Dilsad Er](https://www.linkedin.com/in/guner-dilsad-er/) and [Michael Muehlebach](https://sites.google.com/view/mmuehlebach/) ([Max-Planck-Institut für Intelligente Systeme](https://is.mpg.de/)) in Kollaboration mit dem [KI-Makerspace](https://ki-maker.space/) entwickelt. Der Kurs ist für junge Erwachsene im Alter von 13-17 Jahren ausgelegt.",
+    "experiments": {
+      "heading": "Experimente",
+      "paragraph": "Die Experimente lehren überwachtes Lernen (Klassifizierung und Regression) sowie Reinforcement Learning auf intuitive und verständliche Weise."
+    },
+    "troubleshooting": {
+      "heading": "Fehlerbehebung",
+      "paragraph": "Bei technischen Problemen verweisen wir auf die [Seite zur Fehlerbehebung](/ml-with-bricks/#/troubleshooting) oder ermutigen Kontaktaufnahme per E-Mail: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)."
+    },
+    "courseRecording": {
+      "heading": "Kursaufzeichnung",
+      "paragraph": "Die Anleitungen sind auf den dazugehörigen Experiment-Seiten beigefügt. Wir stellen den gesamten Kurs auf YouTube zur Verfügung:",
+      "watch": "Auf YouTube ansehen"
+    },
+    "courseMaterials": {
+      "heading": "Kursmaterialien",
+      "paragraph": "Wir ermutigen Lehrende, unsere Kursmaterialien und unser Web-Interface zu benutzen. Kursmaterialien stehen in [deutscher](/materials/de/presentation.pdf) und [englischer](/materials/en/presentation.pdf) Sprache zur Verfügung."
+    },
+    "developers": {
+      "heading": "Für Entwickler",
+      "paragraph": "Der Quellcode dieser Seite ist in dem folgenden [GitHub-Repository](https://github.com/slavasg-lab/ml-with-bricks) veröffentlicht. Wenn Du ein Entwickler bist, der den LEGO® Hub über Bluetooth Low Energy (BLE) mit einer Webseite verbinden möchte, haben wir ein [Boilerplate](https://github.com/slavasg-lab/ml-with-bricks) für Dich erstellt!"
+    },
     "text": {
       "part1": "Diese Website ist eine interaktive Webplattform zum spielerischen Erlernen der Grundlagen des maschinellen Lernens mit ",
       "lego": "LEGO® Education SPIKE™ Prime Set",
       "part2": ". Hier findest du verschiedene Experimente, die dir helfen, grundlegende Algorithmen wie K-Nearest Neighbors, Lineare Regression und Reinforcement Learning zu erlernen. Alles, was du brauchst, ist ein Gerät mit einem Browser, der Bluetooth-Verbindungen unterstützt."
     },
-    "developers": "Für Entwickler",
     "developersText": {
       "part1": "Du kannst dir den Quellcode dieser Seite in diesem ",
       "github": "GitHub-Repository",
       "part2": " ansehen. Wenn du ein Entwickler bist und auch in der Lage sein möchtest, den LEGO® Hub über Bluetooth Low Energy mit einer Website zu verbinden, haben wir ein ",
       "boilerplate": "Boilerplate",
       "part3": " für dich erstellt!"
-    },
-    "troubleshooting": "Fehlerbehebung",
-    "troubleshootingText": {
-      "part1": "Wenn du auf technische Probleme stößt, schau auf unserer ",
-      "link": "Seite zur Fehlerbehebung",
-      "part2": " nach oder kontaktiere uns unter dieser E-Mail-Adresse: "
-    },
-    "materialsTitle": "Kursmaterialien",
-    "materialsText": {
-      "part1": "Wir ermutigen auch Leute, die diesen Kurs live mit Hilfe unserer Plattform an Kinder weitergeben möchten. Dafür können Sie unsere Präsentationen in ",
-      "part2": " und "
-    },
-    "courseRecordingTitle": "Kursaufzeichnung",
-    "courseRecordingText": "Du kannst es entweder selbst ausprobieren, indem du den Anweisungen auf den Experimentseiten folgst, oder dir die vorab aufgezeichnete YouTube-Version des Kurses ansehen:",
-    "presentations": "Präsentationen",
-    "presentationsEnglish": "Englische",
-    "presentationsGerman": "Deutsche",
-    "coursePlaylistTitle": "YouTube-Videoplayer",
-    "watch": "Auf YouTube ansehen"
+    }
   },
   "PitcherInstructions": {
     "intro": "In diesem Experiment bauen wir einen Pingponger, der lernt, immer ins Ziel zu treffen. Wir nutzen die lineare Regression, um die benötigte Motorleistung basierend auf der Entfernung zum Ziel vorherzusagen.",

@@ -9,71 +9,55 @@ const PitcherInstructions = () => {
 
   return (
     <Wrapper>
-      <Typography.Text>{t("PitcherInstructions.intro")}</Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.followVideo")}
-        <InTextLink to={"https://youtu.be/P_t-HRxQ80s"}>
-          {t("video")}
-        </InTextLink>
-        {t("PitcherInstructions.followVideoPart2")}
+      <Typography.Text>{t("PitcherInstructions.paragraph1")}</Typography.Text>
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.paragraph2")}
       </Typography.Text>
+
       <Typography.Text $bold>
-        {t("PitcherInstructions.assemblyTitle")}
+        {t("PitcherInstructions.step1.heading")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.assemblyText1Part1")}
-        <InTextLink
-          to={`/ml-with-bricks/materials/${i18next.language}/assembly/pitcher.pdf`}
-        >
-          {t("these instructions")}
-        </InTextLink>
-        {t("PitcherInstructions.assemblyText1Part2")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step1.paragraph1")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.assemblyText2Part1")}
-        <InTextLink
-          to={`/ml-with-bricks/materials/${i18next.language}/connection.pdf`}
-        >
-          {t("pdf")}
-        </InTextLink>
-        {t("PitcherInstructions.assemblyText2Part2")}
-        <InTextLink to={"https://youtu.be/ZsviP40PnuA"}>
-          {t("video")}
-        </InTextLink>
-        {t("PitcherInstructions.assemblyText2Part3")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step1.paragraph2")}
       </Typography.Text>
+
       <Typography.Text $bold>
-        {t("PitcherInstructions.dataCollectionTitle")}
+        {t("PitcherInstructions.step2.heading")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.dataCollectionText")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step2.paragraph1")}
       </Typography.Text>
+
       <Typography.Text $bold>
-        {t("PitcherInstructions.predictionTitle")}
+        {t("PitcherInstructions.step3.heading")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText1")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step3.paragraph1")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText2")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step3.paragraph2")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText3")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step3.paragraph3")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText4")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step3.paragraph4")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText5")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step3.paragraph5")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.predictionText6")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step3.paragraph6")}
       </Typography.Text>
+
       <Typography.Text $bold>
-        {t("PitcherInstructions.thingsToTryTitle")}
+        {t("PitcherInstructions.step4.heading")}
       </Typography.Text>
-      <Typography.Text>
-        {t("PitcherInstructions.thingsToTryText")}
+      <Typography.Text $markdown>
+        {t("PitcherInstructions.step4.paragraph1")}
       </Typography.Text>
     </Wrapper>
   );

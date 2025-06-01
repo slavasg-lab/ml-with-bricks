@@ -324,27 +324,31 @@
     }
   },
   "PitcherInstructions": {
-    "title": "Pitcher Experiment Instructions",
-    "intro": "In this experiment, you'll build a robot 'Pitcher' that learns to always hit a target. We'll use the power of linear regression to predict the motor power needed based on the distance to the target.",
-    "followVideo": "You can follow our experiment ",
-    "followVideoPart2": " and build your Pitcher step by step with us, or do it yourself using the instructions below.",
-    "assemblyTitle": "1. Assembly",
-    "assemblyText1Part1": "First, assemble the Pitcher robot using ",
-    "assemblyText1Part2": ". Ensure the motor and any distance sensor are connected to the correct corresponding ports on the hub.",
-    "assemblyText2Part1": "Then, connect your hub to the web platform using either the ",
-    "assemblyText2Part2": " or ",
-    "assemblyText2Part3": " instructions.",
-    "dataCollectionTitle": "2. Data Collection",
-    "dataCollectionText": "After connecting the hub and starting the code, it's time to collect data. Place the pitcher at a consistent launching position. Place a ball in the holder; ensure the serving arm is always at the 12 o'clock position, as this ensures consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect an ultrasonic signal and measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance while holding the cardboard. The measured distance and the motor power used will be recorded in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch.",
-    "predictionTitle": "3. Prediction",
-    "predictionText1": "If you observe the data points you've collected, you'll notice they roughly form a straight line. This suggests a linear relationship between the motor speed and the distance the ball travels. To predict the necessary motor speed to hit a target at a specific distance, the pitcher will use a machine learning technique called linear regression.",
-    "predictionText2": "Linear regression is a method that finds the line that best represents the relationship between two variables – in our case, the distance to where the ball lands and the motor speed used to launch it.",
-    "predictionText3": "To understand how well a line fits the data, we use a term called 'loss'. The loss represents the error between the line and the actual data points. For example, a simple way to calculate loss is to sum up the vertical distances between the regression line and each individual data point. A smaller loss value indicates a better-fitting line.",
-    "predictionText4": "To find the best-fitting line, we need to minimize this loss. We can do this by adjusting the line's position, which is controlled by its intercept (where the line crosses the Y-axis) and its slope (the line's steepness).",
-    "predictionText5": "You can experiment with this yourself by switching the model mode to 'Prediction'. In this mode, you can manually adjust the slope and intercept parameters to try and minimize the loss visually on the graph. To see the parameters that the algorithm calculates as the best fit for your data, click the 'Calculate best parameters' button.",
-    "predictionText6": "To try and hit a target, while in 'Prediction' mode, place some kind of target in front of the pitcher. Measure the distance to the target by holding a piece of cardboard at the target's location and clicking the 'Measure distance' button. Then, remove the cardboard, place the ball into the claw, and click the 'Launch ball' button. The robot will use the learned linear regression model to predict the motor speed needed to reach that distance.",
-    "thingsToTryTitle": "4. Things to Try",
-    "thingsToTryText": "Experiment with different distances and observe how the predicted motor power changes. Try adding more data points to see how it affects the accuracy of the linear regression line. You can also explore the 'Calculate Best Parameters' function to see the slope and intercept of the learned linear relationship."
+    "paragraph1": "In this experiment, you will build a robot 'Pitcher' that learns to always hit a target. We will use linear regression to learn the motor power needed to successfully hit the target.",
+    "paragraph2": "You can follow our experiment [video](https://youtu.be/P_t-HRxQ80s) and build Pitcher step by step with us, or do it yourself using the instructions below.",
+    
+    "step1": {
+      "heading": "1. Assembly",
+      "paragraph1": "First, assemble the Pitcher robot using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/pitcher.pdf). Ensure the motors and the distance sensor are connected to the correct ports on the hub.",
+      "paragraph2": "$t(FruitPredictorInstructions.step1.paragraph2)"
+    },
+    "step2": {
+      "heading": "2. Data Collection",
+      "paragraph1": "After connecting the hub and starting the code, it is time to collect data. Place the Pitcher at a fixed launching position. Place a ball in the holder and ensure that the serving arm is always at the 12 o'clock position, as this enables consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect an ultrasonic signal and measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance while holding the cardboard. The measured distance and the motor power used will be displayed in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch."
+    },
+    "step3": {
+      "heading": "3. Prediction",
+      "paragraph1": "Notice that the observed data points roughly form a straight line. This suggests a linear relationship between motor speed and distance travelled by the ball. For predicting the required motor speed to hit a target at a specific distance, the pitcher will use a machine learning technique called linear regression.",
+      "paragraph2": "Linear regression is a method that finds the straight line that best represents the relationship between two variables \u2013 in our case, the distance to where the ball lands and the motor speed used to launch it.",
+      "paragraph3": "To understand how well a line fits the data, we use a term called 'loss'. The loss represents the error between the line and the actual data points. For example, a simple way to calculate loss is to sum up the vertical distances between the regression line and each individual data point. A smaller loss value indicates a better-fitting line.",
+      "paragraph4": "To find the best-fitting line, we need to minimize this loss. We can do this by adjusting the line's position, which is controlled by its intercept (where the line crosses the Y-axis) and its slope (the line's steepness).",
+      "paragraph5": "You can experiment with this yourself by switching the model mode to 'Prediction'. In this mode, you can manually adjust the slope and intercept parameters to try and minimize the loss visually on the graph. To see the parameters that the algorithm calculates as the best fit for your data, click the 'Calculate best parameters' button.",
+      "paragraph6": "For hitting a target, switch to 'Prediction' mode, and place the target at a resonable distance in front of the pitcher. Measure the distance to the target by holding a piece of cardboard at the target's location and clicking the 'Measure distance' button. Then, remove the cardboard, place the ball into the claw, and click the 'Launch ball' button. The robot will use the learned linear regression model to predict the motor speed needed to reach that distance."
+    },
+    "step4": {
+      "heading": "4. Things to Try",
+      "paragraph1": "Experiment with different distances and observe how the predicted motor power changes. Try adding more data points to see how it affects the accuracy of the linear regression line. You can also explore the 'Calculate Best Parameters' function to see the slope and intercept of the learned linear relationship."
+    }
   },
   "CrawlerInstructions": {
     "title": "Crawler & Reinforcement Learning",

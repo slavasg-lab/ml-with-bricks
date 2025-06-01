@@ -314,7 +314,7 @@
     },
     "developers": {
       "heading": "For Developers",
-      "paragraph": "The source code of this webpage is published in the following [GitHub Repository](https://github.com/slavasg-lab/ml-with-bricks). If you are a developer who seeks to connect the LEGO® Hub to a website using Bluetooth Low Energy (BLE), we created a [boilerplate](https://github.com/slavasg-lab/ml-with-bricks) for you!"
+      "paragraph": "The source code of this webpage is published in the following [GitHub Repository](https://github.com/slavasg-lab/ml-with-bricks). If you are a developer who seeks to connect the LEGO® Hub to a website using Bluetooth Low Energy (BLE), we created a [boilerplate](https://github.com/slavasg-lab/lego-spikeprime-ble-boilerplate) for you!"
     }
   },
   "PitcherInstructions": {

@@ -90,7 +90,7 @@ const BLEProvider = ({ children }: PropsWithChildren) => {
     try {
       await connectorRef.current.connect();
     } catch (err) {
-      ("closed");
+      setConnectionStatus("closed");
     }
   };
 

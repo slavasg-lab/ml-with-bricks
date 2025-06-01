@@ -353,7 +353,8 @@ export class LegoBleConnector extends EventEmitter {
    */
   async sendMessage(message: BaseMessage): Promise<void> {
     if (!this.rxCharacteristic) {
-      throw new Error("Not connected to hub");
+      console.log("Message not sent. Not connected to a hub.");
+      return;
     }
 
     // console.log(`Sending: ${message}`);

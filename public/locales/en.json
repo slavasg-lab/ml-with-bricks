@@ -129,7 +129,7 @@
     "stopCode": "Stop program",
     "reboot": "Reboot hub",
     "troubleshootingText": {
-      "part1": "It seems that your browser doesn't support bluetooth connection. Please refer to our ",
+      "part1": "It seems that your browser does not support bluetooth connection. Please refer to our ",
       "link": "troubleshooting page"
     }
   },
@@ -137,24 +137,26 @@
   "pdf": "PDF",
   "these instructions": "these instructions",
   "FruitPredictorInstructions": {
-    "title": "Fruit Predictor Instructions",
-    "intro": "On this page, you'll learn how to build a simple classification device that can distinguish between apples and bananas. It uses color and length as features, processed by the K-Nearest Neighbor algorithm to make a prediction.",
-    "followVideo": "You can follow our experiment ",
-    "followVideoPart2": " and do it step by step with us, or do it yourself using the instructions below.",
-    "assemblyTitle": "1. Assembly",
-    "assemblyText1Part1": "First, assemble the device using ",
-    "assemblyText1Part2": ". Ensure all sensors are connected to the correct corresponding ports on the hub.",
-    "assemblyText2Part1": "Then, connect your hub either using the ",
-    "assemblyText2Part2": " or ",
-    "assemblyText2Part3": " instructions.",
-    "dataCollectionTitle": "2. Data Collection",
-    "dataCollectionText": "After connecting the hub to the web platform, start the code and wait for the code start confirmation to pop up. Gather at least 4 apples and 4 bananas. Take 3 of each and collect their data. For each fruit, bring it to the color sensor and click the right button on the hub to record its color. Then, place the same fruit into the robot's claw, close it, and remove the fruit. After removing, click the left button on the hub to measure its length. You'll see data points appear on the diagram, with fruit length on the Y-axis and a color spectrum (from red to yellow) on the X-axis.",
-    "predictionTitle": "3. Prediction",
-    "predictionText1": "Switch the model mode to 'Prediction'. New fruits are classified using the K-Nearest Neighbors algorithm. The algorithm calculates the distances to all existing data points. Then, it selects the 'K' (default is 3) nearest neighbors and performs a vote. If the majority of these neighbors are apples, the new fruit is predicted as an apple, and vice versa for bananas.",
-    "predictionText2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process.",
-    "thingsToTryTitle": "4. Things to Try",
-    "thingsToTryText": "Try turning the 'decision border' visualization on. This will show areas where a new fruit is predicted as either an apple (in one color) or a banana (in another color) based on its features. Experiment with increasing the number of neighbors ('K') participating in the vote and observe how the decision boundary changes."
- 
+    "paragraph1": "You will learn how to build a simple classification device that can distinguish between apples and bananas. It uses color and length as features, processed by the K-nearest neighbor algorithm to distinguish between the two types of fruits.",
+    "paragraph2": "You can follow our experiment [video](https://youtu.be/G8OpubRhUhU) and build the device step by step with us, or do it yourself using the instructions below.",
+    "step1": {
+      "heading": "1. Assembly",
+      "paragraph1": "First, assemble the device using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/fruit-predictor.pdf). Ensure all sensors are connected to the correct corresponding ports on the hub.",
+      "paragraph2": "Then, connect your hub either using the [PDF](/ml-with-bricks/materials/$t(localeCode)/connection.pdf) or [video](https://youtu.be/ZsviP40PnuA) instructions."
+    },
+    "step2": {
+      "heading": "2. Data Collection",
+      "paragraph1": "After connecting the hub to the web platform, start the code and wait for the code start confirmation to pop up. Gather at least four apples and four bananas. Take three of each and collect their color and length data. For each fruit, bring it to the color sensor and click the right button on the hub to record its color. Then, place the same fruit into the robot's claw, close it, and remove the fruit. After removing, click the left button on the hub to measure its length. You will see data points appearing in the diagram, with fruit length on the Y-axis and a color spectrum (from red to yellow) on the X-axis."
+    },
+    "step3": {
+      "heading": "3. Prediction",
+      "paragraph1": "Switch the model mode to 'Prediction'. New fruits are classified using the K-nearest neighbors algorithm. The algorithm calculates the distances to all existing data points. Then, it selects the 'K' (default is three) nearest neighbors and performs a vote. If the majority of these neighbors are apples, the new fruit is predicted as an apple, and vice versa for bananas.",
+      "paragraph2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process."
+    },
+    "step4": {
+      "heading": "4. Things to Try",
+      "paragraph1": "Try turning the 'decision border' visualization on. This will show areas where a new fruit is predicted as either an apple (in one color) or a banana (in another color) based on its features. Experiment with increasing the number of neighbors ('K') participating in the vote and observe how the decision boundary changes."
+    }
    },
   "Settings": {
     "title": "Settings",
@@ -369,13 +371,14 @@
   "Troubleshooting": {
     "title": "Troubleshooting",
     "intro": "On this page you can find tips on how to fix some problems on the website related to interaction with hub.",
-    "bluetoothQuestion": "It says my browser doesn't support Bluetooth. Why?",
+    "bluetoothQuestion": "It says my browser does not support Bluetooth. Why?",
     "bluetoothAnswer": "Unfortunately, Bluetooth is still an experimental API that is not available in all browsers. In our experience, this API is supported in chromium-based browsers and Microsoft Edge.",
-    "chromiumQuestion": "I have a chromium-based browser or Microsoft Edge, but it still doesn't work.",
+    "chromiumQuestion": "I have a chromium-based browser or Microsoft Edge, but it still does not work.",
     "chromiumAnswer": "Especially if you are a Linux user, this may be the case. To fix it, first make sure your device has Bluetooth turned on. If you use a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\", and \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
   },
   "legoDisclaimer": "LEGO is a trademark of the LEGO Group, which does not sponsor, authorize or endorse this web site.",
   "seo_title": "Machine Learning with LEGO® Bricks",
-  "seo_description": "Unlock machine learning with LEGO® Education SPIKE™ Prime kit. Engage in hands-on experiments to master k-nearest neighbors, linear regression, and Q-learning fundamentals interactively."
+  "seo_description": "Unlock machine learning with LEGO® Education SPIKE™ Prime kit. Engage in hands-on experiments to master k-nearest neighbors, linear regression, and Q-learning fundamentals interactively.",
+  "localeCode": "en"
   
 }

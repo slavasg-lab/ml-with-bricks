@@ -12,7 +12,7 @@
   },
   "Experiments": {
     "title": "Experimente",
-    "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die du mit einem LEGO® Spike Prime durchführen kannst.",
+    "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die Du mit einem LEGO® Spike Prime durchführen kannst.",
     "Cards": {
       "fruit-predictor": {
         "title": "Obstvorhersager",
@@ -122,23 +122,27 @@
   "pdf": "PDF",
   "these instructions": "diese Anleitung",
   "FruitPredictorInstructions": {
-    "title": "Anleitung: Obstvorhersager",
-    "intro": "Auf dieser Seite lernst du, wie du ein einfaches Klassifizierungsgerät baust, das Äpfel und Bananen unterscheiden kann. Es verwendet Farbe und Länge als Merkmale, die vom K-Nearest Neighbor-Algorithmus verarbeitet werden, um eine Vorhersage zu treffen.",
-    "followVideo": "Du kannst unserem Experiment ",
-    "followVideoPart2": " folgen und es Schritt für Schritt mit uns durchführen, oder es selbstständig anhand der folgenden Anleitung machen.",
-    "assemblyTitle": "1. Zusammenbau",
-    "assemblyText1Part1": "Baue zuerst das Gerät anhand ",
-    "assemblyText1Part2": " zusammen. Stelle sicher, dass alle Sensoren an den korrekten Anschlüssen des Hubs angeschlossen sind.",
-    "assemblyText2Part1": "Verbinde dann deinen Hub entweder mit der ",
-    "assemblyText2Part2": "- oder der ",
-    "assemblyText2Part3": "-Anleitung.",
-    "dataCollectionTitle": "2. Datenerfassung",
-    "dataCollectionText": "Nachdem du den Hub mit der Webplattform verbunden hast, starte den Code und warte auf die Bestätigung des Code-Starts. Sammle mindestens 4 Äpfel und 4 Bananen. Nimm jeweils 3 davon und erfasse ihre Daten. Bringe jede Frucht zum Farbsensor und klicke auf die rechte Schaltfläche am Hub, um ihre Farbe aufzuzeichnen. Lege dann dieselbe Frucht in den Greifer, schließe den und entferne die Frucht. Klicke nach dem Entfernen auf die linke Schaltfläche am Hub, um ihre Länge zu messen. Du siehst Datenpunkte im Diagramm erscheinen, wobei die Länge der Frucht auf der Y-Achse und ein Farbspektrum (von Rot nach Gelb) auf der X-Achse dargestellt sind.",
-    "predictionTitle": "3. Vorhersage",
-    "predictionText1": "Schalte den Modellmodus auf 'Vorhersage'. Neue Früchte werden mithilfe des K-Nearest Neighbor-Algorithmus klassifiziert. Der Algorithmus berechnet die Entfernungen zu allen vorhandenen Datenpunkten. Anschließend wählt er die 'K' (standardmäßig 3) nächsten Nachbarn aus und führt eine Abstimmung durch. Wenn die Mehrheit dieser Nachbarn Äpfel sind, wird die neue Frucht als Apfel vorhergesagt, und umgekehrt für Bananen.",
-    "predictionText2": "Um das Modell zu testen, messe die Länge und Farbe einer neuen Frucht wie beim Training. Die vorhergesagte Fruchtart wird auf dem Hub angezeigt, und ein neuer Datenpunkt erscheint im Diagramm. Linien verbinden diesen neuen Punkt mit den nächsten Nachbarn, die an der Abstimmung teilgenommen haben.",
-    "thingsToTryTitle": "4. Ausprobieren",
-    "thingsToTryText": "Versuche, die Visualisierung der 'Entscheidungsgrenze' einzuschalten. Dies zeigt Bereiche, in denen eine neue Frucht basierend auf ihren Merkmalen entweder als Apfel (in einer Farbe) oder als Banane (in einer anderen Farbe) vorhergesagt wird. Experimentiere mit der Erhöhung der Anzahl der Nachbarn ('K'), die an der Abstimmung teilnehmen, und beobachte, wie sich die Entscheidungsgrenze verändert."
+    
+    "paragraph1": "Auf dieser Seite lernst Du, wie Du ein einfaches Klassifizierungsgerät baust, welches Äpfel und Bananen unterscheiden kann. Das Gerät verwendet Farbe und Länge als Merkmale, die vom K-Nearest Neighbor-Algorithmus verarbeitet werden, um eine Vorhersage zu treffen.",
+    "paragraph2": "Du kannst unserem [Video](https://youtu.be/G8OpubRhUhU) folgen und die Experimente Schritt für Schritt mit uns durchführen oder das Klassifizierungsgerät selbständig anhang der folgenden Anleitung bauen.",
+    "step1": {
+      "heading": "1. Zusammenbau",
+      "paragraph1": "Baue zuerst das Gerät anhand  [dieser Anleitung](/ml-with-bricks/materials/$t(localeCode)/assembly/fruit-predictor.pdf) zusammen. Stelle sicher, dass alle Sensoren an den korrekten Anschlüssen des Hubs angeschlossen sind.",
+      "paragraph2": "Verbinde dann Deinen Hub entweder mit der [PDF](/ml-with-bricks/materials/$t(localeCode)/connection.pdf)- oder der [Video](https://youtu.be/ZsviP40PnuA)-Anleitung."
+    },
+    "step2": {
+      "heading": "2. Datenerfassung",
+      "paragraph1": "Nachdem Du den Hub mit der Webplattform verbunden hast, starte den Code und warte auf die Bestätigung des Code-Starts. Sammle mindestens vier Äpfel und vier Bananen. Nimm jeweils drei davon und erfasse ihre Länge und Farbe wie folgt: bringe jede Frucht zum Farbsensor und klicke auf die rechte Schaltfläche am Hub, um ihre Farbe aufzuzeichnen. Lege dann dieselbe Frucht in den Greifer, schließe diesen und entferne die Frucht. Klicke nach dem Entfernen auf die linke Schaltfläche am Hub, um die Länge zu messen. Die gemessenen Datenpunkte erscheinen im unterstehenden Diagramm, wobei die Länge der Frucht auf der Y-Achse und ein Farbspektrum (von Rot nach Gelb) auf der X-Achse dargestellt wird."
+    },
+    "step3": {
+      "heading": "3. Vorhersage",
+      "paragraph1": "Schalte den Modellmodus auf 'Vorhersage'. Neue Früchte werden mithilfe des K-Nearest Neighbor-Algorithmus klassifiziert. Der Algorithmus berechnet die Entfernungen zu allen vorhandenen Datenpunkten. Anschließend wählt er die 'K' (standardmäßig drei) nächsten Nachbarn aus und führt eine Abstimmung durch. Wenn die Mehrheit dieser Nachbarn Äpfel sind, wird die neue Frucht als Apfel vorhergesagt, und umgekehrt für Bananen.",
+      "paragraph2": "Um das Modell zu testen, messe die Länge und Farbe einer neuen Frucht wie beim Training. Die vorhergesagte Fruchtart wird auf dem Hub angezeigt, und ein neuer Datenpunkt erscheint im Diagramm. Linien verbinden diesen neuen Punkt mit den nächsten Nachbarn, die an der Abstimmung teilgenommen haben."
+    },
+    "step4": {
+      "heading": "4. Things to Try",
+      "paragraph1": "Versuche, die Visualisierung der 'Entscheidungsgrenze' einzuschalten. Dies zeigt Bereiche, in denen eine neue Frucht basierend auf ihren Merkmalen entweder als Apfel (in einer Farbe) oder als Banane (in einer anderen Farbe) vorhergesagt wird. Experimentiere mit der Erhöhung der Anzahl der Nachbarn ('K'), die an der Abstimmung teilnehmen, und beobachte, wie sich die Entscheidungsgrenze verändert."
+    }
  },
   "HubInteraction": {
     "portState": {
@@ -151,7 +155,7 @@
     "stopCode": "Programm stoppen",
     "reboot": "Hub neu starten",
     "troubleshootingText": {
-      "part1": "Es scheint, dass dein Browser keine Bluetooth-Verbindung unterstützt. Bitte lies unsere ",
+      "part1": "Es scheint, dass Dein Browser keine Bluetooth-Verbindung unterstützt. Bitte lies unsere ",
       "link": "Seite zur Fehlerbehebung"
     }
   },
@@ -296,7 +300,7 @@
   },
   "Materials": {
     "title": "Materialien",
-    "text": "Hier findest du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
+    "text": "Hier findest Du Kursmaterialien wie Präsentationen und Videoaufzeichnungen.",
     "Presentations": "Präsentationen",
     "Presentations.english": "Englische",
     "Presentations.german": "Deutsche",
@@ -327,18 +331,6 @@
     "developers": {
       "heading": "Für Entwickler",
       "paragraph": "Der Quellcode dieser Seite ist in dem folgenden [GitHub-Repository](https://github.com/slavasg-lab/ml-with-bricks) veröffentlicht. Wenn Du ein Entwickler bist, der den LEGO® Hub über Bluetooth Low Energy (BLE) mit einer Webseite verbinden möchte, haben wir ein [Boilerplate](https://github.com/slavasg-lab/ml-with-bricks) für Dich erstellt!"
-    },
-    "text": {
-      "part1": "Diese Website ist eine interaktive Webplattform zum spielerischen Erlernen der Grundlagen des maschinellen Lernens mit ",
-      "lego": "LEGO® Education SPIKE™ Prime Set",
-      "part2": ". Hier findest du verschiedene Experimente, die dir helfen, grundlegende Algorithmen wie K-Nearest Neighbors, Lineare Regression und Reinforcement Learning zu erlernen. Alles, was du brauchst, ist ein Gerät mit einem Browser, der Bluetooth-Verbindungen unterstützt."
-    },
-    "developersText": {
-      "part1": "Du kannst dir den Quellcode dieser Seite in diesem ",
-      "github": "GitHub-Repository",
-      "part2": " ansehen. Wenn du ein Entwickler bist und auch in der Lage sein möchtest, den LEGO® Hub über Bluetooth Low Energy mit einer Website zu verbinden, haben wir ein ",
-      "boilerplate": "Boilerplate",
-      "part3": " für dich erstellt!"
     }
   },
   "PitcherInstructions": {
@@ -352,25 +344,25 @@
     "assemblyText2Part2": "- oder der ",
     "assemblyText2Part3": "-Anleitung.",
     "dataCollectionTitle": "2. Datenerfassung",
-    "dataCollectionText": "Nachdem du den Hub verbunden und den Code gestartet hast, sammeln wir Daten. Stelle den Pingponger an eine gleichbleibende Startposition. Lege einen Ball in die Halterung; stelle sicher, dass sich der Wurfarm immer in der 12-Uhr-Position befindet, da dies konsistente Würfe mit ausreichend Beschleunigungszeit gewährleistet. Beginne in der Weboberfläche mit einer Motorleistung von 20% (denke daran, auf 'Aktualisieren' zu klicken, damit die Änderungen übernommen werden). Klicke auf die Schaltfläche 'Ball werfen' auf der Webplattform, um den Ball zu werfen. Beobachte, wo der Ball landet. Halte ein Stück Karton an die Stelle, an der der Ball gelandet ist. Der Karton ermöglicht es dem Abstandssensor am Roboter, ein Signal zu reflektieren und die zurückgelegte Entfernung des Balls genau zu messen. Klicke auf die Schaltfläche 'Abstand messen' auf der Webplattform, um diese Entfernung aufzuzeichnen. Die gemessene Entfernung und die verwendete Motorleistung werden in der Weboberfläche aufgezeichnet. Wiederhole diese Schritte und verwende für jeden Wurf unterschiedliche Motorleistungswerte (z. B. 40%, 60%, 80%, bis zu 100%).",
+    "dataCollectionText": "Nachdem Du den Hub verbunden und den Code gestartet hast, sammeln wir Daten. Stelle den Pingponger an eine gleichbleibende Startposition. Lege einen Ball in die Halterung; stelle sicher, dass sich der Wurfarm immer in der 12-Uhr-Position befindet, da dies konsistente Würfe mit ausreichend Beschleunigungszeit gewährleistet. Beginne in der Weboberfläche mit einer Motorleistung von 20% (denke daran, auf 'Aktualisieren' zu klicken, damit die Änderungen übernommen werden). Klicke auf die Schaltfläche 'Ball werfen' auf der Webplattform, um den Ball zu werfen. Beobachte, wo der Ball landet. Halte ein Stück Karton an die Stelle, an der der Ball gelandet ist. Der Karton ermöglicht es dem Abstandssensor am Roboter, ein Signal zu reflektieren und die zurückgelegte Entfernung des Balls genau zu messen. Klicke auf die Schaltfläche 'Abstand messen' auf der Webplattform, um diese Entfernung aufzuzeichnen. Die gemessene Entfernung und die verwendete Motorleistung werden in der Weboberfläche aufgezeichnet. Wiederhole diese Schritte und verwende für jeden Wurf unterschiedliche Motorleistungswerte (z. B. 40%, 60%, 80%, bis zu 100%).",
     "predictionTitle": "3. Vorhersage",
-    "predictionText1": "Wenn du dir deine gesammelten Datenpunkte ansiehst, wirst du feststellen, dass sie annähernd eine gerade Linie bilden. Dies deutet auf eine lineare Beziehung zwischen der Motorleistung und der Entfernung hin, die der Ball zurücklegt. Um die benötigte Motorleistung für das Treffen eines Ziels in einer bestimmten Entfernung vorherzusagen, verwendet der Pingponger eine Methode des maschinellen Lernens namens lineare Regression.",
+    "predictionText1": "Wenn Du dir deine gesammelten Datenpunkte ansiehst, wirst Du feststellen, dass sie annähernd eine gerade Linie bilden. Dies deutet auf eine lineare Beziehung zwischen der Motorleistung und der Entfernung hin, die der Ball zurücklegt. Um die benötigte Motorleistung für das Treffen eines Ziels in einer bestimmten Entfernung vorherzusagen, verwendet der Pingponger eine Methode des maschinellen Lernens namens lineare Regression.",
     "predictionText2": "Die lineare Regression ist eine Methode, die die Linie bestimmt, welche die Beziehung zwischen zwei Variablen am besten darstellt – in unserem Fall die Entfernung, wo der Ball landet, und die zum Werfen verwendete Motorleistung.",
     "predictionText3": "Um zu verstehen, wie gut eine Linie zu den Daten passt, verwenden wir den Begriff 'Verlust' (Loss). Der Verlust stellt den Fehler zwischen der Linie und den tatsächlichen Datenpunkten dar. Eine einfache Möglichkeit, den Verlust zu berechnen, ist beispielsweise die Summe der vertikalen Abstände zwischen der Regressionsgeraden und jedem einzelnen Datenpunkt. Ein kleinerer Verlustwert deutet auf eine besser passende Linie hin.",
     "predictionText4": "Um die beste Linie zu finden, müssen wir diesen Verlust minimieren. Dies können wir tun, indem wir die Position der Linie anpassen, die durch ihren Achsenabschnitt (wo die Linie die Y-Achse schneidet) und ihre Steigung (die Steilheit der Linie) bestimmt wird.",
-    "predictionText5": "Du kannst dies selbst ausprobieren, indem du den Modellmodus auf 'Vorhersage' umschaltest. In diesem Modus kannst du die Parameter für die Steigung und den Achsenabschnitt manuell anpassen, um den Verlust im Diagramm visuell zu minimieren. Um die Parameter anzuzeigen, die der Algorithmus als die beste Anpassung für deine Daten berechnet, klicke auf die Schaltfläche 'Beste Parameter ausrechnen'.",
-    "predictionText6": "Um zu versuchen, ein Ziel zu treffen, platziere im 'Vorhersage'-Modus eine Art Ziel vor dem Pingponger. Miss die Entfernung zum Ziel, indem du ein Stück Karton an die Position des Ziels hältst und auf die Schaltfläche 'Abstand messen' klickst. Entferne dann den Karton, lege den Ball in die Klaue und klicke auf die Schaltfläche 'Ball werfen'. Der Roboter verwendet das gelernte lineare Regressionsmodell, um die benötigte Motorleistung für diese Entfernung vorherzusagen.",
+    "predictionText5": "Du kannst dies selbst ausprobieren, indem Du den Modellmodus auf 'Vorhersage' umschaltest. In diesem Modus kannst Du die Parameter für die Steigung und den Achsenabschnitt manuell anpassen, um den Verlust im Diagramm visuell zu minimieren. Um die Parameter anzuzeigen, die der Algorithmus als die beste Anpassung für deine Daten berechnet, klicke auf die Schaltfläche 'Beste Parameter ausrechnen'.",
+    "predictionText6": "Um zu versuchen, ein Ziel zu treffen, platziere im 'Vorhersage'-Modus eine Art Ziel vor dem Pingponger. Miss die Entfernung zum Ziel, indem Du ein Stück Karton an die Position des Ziels hältst und auf die Schaltfläche 'Abstand messen' klickst. Entferne dann den Karton, lege den Ball in die Klaue und klicke auf die Schaltfläche 'Ball werfen'. Der Roboter verwendet das gelernte lineare Regressionsmodell, um die benötigte Motorleistung für diese Entfernung vorherzusagen.",
     "thingsToTryTitle": "4. Ausprobieren",
     "thingsToTryText": "Experimentiere mit verschiedenen Entfernungen und beobachte, wie sich die vorhergesagte Motorleistung ändert. Füge weitere Datenpunkte hinzu, um zu sehen, wie sich dies auf die Genauigkeit der linearen Regressionsgerade auswirkt. Du kannst auch die Funktion 'Beste Parameter ausrechnen' verwenden, um die Steigung und den Achsenabschnitt der gelernten linearen Beziehung anzuzeigen."
   },
   "CrawlerInstructions": {
     "title": "Crawler & Reinforcement Learning",
-    "intro": "In diesem Experiment wirst du einen Crawler mithilfe von Reinforcement Learning steuern.",
+    "intro": "In diesem Experiment wirst Du einen Crawler mithilfe von Reinforcement Learning steuern.",
     "followVideo": "Du kannst unserem Experiment-",
     "followVideoPart2": " folgen und deinen Crawler Schritt für Schritt mit uns bauen, oder es selbstständig anhand der folgenden Anleitung versuchen.",
     "assemblyTitle": "1. Zusammenbau",
     "assemblyText1Part1": "Baue zuerst den Crawler-Roboter anhand ",
-    "assemblyText1Part2": " dieser Anleitung zusammen. Stelle sicher, dass die Motoren und der Abstandssensor an den korrekten entsprechenden Anschlüssen des Hubs angeschlossen sind. Achte darauf, dass sich alle Motoren in ihrer Nullposition befinden, wenn der Arm vollständig ausgefahren ist, wie in der Anleitung gezeigt. Andernfalls könntest du deine Motoren beschädigen.",
+    "assemblyText1Part2": " dieser Anleitung zusammen. Stelle sicher, dass die Motoren und der Abstandssensor an den korrekten entsprechenden Anschlüssen des Hubs angeschlossen sind. Achte darauf, dass sich alle Motoren in ihrer Nullposition befinden, wenn der Arm vollständig ausgefahren ist, wie in der Anleitung gezeigt. Andernfalls könntest Du deine Motoren beschädigen.",
     "assemblyText2Part1": "Verbinde dann deinen Hub mit der Webplattform entweder über die ",
     "assemblyText2Part2": " PDF- oder die ",
     "assemblyText2Part3": " Videoanleitung.",
@@ -378,11 +370,11 @@
     "algorithmText1": "Der Crawler verwendet Reinforcement Learning, um das Kriechen zu erlernen. Um die Sache zu vereinfachen, hat er nur 4 Armpositionen, wie im Belohnungsdiagramm unten dargestellt. Er muss bestimmen, von welcher Position aus die nächste beste Position zum Bewegen ist.",
     "algorithmText2": "Um den besten Zug auszuwählen, muss der Crawler zunächst verstehen, wie effektiv jeder Übergang zwischen den Armpositionen ist. Ziel ist es, so weit wie möglich zu kriechen, daher messen wir die gekrochene Distanz, um jeden Übergang zu bewerten.",
     "algorithmText3": "Wir erstellen eine 'Entscheidungstabelle', in der die Zeilen die aktuelle Armposition und die Spalten die nächsten möglichen Armpositionen darstellen. Jede Zelle in dieser Tabelle enthält einen Wert, der angibt, wie gut ein Übergang vom Zustand der Zeile zum Zustand der Spalte ist. Anfangs sind diese Werte unbekannt, daher ist die Tabelle mit Nullen gefüllt und wird während des Trainings mit gelernten Werten aktualisiert.",
-    "algorithmText4": "Um diese Werte zu lernen, positioniere den Crawler mit seinem Abstandssensor in Richtung einer Wand in etwa einer Armlänge Entfernung. Starte den Code, indem du auf die entsprechende Schaltfläche auf der Webplattform klickst, stelle den Erkundungsparameter auf 'hoch' und klicke auf die Schaltfläche 'Play'. Eine hohe Erkundungseinstellung bewirkt, dass der Crawler in 80 % der Fälle eine zufällige Bewegung anstelle der besten bekannten Aktion wählt. Dies fördert das Lernen und verhindert, dass der Crawler bei einer suboptimalen Bewegung stecken bleibt. Nachdem der Crawler gelernt hat, welche Distanz er mit jedem Übergang kriecht, ändere den Erkundungsparameter auf 'keine'. Der Crawler kriecht nun einfach, indem er die Aktion auswählt, die die größte gekrochene Distanz ergibt.",
+    "algorithmText4": "Um diese Werte zu lernen, positioniere den Crawler mit seinem Abstandssensor in Richtung einer Wand in etwa einer Armlänge Entfernung. Starte den Code, indem Du auf die entsprechende Schaltfläche auf der Webplattform klickst, stelle den Erkundungsparameter auf 'hoch' und klicke auf die Schaltfläche 'Play'. Eine hohe Erkundungseinstellung bewirkt, dass der Crawler in 80 % der Fälle eine zufällige Bewegung anstelle der besten bekannten Aktion wählt. Dies fördert das Lernen und verhindert, dass der Crawler bei einer suboptimalen Bewegung stecken bleibt. Nachdem der Crawler gelernt hat, welche Distanz er mit jedem Übergang kriecht, ändere den Erkundungsparameter auf 'keine'. Der Crawler kriecht nun einfach, indem er die Aktion auswählt, die die größte gekrochene Distanz ergibt.",
     "algorithmText5": "Um genaue Messungen zu gewährleisten, stoppt der Crawler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere ihn einfach in etwa einer Armlänge Entfernung zur Wand und klicke erneut auf die Schaltfläche 'Play'.",
     "warning1": "Stelle sicher, dass sich während des Trainings keine Objekte zwischen der Wand und dem Abstandssensor befinden, um korrekte Messungen zu gewährleisten.",
     "warning2": "Um genaue Messungen zu gewährleisten, stoppt ein Crawler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere ihn einfach in ca. 1 Armlänge Entfernung zur Wand und klicke erneut auf die Schaltfläche 'Play'.",
-    "thingsToTryTitle": "3. Dinge, die du ausprobieren kannst",
+    "thingsToTryTitle": "3. Dinge, die Du ausprobieren kannst",
     "thingsToTryText": "Versuche, das Experiment zurückzusetzen und das Training mit aktiviertem 'Voraussicht' zu wiederholen. In diesem Fall berücksichtigt der Crawler auch zukünftige Belohnungen, indem er den maximalen Wert aus der Zeile, zu der er sich bewegt (dem nächsten Zustand), zur unmittelbar gekrochenen Distanz (der kurzfristigen Belohnung) hinzufügt. Wie haben sich die Entscheidungstabelle und die Bewegungen des Crawlers verändert?"
   },
   "Troubleshooting": {
@@ -395,5 +387,6 @@
   },
   "legoDisclaimer": "LEGO ist eine Marke der LEGO Gruppe, die diese Webseite weder sponsert, autorisiert noch unterstützt.",
   "seo_title": "Maschinelles Lernen mit LEGO® Bausteinen",
-  "seo_description": "Entdecke maschinelles Lernen mit dem LEGO® Education SPIKE™ Prime Set. Absolviere praktische Experimente, um Grundlagen wie k-nächste Nachbarn, lineare Regression und Q-Learning interaktiv zu meistern."
+  "seo_description": "Entdecke maschinelles Lernen mit dem LEGO® Education SPIKE™ Prime Set. Absolviere praktische Experimente, um Grundlagen wie k-nächste Nachbarn, lineare Regression und Q-Learning interaktiv zu meistern.",
+  "localeCode": "de"
 }

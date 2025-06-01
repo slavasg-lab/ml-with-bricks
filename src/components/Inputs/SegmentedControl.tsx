@@ -43,7 +43,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  & > p {
+  & p {
     font-weight: 600;
   }
 `;

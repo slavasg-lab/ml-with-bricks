@@ -103,6 +103,7 @@ const TableCell = styled.div<{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: 600;
   }
 `;
 

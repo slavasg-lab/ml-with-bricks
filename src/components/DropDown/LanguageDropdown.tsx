@@ -8,8 +8,8 @@ interface Props {
 }
 
 const options = [
-  { id: "en", text: "🇬🇧" },
-  { id: "de", text: "🇩🇪" },
+  { id: "en", text: "English" },
+  { id: "de", text: "Deutsch" },
 ];
 
 const LanguageDropdown = ({ width = "auto" }: Props) => {
@@ -54,18 +54,18 @@ const Wrapper = styled.div<{ width: string }>`
 `;
 
 const Header = styled.div<{ $open: boolean }>`
-  padding: 3px 8px; /* Reduced padding */
+  padding: 3px 5px 3px 10px; /* Reduced padding */
   cursor: pointer;
   display: flex;
   column-gap: 10px; /* Reduced column gap */
   justify-content: space-between;
   align-items: center;
-  border: 1px solid ${({ theme }) => theme.lightGray}; /* Lighter border */
+  border: 1px solid ${({ theme }) => theme.gray}; /* Lighter border */
   border-radius: 3px; /* Smaller border radius */
 `;
 
 const Body = styled.ul<{ $open: boolean }>`
-  border: 1px solid ${({ theme }) => theme.lightGray}; /* Lighter border */
+  border: 1px solid ${({ theme }) => theme.gray}; /* Lighter border */
   display: ${({ $open }) => ($open ? "block" : "none")};
   position: absolute;
   background-color: white;
@@ -79,7 +79,7 @@ const Body = styled.ul<{ $open: boolean }>`
 const Item = styled.li`
   padding: 3px 8px; /* Reduced padding */
   list-style: none;
-  border-bottom: 1px solid ${({ theme }) => theme.lightGray}; /* Very light border */
+  border-bottom: 1px solid ${({ theme }) => theme.gray}; /* Very light border */
 
   &:last-of-type {
     border-bottom: none;
@@ -88,7 +88,7 @@ const Item = styled.li`
   &:hover {
     cursor: pointer;
     background-color: ${({ theme }) =>
-      theme.lightGray}; /* Subtle hover feedback */
+      theme.gray}; /* Subtle hover feedback */
   }
 `;
 

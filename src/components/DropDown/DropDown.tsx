@@ -83,6 +83,7 @@ const Header = styled.div<{ $open: boolean }>`
   column-gap: 20px;
   justify-content: space-between;
   align-items: center;
+  font-weight: 600;
   border: 1px solid ${({ theme }) => theme.darkGray};
   border-radius: 5px;
   border-bottom-right-radius: ${({ $open }) => ($open ? "0" : "5px")};
@@ -100,6 +101,7 @@ const Body = styled.ul<{ $open: boolean }>`
   border-bottom-right-radius: 10px;
   z-index: 100;
   width: 100%;
+  margin: 0;
 `;
 
 const Item = styled.li<{ $active: boolean }>`
@@ -107,6 +109,7 @@ const Item = styled.li<{ $active: boolean }>`
   list-style: none;
 
   border-bottom: 1px solid ${({ theme }) => theme.gray};
+  font-weight: 600;
   &:last-of-type {
     border: none;
   }

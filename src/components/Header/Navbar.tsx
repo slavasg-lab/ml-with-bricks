@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 // import { Link } from "react-router-dom";
 import LanguageDropdown from "../DropDown/LanguageDropdown";
+import Typography from "../Typography/Typography";
 
 // interface MenuItem {
 //   intlId: string;
@@ -15,7 +16,7 @@ import LanguageDropdown from "../DropDown/LanguageDropdown";
 // ];
 
 const Navbar = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   // const pathname = "";
 
   return (
@@ -28,6 +29,7 @@ const Navbar = () => {
           <Link to={el.link}>{t(`Navigation.${el.intlId}` as any)}</Link>
         </NavItem>
       ))} */}
+      <Typography.Text>{t("language")}:</Typography.Text>
       <LanguageDropdown />
     </Wrapper>
   );
@@ -35,7 +37,8 @@ const Navbar = () => {
 
 const Wrapper = styled.ul`
   display: flex;
-  gap: 50px;
+  gap: 10px;
+  align-items: center;
 `;
 
 // const NavItem = styled.li<{ $isActive: boolean }>`

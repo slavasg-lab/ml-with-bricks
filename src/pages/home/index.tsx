@@ -4,7 +4,7 @@ import ExperimentCard from "../../components/Cards/ExperimentCard";
 import { styled } from "styled-components";
 import PlaylistLink from "../../components/PlaylistLink/PlaylistLink";
 
-const experiments = ["fruit-predictor", "ping-ponger", "crawler"];
+const experiments = ["fruit-predictor", "pitcher", "crawler"];
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -63,7 +63,7 @@ const CardGrid = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 `;

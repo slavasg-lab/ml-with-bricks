@@ -96,7 +96,7 @@ const Wrapper = styled.button<{
 
 const Text = styled.p<{ $variant: ButtonVariant }>`
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   color: ${({ $variant, theme }) =>
     $variant === "filled" ? "white" : theme.black};
 `;

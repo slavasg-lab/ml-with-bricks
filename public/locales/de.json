@@ -11,25 +11,21 @@
     "troubleshooting": "Fehlerbehebung 🚧"
   },
   "Experiments": {
-    "title": "Experimente",
-    "text": "Hier ist eine Liste von Experimenten zum maschinellen Lernen, die Du mit einem LEGO® Spike Prime durchführen kannst.",
-    "Cards": {
-      "fruit-predictor": {
-        "title": "Obstvorhersager",
-        "description": "Sage eine Frucht mit ihrer Länge und Farbe mithilfe von K-Nearest Neighbors vorher!"
-      },
-      "ping-ponger": {
-        "title": "Pingponger",
-        "description": "Baue einen Roboter, der mit Hilfe der linearen Regression immer ins Ziel trifft!"
-      },
-      "crawler": {
-        "title": "Krabbler",
-        "description": "Befähige einen selbstlernenden Krabbler mit Q-Learning!"
-      }
+    "fruit-predictor": {
+      "title": "Automatische Obsterkennung",
+      "description": "Erkenne eine Frucht anhand ihrer Länge und Farbe mithilfe von K-Nearest Neighbors!"
+    },
+    "pitcher": {
+      "title": "Pingponger",
+      "description": "Baue einen Roboter, der mit Hilfe von linearer Regression immer ins Ziel trifft!"
+    },
+    "crawler": {
+      "title": "Krabbler",
+      "description": "Baue einen Roboter, der selbstständig Krabbeln lernt!"
     }
   },
   "FruitPredictor": {
-    "title": "Obstvorhersager",
+    "title": "$t(Experiments.fruit-predictor.title)",
     "description": "Sage eine Frucht mit ihrer Länge und Farbe vorher!",
     "yAxisTitle": "Länge \u00A0 [cm]",
     "xAxisTitle": "Farbe",
@@ -53,7 +49,7 @@
     }
   },
   "PingPonger": {
-    "title": "Pingponger",
+    "title": "$t(Experiments.pitcher.title)",
     "description": "Baue einen Roboter, der immer ins Ziel trifft!",
     "modelModes": {
       "train": "Training",
@@ -85,7 +81,7 @@
     "loss": "Verlust"
   },
   "Crawler": {
-    "title": "Krabbler",
+    "title": "$t(Experiments.crawler.title)",
     "description": "Baue einen selbstlernenden Krabbler!",
     "modes": {
       "automatic": "Auto",
@@ -392,5 +388,6 @@
   "legoDisclaimer": "LEGO ist eine Marke der LEGO Gruppe, die diese Webseite weder sponsert, autorisiert noch unterstützt.",
   "seo_title": "Maschinelles Lernen mit LEGO® Bausteinen",
   "seo_description": "Entdecke maschinelles Lernen mit dem LEGO® Education SPIKE™ Prime Set. Absolviere praktische Experimente, um Grundlagen wie k-nächste Nachbarn, lineare Regression und Q-Learning interaktiv zu meistern.",
-  "localeCode": "de"
+  "localeCode": "de",
+  "language": "Sprache"
 }

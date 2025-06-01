@@ -36,7 +36,7 @@ function App() {
                 element={<FruitPredictorPage />}
               />
               <Route
-                path="/experiments/ping-ponger"
+                path="/experiments/pitcher"
                 element={<PingPongerPage />}
               />
               <Route path="/experiments/crawler" element={<CrawlerPage />} />

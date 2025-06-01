@@ -23,8 +23,8 @@ const ExperimentCard = ({ expId }: Props) => {
       /> */}
         <ImageDiv $expId={expId} />
         <InfoWrap>
-          <Typography.H3>{t(`Experiments.Cards.${expId}.title` as never)}</Typography.H3>
-          <Typography.Text>{t(`Experiments.Cards.${expId}.description` as never)}</Typography.Text>
+          <Typography.H3>{t(`Experiments.${expId}.title` as never)}</Typography.H3>
+          <Typography.Text>{t(`Experiments.${expId}.description` as never)}</Typography.Text>
         </InfoWrap>
       </Wrapper>
     </Link>

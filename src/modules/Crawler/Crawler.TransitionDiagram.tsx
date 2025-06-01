@@ -66,9 +66,7 @@ const TransitionDiagram = ({
     for (let i = 0; i < size; i++) {
       for (let j = 0; j < size; j++) {
         const weight = table[i][j];
-        console.log(weight);
         if (weight !== undefined) {
-          console.log("added");
           elements.push({
             data: {
               id: `e${i}-${j}`,

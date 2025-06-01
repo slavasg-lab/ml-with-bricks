@@ -11,25 +11,22 @@
     "troubleshooting": "Troubleshooting 🚧"
   },
   "Experiments": {
-    "title": "Experiments",
-    "text": "Here is a list of machine learning experiments you can conduct with LEGO® Education SPIKE™ Prime Set.",
-    "Cards": {
-      "fruit-predictor": {
-        "title": "Fruit predictor",
-        "description": "Predict a fruit based on its length and color using K-Nearest Neighbors!"
-      },
-      "ping-ponger": {
-        "title": "Pitcher",
-        "description": "Build a robot that always hits the target with help of linear regression!"
-      },
-      "crawler": {
-        "title": "Crawler",
-        "description": "Empower a self-learning crawler with Q-Learning!"
-      }
+    "fruit-predictor": {
+      "title": "Automatic fruit detector",
+      "description": "Predict a fruit based on its length and color using K-nearest neighbors!"
+    },
+    "pitcher": {
+      "title": "Pitcher",
+      "description": "Build a robot that always hits the target with help of linear regression!"
+    },
+    "crawler": {
+      "title": "Crawler",
+      "description": "Empower a self-learning crawler with q-learning!"
     }
+  
   },
   "FruitPredictor": {
-    "title": "Fruit predictor",
+    "title": "$t(Experiments.fruit-predictor.title)",
     "description": "Predict a fruit using its length and color!",
     "yAxisTitle": "Length \u00A0 [cm]",
     "xAxisTitle": "Color",
@@ -53,7 +50,7 @@
     }
   },
   "PingPonger": {
-    "title": "Pitcher",
+    "title": "$t(Experiments.pitcher.title)",
     "description": "Build a robot that always hits the target!",
     "modelModes": {
       "train": "Training",
@@ -85,7 +82,7 @@
     "loss": "LOSS"
   },
   "Crawler": {
-    "title": "Crawler",
+    "title": "$t(Experiments.crawler.title)",
     "description": "Build a self-learning crawler!",
     "modes": {
       "automatic": "Automatic",
@@ -128,7 +125,7 @@
     "launchCode": "Start program",
     "stopCode": "Stop program",
     "reboot": "Reboot hub",
-    "troubleshootingText": "It seems that your browser does not support bluetooth connection. Please refer to our [troubleshooting page](/ml-with-bricks/#/troubleshooting)."
+    "troubleshooting": "It seems that your browser does not support bluetooth connection. Please refer to our [troubleshooting page](/ml-with-bricks/#/troubleshooting)."
   },
   "video": "video",
   "pdf": "PDF",
@@ -383,6 +380,7 @@
   "legoDisclaimer": "LEGO is a trademark of the LEGO Group, which does not sponsor, authorize or endorse this web site.",
   "seo_title": "Machine Learning with LEGO® Bricks",
   "seo_description": "Unlock machine learning with LEGO® Education SPIKE™ Prime kit. Engage in hands-on experiments to master k-nearest neighbors, linear regression, and Q-learning fundamentals interactively.",
-  "localeCode": "en"
+  "localeCode": "en",
+  "language": "Language"
   
 }

@@ -390,6 +390,6 @@
     "chromiumAnswer": "Besonders wenn Sie ein Linux-Benutzer sind, kann dies der Fall sein. Um dies zu beheben, stellen Sie zunächst sicher, dass Bluetooth auf Ihrem Gerät aktiviert ist. Wenn Sie einen Chromium-basierten Browser verwenden, versuchen Sie, die folgenden Adressen in die Adressleiste Ihres Browsers einzugeben und die aufgeführten Flags zu aktivieren: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\" und \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
   },
   "legoDisclaimer": "LEGO ist eine Marke der LEGO Gruppe, die diese Webseite weder sponsert, autorisiert noch unterstützt.",
-  "title": "Maschinelles Lernen mit LEGO® Bausteinen",
-  "meta_description": "Entdecke maschinelles Lernen mit dem LEGO® Education SPIKE™ Prime Set. Absolviere praktische Experimente, um Grundlagen wie k-nächste Nachbarn, lineare Regression und Q-Learning interaktiv zu meistern."
+  "seo_title": "Maschinelles Lernen mit LEGO® Bausteinen",
+  "seo_description": "Entdecke maschinelles Lernen mit dem LEGO® Education SPIKE™ Prime Set. Absolviere praktische Experimente, um Grundlagen wie k-nächste Nachbarn, lineare Regression und Q-Learning interaktiv zu meistern."
 }

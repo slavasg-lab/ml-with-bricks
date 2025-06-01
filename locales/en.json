@@ -11,25 +11,22 @@
     "troubleshooting": "Troubleshooting 🚧"
   },
   "Experiments": {
-    "title": "Experiments",
-    "text": "Here is a list of machine learning experiments you can conduct with LEGO® Education SPIKE™ Prime Set.",
-    "Cards": {
-      "fruit-predictor": {
-        "title": "Fruit predictor",
-        "description": "Predict a fruit based on its length and color using K-Nearest Neighbors!"
-      },
-      "ping-ponger": {
-        "title": "Pitcher",
-        "description": "Build a robot that always hits the target with help of linear regression!"
-      },
-      "crawler": {
-        "title": "Crawler",
-        "description": "Empower a self-learning crawler with Q-Learning!"
-      }
+    "fruit-predictor": {
+      "title": "Automatic fruit detector",
+      "description": "Predict a fruit based on its length and color using K-nearest neighbors!"
+    },
+    "pitcher": {
+      "title": "Pitcher",
+      "description": "Build a robot that always hits the target with help of linear regression!"
+    },
+    "crawler": {
+      "title": "Crawler",
+      "description": "Empower a self-learning crawler with q-learning!"
     }
+  
   },
   "FruitPredictor": {
-    "title": "Fruit predictor",
+    "title": "$t(Experiments.fruit-predictor.title)",
     "description": "Predict a fruit using its length and color!",
     "yAxisTitle": "Length \u00A0 [cm]",
     "xAxisTitle": "Color",
@@ -53,7 +50,7 @@
     }
   },
   "PingPonger": {
-    "title": "Pitcher",
+    "title": "$t(Experiments.pitcher.title)",
     "description": "Build a robot that always hits the target!",
     "modelModes": {
       "train": "Training",
@@ -85,7 +82,7 @@
     "loss": "LOSS"
   },
   "Crawler": {
-    "title": "Crawler",
+    "title": "$t(Experiments.crawler.title)",
     "description": "Build a self-learning crawler!",
     "modes": {
       "automatic": "Automatic",
@@ -128,33 +125,32 @@
     "launchCode": "Start program",
     "stopCode": "Stop program",
     "reboot": "Reboot hub",
-    "troubleshootingText": {
-      "part1": "It seems that your browser doesn't support bluetooth connection. Please refer to our ",
-      "link": "troubleshooting page"
-    }
+    "troubleshooting": "It seems that your browser does not support bluetooth connection. Please refer to our [troubleshooting page](/ml-with-bricks/#/troubleshooting)."
   },
   "video": "video",
   "pdf": "PDF",
   "these instructions": "these instructions",
   "FruitPredictorInstructions": {
-    "title": "Fruit Predictor Instructions",
-    "intro": "On this page, you'll learn how to build a simple classification device that can distinguish between apples and bananas. It uses color and length as features, processed by the K-Nearest Neighbor algorithm to make a prediction.",
-    "followVideo": "You can follow our experiment ",
-    "followVideoPart2": " and do it step by step with us, or do it yourself using the instructions below.",
-    "assemblyTitle": "1. Assembly",
-    "assemblyText1Part1": "First, assemble the device using ",
-    "assemblyText1Part2": ". Ensure all sensors are connected to the correct corresponding ports on the hub.",
-    "assemblyText2Part1": "Then, connect your hub either using the ",
-    "assemblyText2Part2": " or ",
-    "assemblyText2Part3": " instructions.",
-    "dataCollectionTitle": "2. Data Collection",
-    "dataCollectionText": "After connecting the hub to the web platform, start the code and wait for the code start confirmation to pop up. Gather at least 4 apples and 4 bananas. Take 3 of each and collect their data. For each fruit, bring it to the color sensor and click the right button on the hub to record its color. Then, place the same fruit into the robot's claw, close it, and remove the fruit. After removing, click the left button on the hub to measure its length. You'll see data points appear on the diagram, with fruit length on the Y-axis and a color spectrum (from red to yellow) on the X-axis.",
-    "predictionTitle": "3. Prediction",
-    "predictionText1": "Switch the model mode to 'Prediction'. New fruits are classified using the K-Nearest Neighbors algorithm. The algorithm calculates the distances to all existing data points. Then, it selects the 'K' (default is 3) nearest neighbors and performs a vote. If the majority of these neighbors are apples, the new fruit is predicted as an apple, and vice versa for bananas.",
-    "predictionText2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process.",
-    "thingsToTryTitle": "4. Things to Try",
-    "thingsToTryText": "Try turning the 'decision border' visualization on. This will show areas where a new fruit is predicted as either an apple (in one color) or a banana (in another color) based on its features. Experiment with increasing the number of neighbors ('K') participating in the vote and observe how the decision boundary changes."
- 
+    "paragraph1": "You will learn how to build a simple classification device that can distinguish between apples and bananas. It uses color and length as features, processed by the K-nearest neighbor algorithm to distinguish between the two types of fruits.",
+    "paragraph2": "You can follow our experiment [video](https://youtu.be/G8OpubRhUhU) and build the device step by step with us, or do it yourself using the instructions below.",
+    "step1": {
+      "heading": "1. Assembly",
+      "paragraph1": "First, assemble the device using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/fruit-predictor.pdf). Ensure all sensors are connected to the correct ports on the hub.",
+      "paragraph2": "Then, connect your hub either using the [PDF](/ml-with-bricks/materials/$t(localeCode)/connection.pdf) or [video](https://youtu.be/ZsviP40PnuA) instructions."
+    },
+    "step2": {
+      "heading": "2. Data Collection",
+      "paragraph1": "After connecting the hub to the web platform, start the code and wait for the code start confirmation to pop up. Gather at least four apples and four bananas. Take three of each and collect their color and length data. For each fruit, bring it to the color sensor and click the right button on the hub to record its color. Then, place the same fruit into the robot's claw, close it, and remove the fruit. After removing, click the left button on the hub to measure its length. You will see data points appearing in the diagram, with fruit length on the Y-axis and a color spectrum (from red to yellow) on the X-axis."
+    },
+    "step3": {
+      "heading": "3. Prediction",
+      "paragraph1": "Switch the model mode to 'Prediction'. New fruits are classified using the K-nearest neighbors algorithm. The algorithm calculates the distances to all existing data points. Then, it selects the 'K' (default is three) nearest neighbors and performs a vote. If the majority of these neighbors are apples, the new fruit is predicted as an apple, and vice versa for bananas.",
+      "paragraph2": "To test the model, measure the length and color of a new fruit as you did during training. The predicted fruit type will be displayed on the Hub, and a new data point will appear in the diagram. Lines will connect this new point to the nearest neighbors that participated in the voting process."
+    },
+    "step4": {
+      "heading": "4. Things to Try",
+      "paragraph1": "Try turning the 'decision border' visualization on. This will show areas where a new fruit is predicted as either an apple (in one color) or a banana (in another color) based on its features. Experiment with increasing the number of neighbors ('K') participating in the vote and observe how the decision boundary changes."
+    }
    },
   "Settings": {
     "title": "Settings",
@@ -296,94 +292,99 @@
       }
     },
   "Home": {
-    "title": "Welcome!",
-    "text": {
-      "part1": "This website is an interactive web-platform designed to learning of funfamentals of machine learning interactively using ",
-      "lego": "LEGO® Education SPIKE™ Prime Set",
-      "part2": ". Here you can find different experiments that help you learn basic algorithms such as K-Nearest Neighbors, Linear Regression and Reinforcement Learning. All you need is a device with browser that both support bluetooth connection."
+    "title": "Hands-on Machine Learning with LEGO® SPIKE",
+    "paragraph1": "This website is an interactive web-platform designed to teach the fundamentals of machine learning interactively using the [LEGO® Education SPIKE™ Prime Set](https://www.lego.com/product/lego-education-spike-prime-set-45678). You will find different experiments below that teach basic algorithms such as k-nearest neighbors, linear regression and reinforcement learning. All you need is a device with browser that both support Bluetooth connection. The course material (pdf slides) and corresponding video recordings are attached below.",
+    "paragraph2": "This course was developed by [Viacheslav Sydora](https://www.linkedin.com/in/viacheslav-sydora/), [Guner Dilsad Er](https://www.linkedin.com/in/guner-dilsad-er/) and [Michael Muehlebach](https://sites.google.com/view/mmuehlebach/) ([Max Planck Institute for Intelligent Systems](https://is.mpg.de/)) in collaboration with [KI-Makerspace](https://ki-maker.space/). It is designed for young adults at the age of 13-17 years.",
+    "experiments": {
+      "heading": "Experiments",
+      "paragraph": "The experiments teach supervised learning (classification and regression), as well as reinforcement learning in an intuitive and accessible way."
     },
-    "developers": "For Developers",
-    "developersText": {
-      "part1": "You can check out the source code of this page in this ",
-      "github": "GitHub Repository",
-      "part2": ". If you are a developer who wants to also be able to connect the LEGO® Hub to a website using Bluetooth Low Energy, we created a ",
-      "boilerplate": "boilerplate",
-      "part3": " for you!"
+    "troubleshooting": {
+      "heading": "Troubleshooting",
+      "paragraph": "If you encounter any technical problems, check out our [troubleshooting page](/ml-with-bricks/#/troubleshooting) or reach us under this email adress: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de)."
     },
-    "troubleshooting": "Troubleshooting",
-    "troubleshootingText": {
-      "part1": "If you encounter any technical problems, check out our ",
-      "link": "troubleshooting page",
-      "part2": " or reach us under this email adress: "
+    "courseRecording": {
+      "heading": "Course Recording",
+      "paragraph": "All instructions are detailed on the corresponding experiment pages. We also provide the entire course recordings on YouTube:",
+      "watch": "Watch on YouTube"
     },
-    "materialsTitle": "Course Materials",
-    "materialsText": {
-      "part1": "We also encourage people who want to give this course live to children with help of our platform. For that, you can use our presentations. For that, you can use our presentations available in ",
-      "part2": " and "
+    "courseMaterials": {
+      "heading": "Course Materials",
+      "paragraph": "We encourage teachers to use our course with help of our materials and web-interface. The course materials are available in [German](/ml-with-bricks/materials/de/presentation.pdf) and [English](/ml-with-bricks/materials/en/presentation.pdf)."
     },
-    "courseRecordingTitle": "Course Recording",
-    "courseRecordingText": "You can either try it yourself following instructions from experiment pages or watch prerecorded YouTube version of the course:",
-    "presentations": "Presentations",
-    "presentationsEnglish": "English",
-    "presentationsGerman": "German",
-    "coursePlaylistTitle": "YouTube video player",
-    "watch": "Watch on YouTube"
+    "developers": {
+      "heading": "For Developers",
+      "paragraph": "The source code of this webpage is published in the following [GitHub Repository](https://github.com/slavasg-lab/ml-with-bricks). If you are a developer who seeks to connect the LEGO® Hub to a website using Bluetooth Low Energy (BLE), we created a [boilerplate](https://github.com/slavasg-lab/lego-spikeprime-ble-boilerplate) for you!"
+    }
   },
   "PitcherInstructions": {
-    "title": "Pitcher Experiment Instructions",
-    "intro": "In this experiment, you'll build a robot 'Pitcher' that learns to always hit a target. We'll use the power of linear regression to predict the motor power needed based on the distance to the target.",
-    "followVideo": "You can follow our experiment ",
-    "followVideoPart2": " and build your Pitcher step by step with us, or do it yourself using the instructions below.",
-    "assemblyTitle": "1. Assembly",
-    "assemblyText1Part1": "First, assemble the Pitcher robot using ",
-    "assemblyText1Part2": ". Ensure the motor and any distance sensor are connected to the correct corresponding ports on the hub.",
-    "assemblyText2Part1": "Then, connect your hub to the web platform using either the ",
-    "assemblyText2Part2": " or ",
-    "assemblyText2Part3": " instructions.",
-    "dataCollectionTitle": "2. Data Collection",
-    "dataCollectionText": "After connecting the hub and starting the code, it's time to collect data. Place the pitcher at a consistent launching position. Place a ball in the holder; ensure the serving arm is always at the 12 o'clock position, as this ensures consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect an ultrasonic signal and measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance while holding the cardboard. The measured distance and the motor power used will be recorded in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch.",
-    "predictionTitle": "3. Prediction",
-    "predictionText1": "If you observe the data points you've collected, you'll notice they roughly form a straight line. This suggests a linear relationship between the motor speed and the distance the ball travels. To predict the necessary motor speed to hit a target at a specific distance, the pitcher will use a machine learning technique called linear regression.",
-    "predictionText2": "Linear regression is a method that finds the line that best represents the relationship between two variables – in our case, the distance to where the ball lands and the motor speed used to launch it.",
-    "predictionText3": "To understand how well a line fits the data, we use a term called 'loss'. The loss represents the error between the line and the actual data points. For example, a simple way to calculate loss is to sum up the vertical distances between the regression line and each individual data point. A smaller loss value indicates a better-fitting line.",
-    "predictionText4": "To find the best-fitting line, we need to minimize this loss. We can do this by adjusting the line's position, which is controlled by its intercept (where the line crosses the Y-axis) and its slope (the line's steepness).",
-    "predictionText5": "You can experiment with this yourself by switching the model mode to 'Prediction'. In this mode, you can manually adjust the slope and intercept parameters to try and minimize the loss visually on the graph. To see the parameters that the algorithm calculates as the best fit for your data, click the 'Calculate best parameters' button.",
-    "predictionText6": "To try and hit a target, while in 'Prediction' mode, place some kind of target in front of the pitcher. Measure the distance to the target by holding a piece of cardboard at the target's location and clicking the 'Measure distance' button. Then, remove the cardboard, place the ball into the claw, and click the 'Launch ball' button. The robot will use the learned linear regression model to predict the motor speed needed to reach that distance.",
-    "thingsToTryTitle": "4. Things to Try",
-    "thingsToTryText": "Experiment with different distances and observe how the predicted motor power changes. Try adding more data points to see how it affects the accuracy of the linear regression line. You can also explore the 'Calculate Best Parameters' function to see the slope and intercept of the learned linear relationship."
+    "paragraph1": "In this experiment, you will build a robot 'Pitcher' that learns to always hit a target. We will use linear regression to learn the motor power needed to successfully hit the target.",
+    "paragraph2": "You can follow our experiment [video](https://youtu.be/P_t-HRxQ80s) and build Pitcher step by step with us, or do it yourself using the instructions below.",
+    
+    "step1": {
+      "heading": "1. Assembly",
+      "paragraph1": "First, assemble the Pitcher robot using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/pitcher.pdf). Ensure the motors and the distance sensor are connected to the correct ports on the hub.",
+      "paragraph2": "$t(FruitPredictorInstructions.step1.paragraph2)"
+    },
+    "step2": {
+      "heading": "2. Data Collection",
+      "paragraph1": "After connecting the hub and starting the code, it is time to collect data. Place the Pitcher at a fixed launching position. Place a ball in the holder and ensure that the serving arm is always at the 12 o'clock position, as this enables consistent launches with sufficient acceleration time. In the web interface, start by setting the motor power to 20% (remember to click on 'Update motor speed' for changes to take effect). Click the 'Launch ball' button on the web platform to throw the ball. Observe where the ball lands. Hold a piece of cardboard at the point where the ball landed. The cardboard allows the distance sensor on the robot to reflect an ultrasonic signal and measure the distance the ball traveled. Click the 'Measure distance' button on the web platform to record this distance while holding the cardboard. The measured distance and the motor power used will be displayed in the web interface. Repeat these steps, trying different motor power values (e.g., 40%, 60%, 80%, up to 100%) for each launch."
+    },
+    "step3": {
+      "heading": "3. Prediction",
+      "paragraph1": "Notice that the observed data points roughly form a straight line. This suggests a linear relationship between motor speed and distance travelled by the ball. For predicting the required motor speed to hit a target at a specific distance, the pitcher will use a machine learning technique called linear regression.",
+      "paragraph2": "Linear regression is a method that finds the straight line that best represents the relationship between two variables \u2013 in our case, the distance to where the ball lands and the motor speed used to launch it.",
+      "paragraph3": "To understand how well a line fits the data, we use a term called 'loss'. The loss represents the error between the line and the actual data points. For example, a simple way to calculate loss is to sum up the vertical distances between the regression line and each individual data point. A smaller loss value indicates a better-fitting line.",
+      "paragraph4": "To find the best-fitting line, we need to minimize this loss. We can do this by adjusting the line's position, which is controlled by its intercept (where the line crosses the Y-axis) and its slope (the line's steepness).",
+      "paragraph5": "You can experiment with this yourself by switching the model mode to 'Prediction'. In this mode, you can manually adjust the slope and intercept parameters to try and minimize the loss visually on the graph. To see the parameters that the algorithm calculates as the best fit for your data, click the 'Calculate best parameters' button.",
+      "paragraph6": "For hitting a target, switch to 'Prediction' mode, and place the target at a resonable distance in front of the pitcher. Measure the distance to the target by holding a piece of cardboard at the target's location and clicking the 'Measure distance' button. Then, remove the cardboard, place the ball into the claw, and click the 'Launch ball' button. The robot will use the learned linear regression model to predict the motor speed needed to reach that distance."
+    },
+    "step4": {
+      "heading": "4. Things to Try",
+      "paragraph1": "Experiment with different distances and observe how the predicted motor power changes. Try adding more data points to see how it affects the accuracy of the linear regression line. You can also explore the 'Calculate Best Parameters' function to see the slope and intercept of the learned linear relationship."
+    }
   },
   "CrawlerInstructions": {
-    "title": "Crawler & Reinforcement Learning",
-    "intro": "In this experiment, you will empower a crawler with reinforcement learning.",
-    "followVideo": "You can follow our experiment ",
-    "assemblyTitle": "1. Assembly",
-    "assemblyText1Part1": "First, assemble the crawler robot using ",
-    "assemblyText1Part2": ". Ensure the motors and the distance sensor are connected to the correct corresponding ports on the hub. Make sure all motors are in their zero positions when the arm is fully extended as shown in the instructions. Otherwise, you could damage your motors.",
-    "assemblyText2Part1": "Then, connect your hub to the web platform using either the ",
-    "assemblyText2Part2": " or ",
-    "assemblyText2Part3": " instructions.",
-    "followVideoPart2": " and build your crawler step by step with us, or do it yourself using the instructions below.",
-    "algorithmTitle": "2. Algorithm",
-    "algorithmText1": "The crawler will use reinforcement learning to learn how to crawl. To simplify this, it has only 4 arm positions, as shown in the reward diagram below. It needs to determine the best next position to move to from its current position.",
-    "algorithmText2": "To select the best move, the crawler first needs to understand how effective each transition between arm positions is. The goal is to crawl as far as possible, so we measure the crawled distance to evaluate each transition.",
-    "algorithmText3": "We create a 'Decision table' where the rows represent the current arm position and the columns represent the next possible arm positions. Each cell in this table contains a value indicating how good a transition is from the row's state to the column's state. Initially, these values are unknown, so the table is filled with zeros and will be updated with learned values during training.",
-    "algorithmText4": "To learn these values, position the crawler with its distance sensor facing a wall at approximately one elbow's length away. Start the code by clicking the corresponding button on the web platform, set the exploration parameter to 'high', and click the 'play' button. A high exploration setting makes the crawler select a random movement in 80% of cases instead of always choosing the best known action. This encourages learning and prevents the crawler from getting stuck with a suboptimal movement. After the crawler has learned the distance it crawls with each transition, change the exploration parameter to 'none'. The crawler will now simply crawl by selecting the action that results in the greatest crawled distance.",
-    "algorithmText5": "To ensure accurate measurements, the crawler will stop training if it is too close or too far from the wall. To continue training, simply reposition it at approximately one elbow's length from the wall and click the 'play' button again.",
-    "warning1": "Make sure there are no objects between the wall and the distance sensor during training to ensure correct measurements.",
-    "warning2": "To ensure accurate measurements, a crawler will stop training if it's too close or too far from the wall. To continue training, simply reposition it at ~1 elbow length to the wall and click play button again.",
-    "thingsToTryTitle": "3. Things to try",
-    "thingsToTryText": "Try resetting the experiment and repeating the training with 'Foresight' turned on. In this case, the crawler will also consider future rewards by adding the maximum value from the row it moves to (the next state) to the immediate crawled distance (the short-term reward). How did the decision table and the crawler's movements change?"
+    "paragraph1": "In this experiment, you will empower a crawling robot with reinforcement learning.",
+    "paragraph2": "You can follow our experiment [video](https://www.youtube.com/watch/tuYZL71suyY) and build your crawler step by step with us, or do it yourself using the instructions below.",
+
+    "step1": {
+      "heading": "1. Assembly",
+      "paragraph1": "First, assemble the crawler robot using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/crawler.pdf). Ensure the motors and the distance sensor are connected to the correct ports on the hub.",
+      "warning": "Make sure all motors are in their zero positions when the arm is fully extended as shown in the instructions. Otherwise, you could damage your motors.",
+      "paragraph2": "$t(FruitPredictorInstructions.step1.paragraph2)"
+    },
+    "step2": {
+      "heading":"2. Algorithm",
+      "paragraph1": "The crawler will use reinforcement learning to learn how to crawl. To simplify the learning task, the crawler has only four arm positions, as shown in the diagram below. For achieving a crawling motion, the robot will determine the best next arm position to move to from its current arm position.",
+      "paragraph2": "To that extent, the crawler first needs to understand how effective each transition between arm positions is. Our goal is to crawl as far as possible, hence we measure the crawled distance to evaluate the performance of each transition towards achieving our goal.",
+      "paragraph3": "We create a 'Decision table' where the rows represent the current arm position and the columns represent the next possible arm positions. Each cell in this table contains a value indicating how good a transition is from the row's state to the column's state. Initially, these values are unknown, so the table is filled with zeros and will be updated with learned values during training.",
+      "paragraph4": "To learn these values, position the crawler with its distance sensor facing a wall at approximately one elbow's length away. Start the code by clicking the corresponding button on the web platform, set the exploration parameter to 'high', and click the 'play' button. A high exploration setting makes the crawler select a random movement in 80% of cases instead of always choosing the best known action. This encourages learning and prevents the crawler from getting stuck with a suboptimal movement. After the crawler has learned the distance it crawls with each transition, change the exploration parameter to 'none'. The crawler will now simply crawl by selecting the action that results in the greatest crawled distance.",
+      "paragraph5": "To ensure accurate measurements, the crawler will stop training if it is too close or too far from the wall. To continue training, simply reposition the crawler at approximately one elbow's length from the wall and click the 'play' button again.",
+      "warning1": "Make sure there are no objects between the wall and the distance sensor during training to ensure correct measurements.",
+      "warning2": "To ensure accurate measurements, the crawler will stop training if the robot is too close or too far from the wall. To continue training, simply reposition it at roughly one elbow length to the wall and click the play button again."
+    },
+    "step3": {
+      "heading": "3. Things to try",
+      "paragraph1": "Try resetting the experiment and repeating the training with 'Foresight' turned on. In this case, the crawler will also consider future rewards by adding the maximum value from the row it moves to (the next state) to the immediate crawled distance (the short-term reward). How did the decision table and the crawler's movements change?"
+    }
   },
   "Troubleshooting": {
     "title": "Troubleshooting",
-    "intro": "On this page you can find tips on how to fix some problems on the website related to interaction with hub.",
-    "bluetoothQuestion": "It says my browser doesn't support Bluetooth. Why?",
-    "bluetoothAnswer": "Unfortunately, Bluetooth is still an experimental API that is not available in all browsers. In our experience, this API is supported in chromium-based browsers and Microsoft Edge.",
-    "chromiumQuestion": "I have a chromium-based browser or Microsoft Edge, but it still doesn't work.",
-    "chromiumAnswer": "Especially if you are a Linux user, this may be the case. To fix it, first make sure your device has Bluetooth turned on. If you use a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\", and \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
+    "paragraph": "This page provides tips on how to resolve issues related to interacting with your LEGO® hub on the website. If you encounter a case that is not covered here, please email me at: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de).",
+    "question1": {
+      "question": "It says my browser does not support Bluetooth. Why?",
+      "paragraph1": "Unfortunately, Bluetooth remains an experimental API and is not available in all browsers. Based on our experience, this API is supported by Chromium-based browsers, such as Google Chrome and Chromium, as well as Microsoft Edge. We recommend using one of these browsers."
+    },
+    "question2": {
+      "question": "I have a chromium-based browser or Microsoft Edge, but it still does not work. Why?",
+      "paragraph1": "This may be particularly relevant if you use Linux. First, make sure that Bluetooth is turned on at both the hardware and software levels. If it didn't help and you are using a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \n~~~js\nchrome://flags/#enable-experimental-web-platform-features\n~~~\n, \n~~~js\nchrome://flags/#enable-web-bluetooth-new-permissions-backend\n~~~\n and \n~~~js\nchrome://flags/#enable-web-bluetooth-confirm-pairing-support\n~~~\n."
+    }
   },
   "legoDisclaimer": "LEGO is a trademark of the LEGO Group, which does not sponsor, authorize or endorse this web site.",
   "seo_title": "Machine Learning with LEGO® Bricks",
-  "seo_description": "Unlock machine learning with LEGO® Education SPIKE™ Prime kit. Engage in hands-on experiments to master k-nearest neighbors, linear regression, and Q-learning fundamentals interactively."
+  "seo_description": "Unlock machine learning with LEGO® Education SPIKE™ Prime kit. Engage in hands-on experiments to master k-nearest neighbors, linear regression, and Q-learning fundamentals interactively.",
+  "localeCode": "en",
+  "language": "Language"
   
 }

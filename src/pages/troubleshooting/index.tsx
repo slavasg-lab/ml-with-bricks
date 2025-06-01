@@ -6,20 +6,20 @@ const TroubleshootingPage = () => {
   return (
     <div>
       <Typography.H1>{t("Troubleshooting.title")}</Typography.H1>
-      <Typography.Text>
-        {t("Troubleshooting.intro")}
+      <Typography.Text $markdown>
+        {t("Troubleshooting.paragraph")}
       </Typography.Text>
       <Typography.Text $bold>
-        {t("Troubleshooting.bluetoothQuestion")}
+        {t("Troubleshooting.question1.question")}
       </Typography.Text>
-      <Typography.Text>
-        {t("Troubleshooting.bluetoothAnswer")}
+      <Typography.Text $markdown>
+        {t("Troubleshooting.question1.paragraph1")}
       </Typography.Text>
       <Typography.Text $bold>
-        {t("Troubleshooting.chromiumQuestion")}
+        {t("Troubleshooting.question2.question")}
       </Typography.Text>
-      <Typography.Text>
-        {t("Troubleshooting.chromiumAnswer")}
+      <Typography.Text $markdown>
+        {t("Troubleshooting.question2.paragraph1")}
       </Typography.Text>
     </div>
   );

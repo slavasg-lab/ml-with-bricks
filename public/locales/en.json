@@ -371,11 +371,15 @@
   },
   "Troubleshooting": {
     "title": "Troubleshooting",
-    "intro": "On this page you can find tips on how to fix some problems on the website related to interaction with hub.",
-    "bluetoothQuestion": "It says my browser does not support Bluetooth. Why?",
-    "bluetoothAnswer": "Unfortunately, Bluetooth is still an experimental API that is not available in all browsers. In our experience, this API is supported in chromium-based browsers and Microsoft Edge.",
-    "chromiumQuestion": "I have a chromium-based browser or Microsoft Edge, but it still does not work.",
-    "chromiumAnswer": "Especially if you are a Linux user, this may be the case. To fix it, first make sure your device has Bluetooth turned on. If you use a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\", and \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
+    "paragraph": "This page provides tips on how to resolve issues related to interacting with your LEGO® hub on the website. If you encounter a case that is not covered here, please email me at: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de).",
+    "question1": {
+      "question": "It says my browser does not support Bluetooth. Why?",
+      "paragraph1": "Unfortunately, Bluetooth remains an experimental API and is not available in all browsers. Based on our experience, this API is supported by Chromium-based browsers, such as Google Chrome and Chromium, as well as Microsoft Edge. We recommend using one of these browsers."
+    },
+    "question2": {
+      "question": "I have a chromium-based browser or Microsoft Edge, but it still does not work. Why?",
+      "paragraph1": "This may be particularly relevant if you use Linux. First, make sure that Bluetooth is turned on at both the hardware and software levels. If it didn't help and you are using a chromium-based browser, try entering the following addresses into your browser's address bar, and enabling the listed flags: \n~~~js\nchrome://flags/#enable-experimental-web-platform-features\n~~~\n, \n~~~js\nchrome://flags/#enable-web-bluetooth-new-permissions-backend\n~~~\n and \n~~~js\nchrome://flags/#enable-web-bluetooth-confirm-pairing-support\n~~~\n."
+    }
   },
   "legoDisclaimer": "LEGO is a trademark of the LEGO Group, which does not sponsor, authorize or endorse this web site.",
   "seo_title": "Machine Learning with LEGO® Bricks",

@@ -378,12 +378,16 @@
     }
   },
   "Troubleshooting": {
-    "title": "Fehlerbehebung",
-    "intro": "Auf dieser Seite finden Sie Tipps zur Behebung einiger Probleme auf der Website, die mit der Interaktion mit dem Hub zusammenhängen.",
-    "bluetoothQuestion": "Es wird angezeigt, dass mein Browser Bluetooth nicht unterstützt. Warum?",
-    "bluetoothAnswer": "Leider ist Bluetooth immer noch eine experimentelle API, die nicht in allen Browsern verfügbar ist. Unserer Erfahrung nach wird diese API in Chromium-basierten Browsern und Microsoft Edge unterstützt.",
-    "chromiumQuestion": "Ich habe einen Chromium-basierten Browser oder Microsoft Edge, aber es funktioniert immer noch nicht.",
-    "chromiumAnswer": "Besonders wenn Sie ein Linux-Benutzer sind, kann dies der Fall sein. Um dies zu beheben, stellen Sie zunächst sicher, dass Bluetooth auf Ihrem Gerät aktiviert ist. Wenn Sie einen Chromium-basierten Browser verwenden, versuchen Sie, die folgenden Adressen in die Adressleiste Ihres Browsers einzugeben und die aufgeführten Flags zu aktivieren: \"chrome://flags/#enable-experimental-web-platform-features\", \"chrome://flags/#enable-web-bluetooth-new-permissions-backend\" und \"chrome://flags/#enable-web-bluetooth-confirm-pairing-support\"."
+    "title": "Troubleshooting",
+    "paragraph": "Auf dieser Seite findest Du Tipps, wie Du Probleme im Zusammenhang mit der Interaktion mit Deinem LEGO® Hub auf der Website lösen kannst. Wenn Du auf einen Fall stößt, der hier nicht behandelt wird, kontaktiere mich bitte per Mail: [viacheslav.sydora@tuebingen.mpg.de](mailto:viacheslav.sydora@tuebingen.mpg.de).",
+    "question1": {
+      "question": "Es wird angezeigt, dass mein Browser Bluetooth nicht unterstützt. Warum?",
+      "paragraph1": "Leider ist Bluetooth immer noch eine experimentelle API und nicht in allen Browsern verfügbar. Unserer Erfahrung nach wird diese API von Chromium-basierten Browsern wie Google Chrome und Chromium sowie von Microsoft Edge unterstützt. Wir empfehlen, einen dieser Browser zu verwenden."
+    },
+    "question2": {
+      "question": "Ich habe einen Chromium-basierten Browser oder Microsoft Edge, aber es funktioniert immer noch nicht. Warum?",
+      "paragraph1": "Dies kann besonders wichtig sein, wenn Du Linux verwendest. Stell zunächst sicher, dass Bluetooth sowohl auf der Hardware- als auch auf der Softwareebene aktiviert ist. Wenn Du einen Chromium-basierten Browser verwendest, versuch, die folgenden Adressen in die Adressleiste Ihres Browsers einzugeben und die aufgeführten Flags zu aktivieren: \n~~~js\nchrome://flags/#enable-experimental-web-platform-features\n~~~\n, \n~~~js\nchrome://flags/#enable-web-bluetooth-new-permissions-backend\n~~~\n und \n~~~js\nchrome://flags/#enable-web-bluetooth-confirm-pairing-support\n~~~\n."
+    }
   },
   "legoDisclaimer": "LEGO ist eine Marke der LEGO Gruppe, die diese Webseite weder sponsert, autorisiert noch unterstützt.",
   "seo_title": "Maschinelles Lernen mit LEGO® Bausteinen",

@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 import remarkGfm from "remark-gfm";
 import InTextLink from "../Links/InTextLink";
+import MonospaceSpan from "../MonospaceSpan/MonospaceSpan";
 
 // Define media queries for responsiveness
 const breakpoints = {
@@ -83,6 +84,8 @@ const customMarkdownComponents = {
     <InTextLink to={props.href}>{props.children}</InTextLink>
   ),
   p: ({ children }: any) => <>{children}</>,
+  pre: ({ children }: any) => <>{children}</>,
+  code: ({ children }: any) => <MonospaceSpan>{children}</MonospaceSpan>,
 };
 
 const Text = ({

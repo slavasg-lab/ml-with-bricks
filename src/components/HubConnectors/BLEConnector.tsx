@@ -6,9 +6,7 @@ import Button from "../Button/Button";
 import { useTranslation } from "react-i18next";
 import { LinkIcon, LinkOffIcon, PlayIcon, StopIcon } from "../Icons/Icons";
 import { useBLE } from "../../contexts/BLEContext";
-import Warning from "../Warnings/WarningBlock";
-import Typography from "../Typography/Typography";
-import InTextLink from "../Links/InTextLink";
+import WarningBlock from "../Warnings/WarningBlock";
 
 interface Props {
   code: string;
@@ -38,16 +36,7 @@ const BLEConnector = ({ code, onStart }: Props) => {
   };
 
   if (!navigator.bluetooth)
-    return (
-      <Warning>
-        <Typography.Text>
-          {t("HubInteraction.troubleshootingText.part1")}
-          <InTextLink to={"/#/troubleshooting"}>
-            {t("HubInteraction.troubleshootingText.link")}
-          </InTextLink>
-        </Typography.Text>
-      </Warning>
-    );
+    return <WarningBlock $markdown>{t("HubInteraction.troubleshooting")}</WarningBlock>;
 
   return (
     <Wrapper>

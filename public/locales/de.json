@@ -108,7 +108,7 @@
       "exploration": "Exploration"
     },
     "actionTypeLabel": "Modus",
-    "thinkFutureLabel": "Zukunft denken",
+    "thinkFutureLabel": "Voraussicht",
     "controls": "Steuerung",
     "actionQualityTable": "Entscheidungstabelle",
     "rewardDiagram": "Belohnungsdiagramm",
@@ -153,10 +153,7 @@
     "launchCode": "Programm starten",
     "stopCode": "Programm stoppen",
     "reboot": "Hub neu starten",
-    "troubleshootingText": {
-      "part1": "Es scheint, dass Dein Browser keine Bluetooth-Verbindung unterstützt. Bitte lies unsere ",
-      "link": "Seite zur Fehlerbehebung"
-    }
+    "troubleshooting": "Es scheint, dass Dein Browser keine Bluetooth-Verbindung unterstützt. Bitte lies unsere [Seite zur Fehlerbehebung](/ml-with-bricks/#/troubleshooting)."
   },
   "Settings": {
     "title": "Einstellungen",
@@ -329,7 +326,7 @@
     },
     "developers": {
       "heading": "Für Entwickler",
-      "paragraph": "Der Quellcode dieser Seite ist in dem folgenden [GitHub-Repository](https://github.com/slavasg-lab/ml-with-bricks) veröffentlicht. Wenn Du ein Entwickler bist, der den LEGO® Hub über Bluetooth Low Energy (BLE) mit einer Webseite verbinden möchte, haben wir ein [Boilerplate](https://github.com/slavasg-lab/ml-with-bricks) für Dich erstellt!"
+      "paragraph": "Der Quellcode dieser Seite ist in dem folgenden [GitHub-Repository](https://github.com/slavasg-lab/ml-with-bricks) veröffentlicht. Wenn Du ein Entwickler oder eine Entwicklerin bist, der den LEGO® Hub über Bluetooth Low Energy (BLE) mit einer Webseite verbinden möchte, haben wir ein [Boilerplate](https://github.com/slavasg-lab/ml-with-bricks) für Dich erstellt!"
     }
   },
   "PitcherInstructions": {
@@ -360,26 +357,29 @@
     }
   },
   "CrawlerInstructions": {
-    "title": "Crawler & Reinforcement Learning",
-    "intro": "In diesem Experiment wirst Du einen Crawler mithilfe von Reinforcement Learning steuern.",
-    "followVideo": "Du kannst unserem Experiment-",
-    "followVideoPart2": " folgen und deinen Crawler Schritt für Schritt mit uns bauen, oder es selbstständig anhand der folgenden Anleitung versuchen.",
-    "assemblyTitle": "1. Zusammenbau",
-    "assemblyText1Part1": "Baue zuerst den Crawler-Roboter anhand ",
-    "assemblyText1Part2": " dieser Anleitung zusammen. Stelle sicher, dass die Motoren und der Abstandssensor an den korrekten entsprechenden Anschlüssen des Hubs angeschlossen sind. Achte darauf, dass sich alle Motoren in ihrer Nullposition befinden, wenn der Arm vollständig ausgefahren ist, wie in der Anleitung gezeigt. Andernfalls könntest Du deine Motoren beschädigen.",
-    "assemblyText2Part1": "Verbinde dann deinen Hub mit der Webplattform entweder über die ",
-    "assemblyText2Part2": " PDF- oder die ",
-    "assemblyText2Part3": " Videoanleitung.",
-    "algorithmTitle": "2. Algorithmus",
-    "algorithmText1": "Der Crawler verwendet Reinforcement Learning, um das Kriechen zu erlernen. Um die Sache zu vereinfachen, hat er nur 4 Armpositionen, wie im Belohnungsdiagramm unten dargestellt. Er muss bestimmen, von welcher Position aus die nächste beste Position zum Bewegen ist.",
-    "algorithmText2": "Um den besten Zug auszuwählen, muss der Crawler zunächst verstehen, wie effektiv jeder Übergang zwischen den Armpositionen ist. Ziel ist es, so weit wie möglich zu kriechen, daher messen wir die gekrochene Distanz, um jeden Übergang zu bewerten.",
-    "algorithmText3": "Wir erstellen eine 'Entscheidungstabelle', in der die Zeilen die aktuelle Armposition und die Spalten die nächsten möglichen Armpositionen darstellen. Jede Zelle in dieser Tabelle enthält einen Wert, der angibt, wie gut ein Übergang vom Zustand der Zeile zum Zustand der Spalte ist. Anfangs sind diese Werte unbekannt, daher ist die Tabelle mit Nullen gefüllt und wird während des Trainings mit gelernten Werten aktualisiert.",
-    "algorithmText4": "Um diese Werte zu lernen, positioniere den Crawler mit seinem Abstandssensor in Richtung einer Wand in etwa einer Armlänge Entfernung. Starte den Code, indem Du auf die entsprechende Schaltfläche auf der Webplattform klickst, stelle den Erkundungsparameter auf 'hoch' und klicke auf die Schaltfläche 'Play'. Eine hohe Erkundungseinstellung bewirkt, dass der Crawler in 80 % der Fälle eine zufällige Bewegung anstelle der besten bekannten Aktion wählt. Dies fördert das Lernen und verhindert, dass der Crawler bei einer suboptimalen Bewegung stecken bleibt. Nachdem der Crawler gelernt hat, welche Distanz er mit jedem Übergang kriecht, ändere den Erkundungsparameter auf 'keine'. Der Crawler kriecht nun einfach, indem er die Aktion auswählt, die die größte gekrochene Distanz ergibt.",
-    "algorithmText5": "Um genaue Messungen zu gewährleisten, stoppt der Crawler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere ihn einfach in etwa einer Armlänge Entfernung zur Wand und klicke erneut auf die Schaltfläche 'Play'.",
-    "warning1": "Stelle sicher, dass sich während des Trainings keine Objekte zwischen der Wand und dem Abstandssensor befinden, um korrekte Messungen zu gewährleisten.",
-    "warning2": "Um genaue Messungen zu gewährleisten, stoppt ein Crawler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere ihn einfach in ca. 1 Armlänge Entfernung zur Wand und klicke erneut auf die Schaltfläche 'Play'.",
-    "thingsToTryTitle": "3. Dinge, die Du ausprobieren kannst",
-    "thingsToTryText": "Versuche, das Experiment zurückzusetzen und das Training mit aktiviertem 'Voraussicht' zu wiederholen. In diesem Fall berücksichtigt der Crawler auch zukünftige Belohnungen, indem er den maximalen Wert aus der Zeile, zu der er sich bewegt (dem nächsten Zustand), zur unmittelbar gekrochenen Distanz (der kurzfristigen Belohnung) hinzufügt. Wie haben sich die Entscheidungstabelle und die Bewegungen des Crawlers verändert?"
+    "paragraph1": "In diesem Experiment wirst Du einen krabbelnden Roboter mithilfe von Reinforcement Learning steuern.",
+    "paragraph2": "Du kannst unserem [Video](https://www.youtube.com/watch/tuYZL71suyY) und Deinen Krabbler Schritt für Schritt mit uns bauen, oder den Roboter selbständig anhand der folgenden Anleitung erstellen.",
+
+    "step1": {
+      "heading": "1. Zusammenbau",
+      "paragraph1": "Baue zuerst den Krabbler anhand [dieser Anleitung](/ml-with-bricks/materials/$t(localeCode)/assembly/crawler.pdf) zusammen. Stelle sicher, dass die Motoren und der Abstandssensor an den korrekten Anschlüssen des Hubs angeschlossen sind.",
+      "warning": "Achte darauf, dass sich alle Motoren in ihrer Nullposition befinden, wenn der Arm vollständig ausgefahren ist, wie in der Anleitung gezeigt. Andernfalls könntest Du Deine Motoren beschädigen.",
+      "paragraph2": "$t(FruitPredictorInstructions.step1.paragraph2)"
+    },
+    "step2": {
+      "heading":"2. Algorithm",
+      "paragraph1": "Der Krabbler verwendet Reinforcement Learning, um selbstständig Kriechen zu erlernen. Zur Vereinfachung hat der Krabbler nur vier Armpositionen, wie im Diagramm unten dargestellt. Der Roboter bestimmt die nächste Armposition anhand der jetzigen Armposition.",
+      "paragraph2": "Um den besten Zug auszuwählen, muss der Krabbler zunächst verstehen, wie effektiv jeder Übergang zwischen den verschiedenen Armpositionen ist, um unser Ziel \u2013 so weit wie möglich zu kriechen \u2013 zu erreichen. Um den Erfolg der einzelnen Züge zu bewerten, messen wir die jeweils gekrochene Distanz über einen Zug.",
+      "paragraph3": "Wir erstellen eine 'Entscheidungstabelle' (siehe unten), in der die Zeilen die aktuelle Armposition und die Spalten die nächsten möglichen Armpositionen darstellen. Jede Zelle in dieser Tabelle enthält einen Wert, der angibt, wie effektiv ein Übergang von der Armposition der Zeile zur Armposition der Spalte ist. Anfangs sind diese Werte unbekannt, daher ist die Tabelle mit Nullen gefüllt und wird während des Trainings mit gelernten Werten aktualisiert.",
+      "paragraph4": "Um diese Werte zu lernen, positionieren wir den Krabbler etwa eine Armlänge vor einer Wand (mit Abstandssensor zur Wand hingerichtet). Starte den Code, indem Du auf die entsprechende Schaltfläche auf der Webplattform klickst, stelle den Erkundungsparameter auf 'hoch' und klicke auf die Schaltfläche 'Play'. Eine hohe Erkundungseinstellung bewirkt, dass der Krabbler in 80 % der Fälle eine zufällige Bewegung anstelle der besten bekannten Aktion wählt. Dies fördert das Lernen und verhindert, dass der Krabbler bei einer suboptimalen Bewegung stecken bleibt. Nachdem der Krabbler gelernt hat, welche Distanz er mit jedem Übergang kriecht, ändere den Erkundungsparameter auf 'keine'. Der Krabbler kriecht nun einfach, indem er die Aktion auswählt, die die größte gekrochene Distanz ergibt.",
+      "paragraph5": "Um genaue Messungen zu gewährleisten, stoppt der Krabbler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere den Roboter einfach in etwa einer Armlänge Entfernung zur Wand und klicke erneut auf die Schaltfläche 'Play'.",
+      "warning1": "Stelle sicher, dass sich während des Trainings keine Objekte zwischen der Wand und dem Abstandssensor befinden, um korrekte Messungen zu gewährleisten.",
+      "warning2": "Um genaue Messungen zu gewährleisten, stoppt der Krabbler das Training, wenn er sich zu nah oder zu weit von der Wand entfernt befindet. Um das Training fortzusetzen, positioniere den Roboter einfach ca. eine Armlänge vor der Wand und klicke erneut auf die Schaltfläche 'Play'."
+    },
+    "step3": {
+      "heading": "3. Dinge, die Du ausprobieren kannst",
+      "paragraph1": "Versuche, das Experiment zurückzusetzen und das Training zu wiederholen, wobei Du nun 'Voraussicht' aktivierst. In diesem Fall berücksichtigt der Krabbler auch zukünftige Belohnungen, indem er den maximalen Wert aus der Zeile, zu der er sich bewegt (dem nächsten Zustand), zur unmittelbar gekrochenen Distanz (der kurzfristigen Belohnung) hinzufügt. Wie haben sich die Entscheidungstabelle und die Bewegungen des Krabblers verändert?"
+    }
   },
   "Troubleshooting": {
     "title": "Fehlerbehebung",

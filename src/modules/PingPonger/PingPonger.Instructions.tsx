@@ -1,8 +1,6 @@
 import { styled } from "styled-components";
 import Typography from "../../components/Typography/Typography";
-import InTextLink from "../../components/Links/InTextLink";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const PitcherInstructions = () => {
   const { t } = useTranslation();

@@ -128,10 +128,7 @@
     "launchCode": "Start program",
     "stopCode": "Stop program",
     "reboot": "Reboot hub",
-    "troubleshootingText": {
-      "part1": "It seems that your browser does not support bluetooth connection. Please refer to our ",
-      "link": "troubleshooting page"
-    }
+    "troubleshootingText": "It seems that your browser does not support bluetooth connection. Please refer to our [troubleshooting page](/ml-with-bricks/#/troubleshooting)."
   },
   "video": "video",
   "pdf": "PDF",
@@ -141,7 +138,7 @@
     "paragraph2": "You can follow our experiment [video](https://youtu.be/G8OpubRhUhU) and build the device step by step with us, or do it yourself using the instructions below.",
     "step1": {
       "heading": "1. Assembly",
-      "paragraph1": "First, assemble the device using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/fruit-predictor.pdf). Ensure all sensors are connected to the correct corresponding ports on the hub.",
+      "paragraph1": "First, assemble the device using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/fruit-predictor.pdf). Ensure all sensors are connected to the correct ports on the hub.",
       "paragraph2": "Then, connect your hub either using the [PDF](/ml-with-bricks/materials/$t(localeCode)/connection.pdf) or [video](https://youtu.be/ZsviP40PnuA) instructions."
     },
     "step2": {
@@ -351,26 +348,29 @@
     }
   },
   "CrawlerInstructions": {
-    "title": "Crawler & Reinforcement Learning",
-    "intro": "In this experiment, you will empower a crawler with reinforcement learning.",
-    "followVideo": "You can follow our experiment ",
-    "assemblyTitle": "1. Assembly",
-    "assemblyText1Part1": "First, assemble the crawler robot using ",
-    "assemblyText1Part2": ". Ensure the motors and the distance sensor are connected to the correct corresponding ports on the hub. Make sure all motors are in their zero positions when the arm is fully extended as shown in the instructions. Otherwise, you could damage your motors.",
-    "assemblyText2Part1": "Then, connect your hub to the web platform using either the ",
-    "assemblyText2Part2": " or ",
-    "assemblyText2Part3": " instructions.",
-    "followVideoPart2": " and build your crawler step by step with us, or do it yourself using the instructions below.",
-    "algorithmTitle": "2. Algorithm",
-    "algorithmText1": "The crawler will use reinforcement learning to learn how to crawl. To simplify this, it has only 4 arm positions, as shown in the reward diagram below. It needs to determine the best next position to move to from its current position.",
-    "algorithmText2": "To select the best move, the crawler first needs to understand how effective each transition between arm positions is. The goal is to crawl as far as possible, so we measure the crawled distance to evaluate each transition.",
-    "algorithmText3": "We create a 'Decision table' where the rows represent the current arm position and the columns represent the next possible arm positions. Each cell in this table contains a value indicating how good a transition is from the row's state to the column's state. Initially, these values are unknown, so the table is filled with zeros and will be updated with learned values during training.",
-    "algorithmText4": "To learn these values, position the crawler with its distance sensor facing a wall at approximately one elbow's length away. Start the code by clicking the corresponding button on the web platform, set the exploration parameter to 'high', and click the 'play' button. A high exploration setting makes the crawler select a random movement in 80% of cases instead of always choosing the best known action. This encourages learning and prevents the crawler from getting stuck with a suboptimal movement. After the crawler has learned the distance it crawls with each transition, change the exploration parameter to 'none'. The crawler will now simply crawl by selecting the action that results in the greatest crawled distance.",
-    "algorithmText5": "To ensure accurate measurements, the crawler will stop training if it is too close or too far from the wall. To continue training, simply reposition it at approximately one elbow's length from the wall and click the 'play' button again.",
-    "warning1": "Make sure there are no objects between the wall and the distance sensor during training to ensure correct measurements.",
-    "warning2": "To ensure accurate measurements, a crawler will stop training if it's too close or too far from the wall. To continue training, simply reposition it at ~1 elbow length to the wall and click play button again.",
-    "thingsToTryTitle": "3. Things to try",
-    "thingsToTryText": "Try resetting the experiment and repeating the training with 'Foresight' turned on. In this case, the crawler will also consider future rewards by adding the maximum value from the row it moves to (the next state) to the immediate crawled distance (the short-term reward). How did the decision table and the crawler's movements change?"
+    "paragraph1": "In this experiment, you will empower a crawling robot with reinforcement learning.",
+    "paragraph2": "You can follow our experiment [video](https://www.youtube.com/watch/tuYZL71suyY) and build your crawler step by step with us, or do it yourself using the instructions below.",
+
+    "step1": {
+      "heading": "1. Assembly",
+      "paragraph1": "First, assemble the crawler robot using [these instructions](/ml-with-bricks/materials/$t(localeCode)/assembly/crawler.pdf). Ensure the motors and the distance sensor are connected to the correct ports on the hub.",
+      "warning": "Make sure all motors are in their zero positions when the arm is fully extended as shown in the instructions. Otherwise, you could damage your motors.",
+      "paragraph2": "$t(FruitPredictorInstructions.step1.paragraph2)"
+    },
+    "step2": {
+      "heading":"2. Algorithm",
+      "paragraph1": "The crawler will use reinforcement learning to learn how to crawl. To simplify the learning task, the crawler has only four arm positions, as shown in the diagram below. For achieving a crawling motion, the robot will determine the best next arm position to move to from its current arm position.",
+      "paragraph2": "To that extent, the crawler first needs to understand how effective each transition between arm positions is. Our goal is to crawl as far as possible, hence we measure the crawled distance to evaluate the performance of each transition towards achieving our goal.",
+      "paragraph3": "We create a 'Decision table' where the rows represent the current arm position and the columns represent the next possible arm positions. Each cell in this table contains a value indicating how good a transition is from the row's state to the column's state. Initially, these values are unknown, so the table is filled with zeros and will be updated with learned values during training.",
+      "paragraph4": "To learn these values, position the crawler with its distance sensor facing a wall at approximately one elbow's length away. Start the code by clicking the corresponding button on the web platform, set the exploration parameter to 'high', and click the 'play' button. A high exploration setting makes the crawler select a random movement in 80% of cases instead of always choosing the best known action. This encourages learning and prevents the crawler from getting stuck with a suboptimal movement. After the crawler has learned the distance it crawls with each transition, change the exploration parameter to 'none'. The crawler will now simply crawl by selecting the action that results in the greatest crawled distance.",
+      "paragraph5": "To ensure accurate measurements, the crawler will stop training if it is too close or too far from the wall. To continue training, simply reposition the crawler at approximately one elbow's length from the wall and click the 'play' button again.",
+      "warning1": "Make sure there are no objects between the wall and the distance sensor during training to ensure correct measurements.",
+      "warning2": "To ensure accurate measurements, the crawler will stop training if the robot is too close or too far from the wall. To continue training, simply reposition it at roughly one elbow length to the wall and click the play button again."
+    },
+    "step3": {
+      "heading": "3. Things to try",
+      "paragraph1": "Try resetting the experiment and repeating the training with 'Foresight' turned on. In this case, the crawler will also consider future rewards by adding the maximum value from the row it moves to (the next state) to the immediate crawled distance (the short-term reward). How did the decision table and the crawler's movements change?"
+    }
   },
   "Troubleshooting": {
     "title": "Troubleshooting",

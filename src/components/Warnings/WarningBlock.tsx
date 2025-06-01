@@ -2,9 +2,11 @@
 import styled from "styled-components";
 import { WarningIcon } from "../Icons/Icons";
 import Typography from "../Typography/Typography";
+import React from "react";
 
 interface Props {
-  children: any;
+  children: React.ReactNode;
+  $markdown?: boolean; 
 }
 
 const WarningBlock = ({ children }: Props) => {
@@ -13,7 +15,7 @@ const WarningBlock = ({ children }: Props) => {
       <IconWrapper>
         <WarningIcon />
       </IconWrapper>
-      <Typography.Text> {children}</Typography.Text>
+      <Typography.Text $markdown>{children}</Typography.Text>
     </Wrapper>
   );
 };
